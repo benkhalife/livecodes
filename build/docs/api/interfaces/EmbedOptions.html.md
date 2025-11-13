@@ -23,7 +23,7 @@ If supplied with an invalid URL, an error is thrown.
 
 #### Defined in
 
-[models.ts:314](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L314)
+[models.ts:314](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L314)
 
 ***
 
@@ -43,7 +43,7 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 #### Defined in
 
-[models.ts:346](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L346)
+[models.ts:346](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L346)
 
 ***
 
@@ -61,7 +61,7 @@ false
 
 #### Defined in
 
-[models.ts:352](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L352)
+[models.ts:352](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L352)
 
 ***
 
@@ -73,7 +73,7 @@ A resource to [import](https://play.nitrocode.ir/docs/features/import) (from any
 
 #### Defined in
 
-[models.ts:357](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L357)
+[models.ts:357](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L357)
 
 ***
 
@@ -95,7 +95,7 @@ false
 
 #### Defined in
 
-[models.ts:367](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L367)
+[models.ts:367](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L367)
 
 ***
 
@@ -117,7 +117,7 @@ Sets how the playground loads:
 
 #### Defined in
 
-[models.ts:377](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L377)
+[models.ts:377](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L377)
 
 ***
 
@@ -3826,7 +3826,7 @@ Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#res
 
 #### Defined in
 
-[models.ts:338](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L338)
+[models.ts:338](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L338)
 
 ***
 
@@ -3839,7 +3839,7 @@ Allowed valued can be found [here](https://play.nitrocode.ir/docs/api/internal/t
 
 #### Defined in
 
-[models.ts:383](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L383)
+[models.ts:383](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L383)
 
 ***
 
@@ -3864,4 +3864,4 @@ When set to `"headless"`, the playground is loaded in [headless mode](https://pl
 
 #### Defined in
 
-[models.ts:396](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L396)
+[models.ts:396](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L396)

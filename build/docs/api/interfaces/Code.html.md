@@ -25,7 +25,7 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1918](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L1918)
+[models.ts:1918](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L1918)
 
 ***
 
@@ -35,7 +35,7 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1933](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L1933)
+[models.ts:1933](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L1933)
 
 ***
 
@@ -57,7 +57,7 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1928](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L1928)
+[models.ts:1928](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L1928)
 
 ***
 
@@ -79,4 +79,4 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1923](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L1923)
+[models.ts:1923](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L1923)

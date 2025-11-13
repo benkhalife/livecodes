@@ -5704,7 +5704,7 @@ declare module "livecodes/i18n/locales/en/translation" {
             readonly text: "Plain Text";
         };
         readonly splash: {
-            readonly loading: "Loading LiveCodes…";
+            readonly loading: "Loading Nitro Code Playground ...";
         };
         readonly sync: {
             readonly autoSync: "Auto sync";
