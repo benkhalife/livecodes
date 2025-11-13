@@ -24,4 +24,4 @@ Called when a new project is loaded (including when [imported](https://play.nitr
 
 ## Defined in
 
-[models.ts:230](https://github.com/benkhalife/livecodes/blob/e9f2d95306679d5975bc89ee6b9a546696e7f74f/src/sdk/models.ts#L230)
+[models.ts:230](https://github.com/benkhalife/livecodes/blob/e9a62b57c6bae0671fc6e4999a473a202a9f9b84/src/sdk/models.ts#L230)
