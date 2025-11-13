@@ -8,7 +8,7 @@
 
 #### Defined in
 
-[models.ts:1170](https://github.com/benkhalife/livecodes/blob/2383e677bfa8f267f8df055e5fd13f138389a379/src/sdk/models.ts#L1170)
+[models.ts:1170](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L1170)
 
 ***
 
@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[models.ts:1169](https://github.com/benkhalife/livecodes/blob/2383e677bfa8f267f8df055e5fd13f138389a379/src/sdk/models.ts#L1169)
+[models.ts:1169](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L1169)

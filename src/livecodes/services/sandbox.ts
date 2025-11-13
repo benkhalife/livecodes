@@ -1,6 +1,6 @@
 import { sandboxVersion } from '../html/sandbox/index';
 
-const cfPagesBaseUrl = 'https://livecodes-sandbox.pages.dev';
+const cfPagesBaseUrl = 'https://livecodes-sandbox.onrender.com';
 const ghPagesBaseUrl = 'https://live-codes.github.io/livecodes-sandbox/dist';
 const selfHostedBaseUrl = `https://${process.env.SANDBOX_HOST_NAME}:${process.env.SANDBOX_PORT}`;
 const localBaseUrl = 'http://127.0.0.1:8085';

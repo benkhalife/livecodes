@@ -25,7 +25,7 @@ See [docs](https://livecodes.io/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1918](https://github.com/benkhalife/livecodes/blob/2383e677bfa8f267f8df055e5fd13f138389a379/src/sdk/models.ts#L1918)
+[models.ts:1918](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L1918)
 
 ***
 
@@ -35,7 +35,7 @@ See [docs](https://livecodes.io/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1933](https://github.com/benkhalife/livecodes/blob/2383e677bfa8f267f8df055e5fd13f138389a379/src/sdk/models.ts#L1933)
+[models.ts:1933](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L1933)
 
 ***
 
@@ -57,7 +57,7 @@ See [docs](https://livecodes.io/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1928](https://github.com/benkhalife/livecodes/blob/2383e677bfa8f267f8df055e5fd13f138389a379/src/sdk/models.ts#L1928)
+[models.ts:1928](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L1928)
 
 ***
 
@@ -79,4 +79,4 @@ See [docs](https://livecodes.io/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1923](https://github.com/benkhalife/livecodes/blob/2383e677bfa8f267f8df055e5fd13f138389a379/src/sdk/models.ts#L1923)
+[models.ts:1923](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L1923)
