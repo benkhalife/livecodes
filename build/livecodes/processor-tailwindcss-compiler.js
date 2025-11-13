@@ -1,5 +1,5 @@
 "use strict";
-var livecodes = (() => {
+(() => {
   var __create = Object.create;
   var __defProp = Object.defineProperty;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -8,10 +8,6 @@ var livecodes = (() => {
   var __hasOwnProp = Object.prototype.hasOwnProperty;
   var __commonJS = (cb, mod) => function __require() {
     return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-  };
-  var __export = (target, all) => {
-    for (var name in all)
-      __defProp(target, name, { get: all[name], enumerable: true });
   };
   var __copyProps = (to, from, except, desc) => {
     if (from && typeof from === "object" || typeof from === "function") {
@@ -29,7 +25,6 @@ var livecodes = (() => {
     isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
     mod
   ));
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
   // node_modules/lz-string/libs/lz-string.js
   var require_lz_string = __commonJS({
@@ -494,360 +489,539 @@ var livecodes = (() => {
     }
   });
 
-  // src/sdk/index.ts
-  var sdk_exports = {};
-  __export(sdk_exports, {
-    createPlayground: () => createPlayground,
-    getPlaygroundUrl: () => getPlaygroundUrl
+  // src/livecodes/compiler/utils.ts
+  var getCompileResult = (result) => {
+    if (typeof result === "string") {
+      return { code: result, info: {} };
+    }
+    return result;
+  };
+
+  // src/livecodes/compiler/compile-in-compiler.ts
+  var compileInCompiler = async (content, language, config, options = {}, worker = self) => new Promise((resolve) => {
+    if (!content || !language || !config) {
+      return resolve(getCompileResult(""));
+    }
+    const handler = async function(ev) {
+      const message = ev.data.payload;
+      if (ev.data.trigger === "compileInCompiler" && message?.content === content && message?.language === language) {
+        worker.removeEventListener("message", handler);
+        resolve(getCompileResult(message.compiled));
+      }
+    };
+    worker.addEventListener("message", handler);
+    worker.postMessage({
+      type: "compileInCompiler",
+      payload: { content, language, config, options }
+    });
   });
-  var import_lz_string = __toESM(require_lz_string());
-  async function createPlayground(container, options = {}) {
-    if (typeof container === "object" && !(container instanceof HTMLElement) && (container.headless || container.view === "headless")) {
-      options = container;
-      container = null;
-    }
-    const { config = {}, headless, loading = "lazy", view } = options;
-    const isHeadless = headless || view === "headless";
-    let containerElement = null;
-    let appVersion = null;
-    if (typeof container === "string") {
-      containerElement = document.querySelector(container);
-    } else if (container instanceof HTMLElement) {
-      containerElement = container;
-    } else if (!(isHeadless && typeof container === "object")) {
-      throw new Error("A valid container element is required.");
-    }
-    if (!containerElement) {
-      if (isHeadless) {
-        containerElement = document.createElement("div");
-        hideElement(containerElement);
-        document.body.appendChild(containerElement);
-      } else {
-        throw new Error(`Cannot find element: "${container}"`);
+
+  // src/livecodes/services/modules.ts
+  var moduleCDNs = [
+    "esm.sh",
+    "skypack",
+    "esm.run",
+    "jsdelivr.esm",
+    "fastly.jsdelivr.esm",
+    "gcore.jsdelivr.esm",
+    "testingcf.jsdelivr.esm",
+    "jsdelivr.b-cdn.esm",
+    "jspm"
+  ];
+  var npmCDNs = [
+    "jsdelivr",
+    "fastly.jsdelivr",
+    "unpkg",
+    "gcore.jsdelivr",
+    "testingcf.jsdelivr",
+    "jsdelivr.b-cdn",
+    "npmcdn"
+  ];
+  var ghCDNs = [
+    "jsdelivr.gh",
+    "fastly.jsdelivr.gh",
+    "statically",
+    "gcore.jsdelivr.gh",
+    "testingcf.jsdelivr.gh",
+    "jsdelivr.b-cdn.gh"
+  ];
+  var modulesService = {
+    getModuleUrl: (moduleName, {
+      isModule = true,
+      defaultCDN = "esm.sh",
+      external
+    } = {}) => {
+      moduleName = moduleName.replace(/#nobundle/g, "");
+      const addExternalParam = (url) => !external || !url.includes("https://esm.sh") ? url : url.includes("?") ? `${url}&external=${external}` : `${url}?external=${external}`;
+      const moduleUrl = getCdnUrl(moduleName, isModule, defaultCDN);
+      if (moduleUrl) {
+        return addExternalParam(moduleUrl);
       }
-    }
-    const playgroundUrl = new URL(getPlaygroundUrl(options));
-    const origin = playgroundUrl.origin;
-    playgroundUrl.searchParams.set("embed", "true");
-    playgroundUrl.searchParams.set("loading", isHeadless ? "eager" : loading);
-    playgroundUrl.searchParams.set("sdkVersion", "0.12.0");
-    if (typeof config === "object" && Object.keys(config).length > 0) {
-      playgroundUrl.searchParams.set("config", "sdk");
-    }
-    const params = options.params;
-    if (typeof params === "object" && Object.keys(params).length > 0 && JSON.stringify(params).length < 1800) {
-      Object.keys(params).forEach((param) => {
-        playgroundUrl.searchParams.set(param, encodeURIComponent(String(params[param])));
-      });
-    }
-    let destroyed = false;
-    const alreadyDestroyedMessage = "Cannot call API methods after calling `destroy()`.";
-    const eventHandlers = [];
-    const registerEventHandler = (handler, eventType = "message") => {
-      addEventListener(eventType, handler);
-      eventHandlers.push(handler);
-    };
-    const createIframe = () => new Promise((resolve) => {
-      var _a, _b, _c, _d, _e, _f, _g, _h, _i;
-      if (!containerElement)
-        return;
-      const height = containerElement.dataset.height || containerElement.style.height;
-      if (height && !isHeadless) {
-        const cssHeight = isNaN(Number(height)) ? height : height + "px";
-        containerElement.style.height = cssHeight;
-      }
-      if (containerElement.dataset.defaultStyles !== "false" && !isHeadless) {
-        (_a = containerElement.style).backgroundColor || (_a.backgroundColor = "#fff");
-        (_b = containerElement.style).border || (_b.border = "1px solid black");
-        (_c = containerElement.style).borderRadius || (_c.borderRadius = "8px");
-        (_d = containerElement.style).boxSizing || (_d.boxSizing = "border-box");
-        (_e = containerElement.style).padding || (_e.padding = "0");
-        (_f = containerElement.style).width || (_f.width = "100%");
-        (_g = containerElement.style).height || (_g.height = containerElement.style.height || "300px");
-        containerElement.style.minHeight = "200px";
-        containerElement.style.flexGrow = "1";
-        (_h = containerElement.style).overflow || (_h.overflow = "hidden");
-        (_i = containerElement.style).resize || (_i.resize = "vertical");
-      }
-      const className = "livecodes";
-      const preExistingIframe = containerElement.querySelector(
-        `iframe.${className}`
-      );
-      const frame = preExistingIframe || document.createElement("iframe");
-      frame.classList.add(className);
-      frame.setAttribute(
-        "allow",
-        "accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share"
-      );
-      frame.setAttribute("allowtransparency", "true");
-      frame.setAttribute("allowpaymentrequest", "true");
-      frame.setAttribute("allowfullscreen", "true");
-      frame.setAttribute(
-        "sandbox",
-        "allow-same-origin allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts"
-      );
-      const iframeLoading = loading === "eager" ? "eager" : "lazy";
-      frame.setAttribute("loading", iframeLoading);
-      if (isHeadless) {
-        hideElement(frame);
-      } else {
-        frame.style.height = "100%";
-        frame.style.minHeight = "200px";
-        frame.style.width = "100%";
-        frame.style.margin = "0";
-        frame.style.border = "0";
-        frame.style.borderRadius = containerElement.style.borderRadius;
-      }
-      registerEventHandler(function initHandler(e) {
-        var _a2;
-        if (e.source !== frame.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-init") {
-          return;
-        }
-        removeEventListener("message", initHandler);
-        appVersion = Number(e.data.payload.appVersion.replace(/^v/, ""));
-      });
-      if (!appVersion || appVersion < 46) {
-        registerEventHandler(function configHandler(e) {
-          var _a2, _b2;
-          if (e.source !== frame.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-get-config") {
-            return;
-          }
-          removeEventListener("message", configHandler);
-          (_b2 = frame.contentWindow) == null ? void 0 : _b2.postMessage({ type: "livecodes-config", payload: config }, origin);
-        });
-      }
-      frame.onload = () => {
-        resolve(frame);
-      };
-      frame.src = playgroundUrl.href;
-      if (!preExistingIframe) {
-        containerElement.appendChild(frame);
-      }
-    });
-    const iframe = await createIframe();
-    const livecodesReady = new Promise((resolve) => {
-      registerEventHandler(function readyHandler(e) {
-        var _a;
-        if (e.source !== iframe.contentWindow || e.origin !== origin || ((_a = e.data) == null ? void 0 : _a.type) !== "livecodes-ready") {
-          return;
-        }
-        removeEventListener("message", readyHandler);
-        resolve();
-        livecodesReady.settled = true;
-      });
-    });
-    const loadLivecodes = () => destroyed ? Promise.reject(alreadyDestroyedMessage) : new Promise(async (resolve) => {
-      var _a;
-      if (livecodesReady.settled)
-        resolve();
-      const message = { type: "livecodes-load" };
-      (_a = iframe.contentWindow) == null ? void 0 : _a.postMessage(message, origin);
-      await livecodesReady;
-      resolve();
-    });
-    const callAPI = (method, args) => new Promise(async (resolve, reject) => {
-      var _a;
-      if (destroyed) {
-        return reject(alreadyDestroyedMessage);
-      }
-      await loadLivecodes();
-      const id = getRandomString();
-      registerEventHandler(function handler(e) {
-        var _a2, _b;
-        if (e.source !== iframe.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-api-response" || ((_b = e.data) == null ? void 0 : _b.id) !== id) {
-          return;
-        }
-        if (e.data.method === method) {
-          removeEventListener("message", handler);
-          const payload = e.data.payload;
-          if (payload == null ? void 0 : payload.error) {
-            reject(payload.error);
-          } else {
-            resolve(payload);
-          }
-        }
-      });
-      (_a = iframe.contentWindow) == null ? void 0 : _a.postMessage({ method, id, args }, origin);
-    });
-    const watchers = {};
-    const sdkEvents = ["load", "ready", "code", "console", "tests", "destroy"];
-    const watch = (event, fn) => {
-      var _a;
-      if (destroyed) {
-        throw new Error(alreadyDestroyedMessage);
-      }
-      if (!sdkEvents.includes(event))
-        return { remove: () => void 0 };
-      callAPI("watch", [event]);
-      if (!watchers[event]) {
-        watchers[event] = [];
-      }
-      (_a = watchers[event]) == null ? void 0 : _a.push(fn);
-      return {
-        remove: () => {
-          var _a2, _b;
-          watchers[event] = (_a2 = watchers[event]) == null ? void 0 : _a2.filter((w) => w !== fn);
-          if (((_b = watchers[event]) == null ? void 0 : _b.length) === 0) {
-            callAPI("watch", [event, "unsubscribe"]);
-          }
-        }
-      };
-    };
-    const mapEvent = (event) => ({
-      "livecodes-app-loaded": "load",
-      "livecodes-ready": "ready",
-      "livecodes-change": "code",
-      "livecodes-console": "console",
-      "livecodes-test-results": "tests",
-      "livecodes-destroy": "destroy"
-    })[event];
-    registerEventHandler(async function watchHandler(e) {
-      var _a, _b, _c, _d;
-      const sdkEvent = mapEvent((_b = (_a = e.data) == null ? void 0 : _a.type) != null ? _b : "");
-      if (e.source !== iframe.contentWindow || e.origin !== origin || !sdkEvent || !watchers[sdkEvent]) {
-        return;
-      }
-      const data = (_c = e.data) == null ? void 0 : _c.payload;
-      (_d = watchers[sdkEvent]) == null ? void 0 : _d.forEach((fn) => {
-        fn(data);
-      });
-    });
-    const destroy = () => {
-      var _a;
-      (_a = iframe == null ? void 0 : iframe.remove) == null ? void 0 : _a.call(iframe);
-      Object.values(watchers).forEach((watcher) => {
-        watcher.length = 0;
-      });
-      eventHandlers.forEach((handler) => removeEventListener("message", handler));
-      eventHandlers.length = 0;
-      if (observer && containerElement) {
-        observer.unobserve(containerElement);
-      }
-      destroyed = true;
-    };
-    let observer;
-    if (loading === "lazy" && "IntersectionObserver" in window) {
-      observer = new IntersectionObserver(
-        (entries, observer2) => {
-          entries.forEach(async (entry) => {
-            if (entry.isIntersecting) {
-              await loadLivecodes();
-              observer2.unobserve(containerElement);
-            }
+      return isModule ? addExternalParam("https://esm.sh/" + moduleName) : "https://cdn.jsdelivr.net/npm/" + moduleName;
+    },
+    getUrl: (path, cdn) => path.startsWith("http") || path.startsWith("data:") ? path : getCdnUrl(path, false, cdn || getAppCDN()) || path,
+    cdnLists: { npm: npmCDNs, module: moduleCDNs, gh: ghCDNs },
+    checkCDNs: async (testModule, preferredCDN) => {
+      const cdns = [preferredCDN, ...modulesService.cdnLists.npm].filter(Boolean);
+      for (const cdn of cdns) {
+        try {
+          const res = await fetch(modulesService.getUrl(testModule, cdn), {
+            method: "HEAD"
           });
-        },
-        { rootMargin: "150px" }
-      );
-      observer.observe(containerElement);
-    }
-    function hideElement(el) {
-      el.style.position = "absolute";
-      el.style.top = "0";
-      el.style.visibility = "hidden";
-      el.style.opacity = "0";
-    }
-    const getRandomString = () => (String(Math.random()) + Date.now().toFixed()).replace("0.", "");
-    return {
-      load: () => loadLivecodes(),
-      run: () => callAPI("run"),
-      format: (allEditors) => callAPI("format", [allEditors]),
-      getShareUrl: (shortUrl) => callAPI("getShareUrl", [shortUrl]),
-      getConfig: (contentOnly) => callAPI("getConfig", [contentOnly]),
-      setConfig: (config2) => callAPI("setConfig", [config2]),
-      getCode: () => callAPI("getCode"),
-      show: (pane, options2) => callAPI("show", [pane, options2]),
-      runTests: () => callAPI("runTests"),
-      onChange: (fn) => watch("code", fn),
-      watch,
-      exec: (command, ...args) => callAPI("exec", [command, ...args]),
-      destroy: () => {
-        if (destroyed) {
-          return Promise.reject(alreadyDestroyedMessage);
+          if (res.ok)
+            return cdn;
+        } catch {
         }
-        destroy();
-        return Promise.resolve();
       }
-    };
-  }
-  function getPlaygroundUrl(options = {}) {
-    const {
-      appUrl = "https://livecodes.io",
-      params = {},
-      config = {},
-      headless,
-      import: importId,
-      lite,
-      view,
-      ...otherOptions
-    } = options;
-    let playgroundUrl;
+      return modulesService.cdnLists.npm[0];
+    }
+  };
+  var getAppCDN = () => {
+    if (globalThis.appCDN)
+      return globalThis.appCDN;
     try {
-      playgroundUrl = new URL(appUrl);
-    } catch (e) {
-      throw new Error(`${appUrl} is not a valid URL.`);
+      const url = new URL(location.href);
+      return url.searchParams.get("appCDN") || modulesService.cdnLists.npm[0];
+    } catch {
+      return modulesService.cdnLists.npm[0];
     }
-    const hashParams = new URLSearchParams();
-    Object.entries(otherOptions).forEach(([key, value]) => {
-      if (value !== void 0) {
-        playgroundUrl.searchParams.set(key, String(value));
-      }
-    });
-    const isHeadless = options.view === "headless" || headless;
-    if (lite) {
-      console.warn(
-        `Deprecation notice: "lite" option is deprecated. Use "config: { mode: 'lite' }" instead.`
-      );
-      if (typeof config === "object" && config.mode == null) {
-        config.mode = "lite";
-      } else {
-        playgroundUrl.searchParams.set("lite", "true");
-      }
+  };
+  var getCdnUrl = (modName, isModule, defaultCDN) => {
+    const post = isModule && modName.startsWith("unpkg:") ? "?module" : "";
+    if (modName.startsWith("gh:")) {
+      modName = modName.replace("gh", ghCDNs[0]);
+    } else if (!modName.includes(":")) {
+      const prefix = defaultCDN || (isModule ? moduleCDNs[0] : npmCDNs[0]);
+      modName = prefix + ":" + modName;
     }
-    if (view) {
-      console.warn(
-        `Deprecation notice: The "view" option has been moved to "config.view". For headless mode use "headless: true".`
-      );
-      if (typeof config === "object" && config.view == null && view !== "headless") {
-        config.view = view;
-      } else {
-        playgroundUrl.searchParams.set("view", view);
+    for (const i of TEMPLATES) {
+      const [pattern, template] = i;
+      if (pattern.test(modName)) {
+        return modName.replace(pattern, template) + post;
       }
     }
-    if (typeof config === "string") {
+    return null;
+  };
+  var TEMPLATES = [
+    [/^(esm\.sh:)(.+)/i, "https://esm.sh/$2"],
+    [/^(npm:)(.+)/i, "https://esm.sh/$2"],
+    [/^(node:)(.+)/i, "https://esm.sh/$2"],
+    [/^(jsr:)(.+)/i, "https://esm.sh/jsr/$2"],
+    [/^(pr:)(.+)/i, "https://esm.sh/pr/$2"],
+    [/^(pkg\.pr\.new:)(.+)/i, "https://esm.sh/pkg.pr.new/$2"],
+    [/^(skypack:)(.+)/i, "https://cdn.skypack.dev/$2"],
+    [/^(jsdelivr:)(.+)/i, "https://cdn.jsdelivr.net/npm/$2"],
+    [/^(fastly\.jsdelivr:)(.+)/i, "https://fastly.jsdelivr.net/npm/$2"],
+    [/^(gcore\.jsdelivr:)(.+)/i, "https://gcore.jsdelivr.net/npm/$2"],
+    [/^(testingcf\.jsdelivr:)(.+)/i, "https://testingcf.jsdelivr.net/npm/$2"],
+    [/^(jsdelivr\.b-cdn:)(.+)/i, "https://jsdelivr.b-cdn.net/npm/$2"],
+    [/^(jsdelivr\.gh:)(.+)/i, "https://cdn.jsdelivr.net/gh/$2"],
+    [/^(fastly\.jsdelivr\.gh:)(.+)/i, "https://fastly.jsdelivr.net/gh/$2"],
+    [/^(gcore\.jsdelivr\.gh:)(.+)/i, "https://gcore.jsdelivr.net/gh/$2"],
+    [/^(testingcf\.jsdelivr\.gh:)(.+)/i, "https://testingcf.jsdelivr.net/gh/$2"],
+    [/^(jsdelivr\.b-cdn\.gh:)(.+)/i, "https://jsdelivr.b-cdn.net/gh/$2"],
+    [/^(statically:)(.+)/i, "https://cdn.statically.io/gh/$2"],
+    [/^(esm\.run:)(.+)/i, "https://esm.run/$2"],
+    [/^(jsdelivr\.esm:)(.+)/i, "https://cdn.jsdelivr.net/npm/$2/+esm"],
+    [/^(fastly\.jsdelivr\.esm:)(.+)/i, "https://fastly.jsdelivr.net/npm/$2/+esm"],
+    [/^(gcore\.jsdelivr\.esm:)(.+)/i, "https://gcore.jsdelivr.net/npm/$2/+esm"],
+    [/^(testingcf\.jsdelivr\.esm:)(.+)/i, "https://testingcf.jsdelivr.net/npm/$2/+esm"],
+    [/^(jsdelivr\.b-cdn\.esm:)(.+)/i, "https://jsdelivr.b-cdn.net/npm/$2/+esm"],
+    [/^(jspm:)(.+)/i, "https://jspm.dev/$2"],
+    [/^(esbuild:)(.+)/i, "https://esbuild.vercel.app/$2"],
+    [/^(bundle\.run:)(.+)/i, "https://bundle.run/$2"],
+    [/^(unpkg:)(.+)/i, "https://unpkg.com/$2"],
+    [/^(npmcdn:)(.+)/i, "https://npmcdn.com/$2"],
+    [/^(bundlejs:)(.+)/i, "https://deno.bundlejs.com/?file&q=$2"],
+    [/^(bundle:)(.+)/i, "https://deno.bundlejs.com/?file&q=$2"],
+    [/^(deno:)(.+)/i, "https://deno.bundlejs.com/?file&q=https://deno.land/x/$2/mod.ts"],
+    [/^(https:\/\/deno\.land\/.+)/i, "https://deno.bundlejs.com/?file&q=$1"],
+    [
+      /^(github:|https:\/\/github\.com\/)(.[^\/]+?)\/(.[^\/]+?)\/(?!releases\/)(?:(?:blob|raw)\/)?(.+?\/.+)/i,
+      "https://deno.bundlejs.com/?file&q=https://cdn.jsdelivr.net/gh/$2/$3@$4"
+    ],
+    [/^(gist\.github:)(.+?\/[0-9a-f]+\/raw\/(?:[0-9a-f]+\/)?.+)$/i, "https://gist.githack.com/$2"],
+    [
+      /^(gitlab:|https:\/\/gitlab\.com\/)([^\/]+.*\/[^\/]+)\/(?:raw|blob)\/(.+?)(?:\?.*)?$/i,
+      "https://deno.bundlejs.com/?file&q=https://gl.githack.com/$2/raw/$3"
+    ],
+    [
+      /^(bitbucket:|https:\/\/bitbucket\.org\/)([^\/]+\/[^\/]+)\/(?:raw|src)\/(.+?)(?:\?.*)?$/i,
+      "https://deno.bundlejs.com/?file&q=https://bb.githack.com/$2/raw/$3"
+    ],
+    // snippet file URL from web interface, with revision
+    [
+      /^(bitbucket:)snippets\/([^\/]+\/[^\/]+)\/revisions\/([^\/\#\?]+)(?:\?[^#]*)?(?:\#file-(.+?))$/i,
+      "https://bb.githack.com/!api/2.0/snippets/$2/$3/files/$4"
+    ],
+    // snippet file URL from web interface, no revision
+    [
+      /^(bitbucket:)snippets\/([^\/]+\/[^\/\#\?]+)(?:\?[^#]*)?(?:\#file-(.+?))$/i,
+      "https://bb.githack.com/!api/2.0/snippets/$2/HEAD/files/$3"
+    ],
+    // snippet file URLs from REST API
+    [
+      /^(bitbucket:)\!api\/2.0\/snippets\/([^\/]+\/[^\/]+\/[^\/]+)\/files\/(.+?)(?:\?.*)?$/i,
+      "https://bb.githack.com/!api/2.0/snippets/$2/files/$3"
+    ],
+    [
+      /^(api\.bitbucket:)2.0\/snippets\/([^\/]+\/[^\/]+\/[^\/]+)\/files\/(.+?)(?:\?.*)?$/i,
+      "https://bb.githack.com/!api/2.0/snippets/$2/files/$3"
+    ],
+    [/^(rawgit:)(.+?\/[0-9a-f]+\/raw\/(?:[0-9a-f]+\/)?.+)$/i, "https://gist.githack.com/$2"],
+    [
+      /^(rawgit:|https:\/\/raw\.githubusercontent\.com)(\/[^\/]+\/[^\/]+|[0-9A-Za-z-]+\/[0-9a-f]+\/raw)\/(.+)/i,
+      "https://deno.bundlejs.com/?file&q=https://raw.githack.com/$2/$3"
+    ]
+  ];
+
+  // src/livecodes/utils/utils.ts
+  var getLanguageCustomSettings = (language, config) => ({
+    ...config.customSettings[language]
+  });
+
+  // src/livecodes/compiler/import-map.ts
+  var isBare = (mod) => !mod.startsWith("https://") && !mod.startsWith("http://") && !mod.startsWith(".") && !mod.startsWith("/") && !mod.startsWith("data:") && !mod.startsWith("blob:");
+  var styleimportsPattern = /(?:@import\s+?)((?:".*?")|(?:'.*?')|(?:url\('.*?'\))|(?:url\(".*?"\)))(.*)?;/g;
+  var replaceStyleImports = (code, exceptions) => code.replace(new RegExp(styleimportsPattern), (statement, match, media) => {
+    if (exceptions?.some(
+      (e) => typeof e === "string" && e === match || typeof e === "object" && new RegExp(e).test(match)
+    )) {
+      return statement;
+    }
+    const url = match.replace(/"/g, "").replace(/'/g, "").replace(/url\(/g, "").replace(/\)/g, "");
+    const modified = '@import "' + modulesService.getUrl(url) + '";';
+    const mediaQuery = media?.trim();
+    return !isBare(url) ? statement : mediaQuery ? `@media ${mediaQuery} {
+${modified}
+}` : modified;
+  });
+
+  // src/livecodes/services/allowed-origin.ts
+  var allowedOrigin = (origin = location.origin) => Boolean(
+    origin && (origin.endsWith("livecodes.io") || origin.endsWith("livecodes.pages.dev") || origin.endsWith("localpen.pages.dev") || origin.includes("127.0.0.1") || origin.includes("localhost:") || origin.endsWith("localhost") || origin.endsWith(".test"))
+  );
+
+  // src/livecodes/utils/compression.ts
+  var import_lz_string = __toESM(require_lz_string());
+
+  // src/livecodes/vendors.ts
+  var { getUrl, getModuleUrl } = modulesService;
+  var vendorsBaseUrl = (
+    // 'http://127.0.0.1:8081/';
+    /* @__PURE__ */ getUrl("@live-codes/browser-compilers@0.22.5/dist/")
+  );
+  var tailwindcssBaseUrl = /* @__PURE__ */ getUrl("tailwindcss@4.0.0/");
+  var tailwindcss3Url = /* @__PURE__ */ getUrl(
+    "@mhsdesign/jit-browser-tailwindcss@0.4.1/dist/cdn.min.js"
+  );
+
+  // src/livecodes/services/sandbox.ts
+  var cfPagesBaseUrl = "https://livecodes-sandbox.pages.dev";
+  var localBaseUrl = "http://127.0.0.1:8085";
+  var serviceBaseUrl = location.hostname === "localhost" || location.hostname === "127.0.0.1" ? localBaseUrl : false ? selfHostedBaseUrl : false ? ghPagesBaseUrl : cfPagesBaseUrl;
+
+  // src/livecodes/services/share.ts
+  var dpasteGetUrl = "https://dpaste.com/";
+  var dpastePostUrl = "https://dpaste.com/api/v2/";
+  var apiUrl = "https://api2.livecodes.io/share";
+  var dpasteService = {
+    getProject: async (id) => {
       try {
-        new URL(config);
-        playgroundUrl.searchParams.set("config", encodeURIComponent(config));
-      } catch (e) {
-        throw new Error(`"config" is not a valid URL or configuration object.`);
+        const res = await fetch(dpasteGetUrl + id + ".txt");
+        if (!res.ok)
+          return {};
+        return JSON.parse(await res.text());
+      } catch {
+        return {};
       }
-    } else if (config && typeof config === "object" && Object.keys(config).length > 0) {
-      if (config.title && config.title !== "Untitled Project") {
-        playgroundUrl.searchParams.set("title", config.title);
-      }
-      if (config.description && config.description.length > 0) {
-        playgroundUrl.searchParams.set("description", config.description);
-      }
-      hashParams.set("config", "code/" + (0, import_lz_string.compressToEncodedURIComponent)(JSON.stringify(config)));
-    }
-    if (params && typeof params === "object" && Object.keys(params).length > 0) {
+    },
+    shareProject: async (config) => {
       try {
-        hashParams.set("params", (0, import_lz_string.compressToEncodedURIComponent)(JSON.stringify(params)));
-      } catch (e) {
-        Object.keys(params).forEach((param) => {
-          playgroundUrl.searchParams.set(param, encodeURIComponent(String(params[param])));
+        const res = await fetch(dpastePostUrl, {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "LiveCodes / https://livecodes.io/"
+          },
+          body: `content=${encodeURIComponent(JSON.stringify(config))}&title=${encodeURIComponent(
+            config.title || ""
+          )}&syntax=json&expiry_days=365`
+        });
+        if (!res.ok)
+          return "";
+        const url = await res.text();
+        return url.replace(dpasteGetUrl, "");
+      } catch {
+        return "";
+      }
+    }
+  };
+  var apiService = {
+    getProject: async (id) => {
+      if (id.length < 11)
+        return dpasteService.getProject(id);
+      try {
+        const res = await fetch(apiUrl + "?id=" + id);
+        if (!res.ok)
+          return {};
+        return JSON.parse(await res.text());
+      } catch {
+        return {};
+      }
+    },
+    shareProject: async (config) => {
+      if (!allowedOrigin())
+        return "";
+      try {
+        const res = await fetch(apiUrl, {
+          method: "POST",
+          mode: "cors",
+          body: JSON.stringify(config)
+        });
+        if (!res.ok)
+          return "";
+        return res.text();
+      } catch {
+        return "";
+      }
+    }
+  };
+  var shareService = false ? false ? selfHostedService : dpasteService : allowedOrigin() ? apiService : dpasteService;
+
+  // src/livecodes/languages/lightningcss/processor-lightningcss-compiler.ts
+  self.createLightningcssCompiler = () => {
+    const { init, transform } = self.lightningcss;
+    const initialized = init(new URL(vendorsBaseUrl + "lightningcss/lightningcss_node.wasm"));
+    return async (css, { config }) => {
+      const customSettings = getLanguageCustomSettings("lightningcss", config);
+      await initialized;
+      const { code, map, warnings } = transform({
+        filename: "style.css",
+        code: new TextEncoder().encode(css),
+        minify: true,
+        drafts: {
+          nesting: true,
+          customMedia: true
+        },
+        errorRecovery: true,
+        ...customSettings
+      });
+      warnings.forEach((warning) => {
+        console.warn(warning.message, "\nline:", warning.loc.line, "column:", warning.loc.column);
+      });
+      const sourceMap = customSettings.sourceMap ? `
+/*# sourceMappingURL=${new TextDecoder().decode(map)}` : "";
+      return new TextDecoder().decode(code) + sourceMap;
+    };
+  };
+  var lightningcssFeatures = {
+    Nesting: 1,
+    NotSelectorList: 2,
+    DirSelector: 4,
+    LangSelectorList: 8,
+    IsSelector: 16,
+    TextDecorationThicknessPercent: 32,
+    MediaIntervalSyntax: 64,
+    MediaRangeSyntax: 128,
+    CustomMediaQueries: 256,
+    ClampFunction: 512,
+    ColorFunction: 1024,
+    OklabColors: 2048,
+    LabColors: 4096,
+    P3Colors: 8192,
+    HexAlphaColors: 16384,
+    SpaceSeparatedColorNotation: 32768,
+    FontFamilySystemUi: 65536,
+    DoublePositionGradients: 131072,
+    VendorPrefixes: 262144,
+    LogicalProperties: 524288,
+    LightDark: 1048576,
+    Selectors: 31,
+    MediaQueries: 448,
+    Colors: 1113088
+  };
+
+  // src/livecodes/languages/tailwindcss/utils.ts
+  var addCodeInStyleBlocks = (css, html) => {
+    const getBlockPattern = (el, langAttr = "lang") => `(<${el}\\s*)(?:([\\s\\S]*?)${langAttr}\\s*=\\s*["']([A-Za-z0-9 _]*)["'])?((?:[^>]*)>)([\\s\\S]*?)(<\\/${el}>)`;
+    const pattern = getBlockPattern("style");
+    for (const arr of [...html.matchAll(new RegExp(pattern, "g"))]) {
+      const content = arr[5];
+      if (content?.trim()) {
+        css += `
+${content}`;
+      }
+    }
+    return css;
+  };
+
+  // src/livecodes/languages/tailwindcss/processor-tailwindcss-compiler.ts
+  self.createTailwindcssCompiler = () => {
+    const pluginsUrl = vendorsBaseUrl + "tailwindcss/tailwindcss-plugins.js";
+    let cachedPlugins;
+    const officialPlugins = [
+      "@tailwindcss/forms",
+      "@tailwindcss/typography",
+      "@tailwindcss/aspect-ratio",
+      "@tailwindcss/line-clamp"
+    ];
+    const loadPlugins = () => {
+      self.importScripts(pluginsUrl);
+      cachedPlugins = self.tailwindcssPlugins.plugins;
+    };
+    const scan = (code) => {
+      const classes = /* @__PURE__ */ new Set();
+      const stringsPattern = /((?:`(?:.|\n|\r)+?`)|(?:'.+?')|(?:".+?"))/g;
+      const strings = code.match(new RegExp(stringsPattern)) ?? [];
+      for (const str of strings) {
+        str.slice(1, -1).replace(/[\n\r]/g, " ").split(" ").forEach((c) => {
+          c = c.trim();
+          if (c === "" || classes.has(c))
+            return;
+          classes.add(c);
         });
       }
-    }
-    if (importId) {
-      playgroundUrl.searchParams.set("x", encodeURIComponent(importId));
-    }
-    if (isHeadless) {
-      playgroundUrl.searchParams.set("headless", "true");
-    }
-    if (hashParams.toString().length > 0) {
-      playgroundUrl.hash = hashParams.toString();
-    }
-    return playgroundUrl.href;
-  }
-  return __toCommonJS(sdk_exports);
+      return Array.from(classes);
+    };
+    const loadStylesheet = async (id, base) => {
+      const fetchFromCDN = (file) => {
+        const url = tailwindcssBaseUrl + file;
+        return fetch(url).then((res) => res.text());
+      };
+      const load = async () => {
+        if (id === "tailwindcss") {
+          return {
+            base,
+            content: await fetchFromCDN("index.css")
+          };
+        } else if (id === "tailwindcss/preflight" || id === "tailwindcss/preflight.css" || id === "./preflight.css") {
+          return {
+            base,
+            content: await fetchFromCDN("preflight.css")
+          };
+        } else if (id === "tailwindcss/theme" || id === "tailwindcss/theme.css" || id === "./theme.css") {
+          return {
+            base,
+            content: await fetchFromCDN("theme.css")
+          };
+        } else if (id === "tailwindcss/utilities" || id === "tailwindcss/utilities.css" || id === "./utilities.css") {
+          return {
+            base,
+            content: await fetchFromCDN("utilities.css")
+          };
+        }
+        return {
+          base,
+          content: await fetch(id).then((res) => res.text()).catch(() => "")
+        };
+      };
+      return load();
+    };
+    const loadModule = async (id) => {
+      if (officialPlugins.includes(id) && !cachedPlugins) {
+        loadPlugins();
+      }
+      if (cachedPlugins?.[id]) {
+        return {
+          base: "/",
+          module: cachedPlugins[id]
+        };
+      }
+      try {
+        const moduleUrl = isBare(id) ? modulesService.getModuleUrl(id) : id;
+        const module = await import(moduleUrl);
+        return {
+          base: "/",
+          module: module.default ?? module
+        };
+      } catch {
+        throw new Error(`Tailwind CSS plugin "${id}" could not be loaded.`);
+      }
+    };
+    const checkVersion = (code) => {
+      const directivesPattern = /@tailwind\s+((base)|(components)|(utilities))\s*;?/g;
+      if (new RegExp(directivesPattern).exec(code))
+        return 3;
+      return 4;
+    };
+    const processInLightningCss = async (code, language, config, options) => {
+      const Features = lightningcssFeatures;
+      const lightningConfig = {
+        minify: false,
+        sourceMap: false,
+        drafts: { customMedia: true },
+        nonStandard: { deepSelectorCombinator: true },
+        include: Features.Nesting,
+        exclude: Features.LogicalProperties | Features.DirSelector | Features.LightDark,
+        targets: {
+          safari: 16 << 16 | 4 << 8,
+          ios_saf: 16 << 16 | 4 << 8,
+          firefox: 128 << 16,
+          chrome: 111 << 16
+        },
+        errorRecovery: true
+      };
+      const modifiedConfig = {
+        ...config,
+        customSettings: {
+          ...config.customSettings,
+          lightningcss: {
+            ...lightningConfig,
+            ...config.customSettings.lightningcss
+          }
+        }
+      };
+      const compiled1 = await compileInCompiler(code, language, modifiedConfig, options);
+      const compiled2 = await compileInCompiler(compiled1.code, language, modifiedConfig, options);
+      return compiled2;
+    };
+    const tailwind3 = (code, { config, options }) => {
+      if (!self.createTailwindcss) {
+        self.importScripts(tailwindcss3Url);
+      }
+      const customSettings = getLanguageCustomSettings("tailwindcss", config);
+      const selectedPluginNames = customSettings.plugins?.filter((p) => officialPlugins.includes(p)) || [];
+      if (!cachedPlugins && selectedPluginNames.length > 0) {
+        loadPlugins();
+      }
+      const loadedPlugins = selectedPluginNames.map((p) => cachedPlugins[p]);
+      const tailwind = self.createTailwindcss({
+        tailwindConfig: {
+          ...customSettings,
+          ...loadedPlugins.length > 0 ? { plugins: loadedPlugins } : {}
+        }
+      });
+      const html = `<template>${options.html}
+<script>${config.script.content}<\/script></template>`;
+      return tailwind.generateStylesFromContent(addCodeInStyleBlocks(code, html), [html]);
+    };
+    const tailwind4 = async (code, { config, options }) => {
+      const prepareCode = (css2, html2) => {
+        let result = replaceStyleImports(css2, [/tailwindcss/g]);
+        if (!result.includes("@import")) {
+          result = `@import "tailwindcss";${result}`;
+        }
+        return addCodeInStyleBlocks(result, html2);
+      };
+      const html = `<template>${options.html}
+<script>${config.script.content}<\/script></template>`;
+      const css = prepareCode(code, html);
+      try {
+        const compiler = await self.tailwindcss.compile(css, {
+          base: "/",
+          loadStylesheet,
+          loadModule
+        });
+        const candidates = scan(html);
+        const output = compiler.build(candidates);
+        return processInLightningCss(output, "lightningcss", config, options);
+      } catch (e) {
+        console.error("Error compiling Tailwind CSS.", e.message || e);
+      }
+      return css;
+    };
+    return (cssCode, compileOptions) => checkVersion(cssCode) === 3 ? tailwind3(cssCode, compileOptions) : tailwind4(cssCode, compileOptions);
+  };
 })();

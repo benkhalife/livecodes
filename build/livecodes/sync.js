@@ -1,4 +1,3 @@
-"use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -7,10 +6,6 @@ var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __commonJS = (cb, mod) => function __require() {
   return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-};
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
 };
 var __copyProps = (to, from, except, desc) => {
   if (from && typeof from === "object" || typeof from === "function") {
@@ -28,11 +23,10 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
   mod
 ));
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // node_modules/lz-string/libs/lz-string.js
 var require_lz_string = __commonJS({
-  "node_modules/lz-string/libs/lz-string.js"(exports, module2) {
+  "node_modules/lz-string/libs/lz-string.js"(exports, module) {
     var LZString = function() {
       var f = String.fromCharCode;
       var keyStrBase64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
@@ -487,365 +481,346 @@ var require_lz_string = __commonJS({
       (void 0)(function() {
         return LZString;
       });
-    } else if (typeof module2 !== "undefined" && module2 != null) {
-      module2.exports = LZString;
+    } else if (typeof module !== "undefined" && module != null) {
+      module.exports = LZString;
     }
   }
 });
 
-// src/sdk/index.ts
-var sdk_exports = {};
-__export(sdk_exports, {
-  createPlayground: () => createPlayground,
-  getPlaygroundUrl: () => getPlaygroundUrl
-});
-module.exports = __toCommonJS(sdk_exports);
+// src/livecodes/services/modules.ts
+var moduleCDNs = [
+  "esm.sh",
+  "skypack",
+  "esm.run",
+  "jsdelivr.esm",
+  "fastly.jsdelivr.esm",
+  "gcore.jsdelivr.esm",
+  "testingcf.jsdelivr.esm",
+  "jsdelivr.b-cdn.esm",
+  "jspm"
+];
+var npmCDNs = [
+  "jsdelivr",
+  "fastly.jsdelivr",
+  "unpkg",
+  "gcore.jsdelivr",
+  "testingcf.jsdelivr",
+  "jsdelivr.b-cdn",
+  "npmcdn"
+];
+var ghCDNs = [
+  "jsdelivr.gh",
+  "fastly.jsdelivr.gh",
+  "statically",
+  "gcore.jsdelivr.gh",
+  "testingcf.jsdelivr.gh",
+  "jsdelivr.b-cdn.gh"
+];
+var modulesService = {
+  getModuleUrl: (moduleName, {
+    isModule = true,
+    defaultCDN = "esm.sh",
+    external
+  } = {}) => {
+    moduleName = moduleName.replace(/#nobundle/g, "");
+    const addExternalParam = (url) => !external || !url.includes("https://esm.sh") ? url : url.includes("?") ? `${url}&external=${external}` : `${url}?external=${external}`;
+    const moduleUrl = getCdnUrl(moduleName, isModule, defaultCDN);
+    if (moduleUrl) {
+      return addExternalParam(moduleUrl);
+    }
+    return isModule ? addExternalParam("https://esm.sh/" + moduleName) : "https://cdn.jsdelivr.net/npm/" + moduleName;
+  },
+  getUrl: (path, cdn) => path.startsWith("http") || path.startsWith("data:") ? path : getCdnUrl(path, false, cdn || getAppCDN()) || path,
+  cdnLists: { npm: npmCDNs, module: moduleCDNs, gh: ghCDNs },
+  checkCDNs: async (testModule, preferredCDN) => {
+    const cdns = [preferredCDN, ...modulesService.cdnLists.npm].filter(Boolean);
+    for (const cdn of cdns) {
+      try {
+        const res = await fetch(modulesService.getUrl(testModule, cdn), {
+          method: "HEAD"
+        });
+        if (res.ok)
+          return cdn;
+      } catch {
+      }
+    }
+    return modulesService.cdnLists.npm[0];
+  }
+};
+var getAppCDN = () => {
+  if (globalThis.appCDN)
+    return globalThis.appCDN;
+  try {
+    const url = new URL(location.href);
+    return url.searchParams.get("appCDN") || modulesService.cdnLists.npm[0];
+  } catch {
+    return modulesService.cdnLists.npm[0];
+  }
+};
+var getCdnUrl = (modName, isModule, defaultCDN) => {
+  const post = isModule && modName.startsWith("unpkg:") ? "?module" : "";
+  if (modName.startsWith("gh:")) {
+    modName = modName.replace("gh", ghCDNs[0]);
+  } else if (!modName.includes(":")) {
+    const prefix = defaultCDN || (isModule ? moduleCDNs[0] : npmCDNs[0]);
+    modName = prefix + ":" + modName;
+  }
+  for (const i of TEMPLATES) {
+    const [pattern, template] = i;
+    if (pattern.test(modName)) {
+      return modName.replace(pattern, template) + post;
+    }
+  }
+  return null;
+};
+var TEMPLATES = [
+  [/^(esm\.sh:)(.+)/i, "https://esm.sh/$2"],
+  [/^(npm:)(.+)/i, "https://esm.sh/$2"],
+  [/^(node:)(.+)/i, "https://esm.sh/$2"],
+  [/^(jsr:)(.+)/i, "https://esm.sh/jsr/$2"],
+  [/^(pr:)(.+)/i, "https://esm.sh/pr/$2"],
+  [/^(pkg\.pr\.new:)(.+)/i, "https://esm.sh/pkg.pr.new/$2"],
+  [/^(skypack:)(.+)/i, "https://cdn.skypack.dev/$2"],
+  [/^(jsdelivr:)(.+)/i, "https://cdn.jsdelivr.net/npm/$2"],
+  [/^(fastly\.jsdelivr:)(.+)/i, "https://fastly.jsdelivr.net/npm/$2"],
+  [/^(gcore\.jsdelivr:)(.+)/i, "https://gcore.jsdelivr.net/npm/$2"],
+  [/^(testingcf\.jsdelivr:)(.+)/i, "https://testingcf.jsdelivr.net/npm/$2"],
+  [/^(jsdelivr\.b-cdn:)(.+)/i, "https://jsdelivr.b-cdn.net/npm/$2"],
+  [/^(jsdelivr\.gh:)(.+)/i, "https://cdn.jsdelivr.net/gh/$2"],
+  [/^(fastly\.jsdelivr\.gh:)(.+)/i, "https://fastly.jsdelivr.net/gh/$2"],
+  [/^(gcore\.jsdelivr\.gh:)(.+)/i, "https://gcore.jsdelivr.net/gh/$2"],
+  [/^(testingcf\.jsdelivr\.gh:)(.+)/i, "https://testingcf.jsdelivr.net/gh/$2"],
+  [/^(jsdelivr\.b-cdn\.gh:)(.+)/i, "https://jsdelivr.b-cdn.net/gh/$2"],
+  [/^(statically:)(.+)/i, "https://cdn.statically.io/gh/$2"],
+  [/^(esm\.run:)(.+)/i, "https://esm.run/$2"],
+  [/^(jsdelivr\.esm:)(.+)/i, "https://cdn.jsdelivr.net/npm/$2/+esm"],
+  [/^(fastly\.jsdelivr\.esm:)(.+)/i, "https://fastly.jsdelivr.net/npm/$2/+esm"],
+  [/^(gcore\.jsdelivr\.esm:)(.+)/i, "https://gcore.jsdelivr.net/npm/$2/+esm"],
+  [/^(testingcf\.jsdelivr\.esm:)(.+)/i, "https://testingcf.jsdelivr.net/npm/$2/+esm"],
+  [/^(jsdelivr\.b-cdn\.esm:)(.+)/i, "https://jsdelivr.b-cdn.net/npm/$2/+esm"],
+  [/^(jspm:)(.+)/i, "https://jspm.dev/$2"],
+  [/^(esbuild:)(.+)/i, "https://esbuild.vercel.app/$2"],
+  [/^(bundle\.run:)(.+)/i, "https://bundle.run/$2"],
+  [/^(unpkg:)(.+)/i, "https://unpkg.com/$2"],
+  [/^(npmcdn:)(.+)/i, "https://npmcdn.com/$2"],
+  [/^(bundlejs:)(.+)/i, "https://deno.bundlejs.com/?file&q=$2"],
+  [/^(bundle:)(.+)/i, "https://deno.bundlejs.com/?file&q=$2"],
+  [/^(deno:)(.+)/i, "https://deno.bundlejs.com/?file&q=https://deno.land/x/$2/mod.ts"],
+  [/^(https:\/\/deno\.land\/.+)/i, "https://deno.bundlejs.com/?file&q=$1"],
+  [
+    /^(github:|https:\/\/github\.com\/)(.[^\/]+?)\/(.[^\/]+?)\/(?!releases\/)(?:(?:blob|raw)\/)?(.+?\/.+)/i,
+    "https://deno.bundlejs.com/?file&q=https://cdn.jsdelivr.net/gh/$2/$3@$4"
+  ],
+  [/^(gist\.github:)(.+?\/[0-9a-f]+\/raw\/(?:[0-9a-f]+\/)?.+)$/i, "https://gist.githack.com/$2"],
+  [
+    /^(gitlab:|https:\/\/gitlab\.com\/)([^\/]+.*\/[^\/]+)\/(?:raw|blob)\/(.+?)(?:\?.*)?$/i,
+    "https://deno.bundlejs.com/?file&q=https://gl.githack.com/$2/raw/$3"
+  ],
+  [
+    /^(bitbucket:|https:\/\/bitbucket\.org\/)([^\/]+\/[^\/]+)\/(?:raw|src)\/(.+?)(?:\?.*)?$/i,
+    "https://deno.bundlejs.com/?file&q=https://bb.githack.com/$2/raw/$3"
+  ],
+  // snippet file URL from web interface, with revision
+  [
+    /^(bitbucket:)snippets\/([^\/]+\/[^\/]+)\/revisions\/([^\/\#\?]+)(?:\?[^#]*)?(?:\#file-(.+?))$/i,
+    "https://bb.githack.com/!api/2.0/snippets/$2/$3/files/$4"
+  ],
+  // snippet file URL from web interface, no revision
+  [
+    /^(bitbucket:)snippets\/([^\/]+\/[^\/\#\?]+)(?:\?[^#]*)?(?:\#file-(.+?))$/i,
+    "https://bb.githack.com/!api/2.0/snippets/$2/HEAD/files/$3"
+  ],
+  // snippet file URLs from REST API
+  [
+    /^(bitbucket:)\!api\/2.0\/snippets\/([^\/]+\/[^\/]+\/[^\/]+)\/files\/(.+?)(?:\?.*)?$/i,
+    "https://bb.githack.com/!api/2.0/snippets/$2/files/$3"
+  ],
+  [
+    /^(api\.bitbucket:)2.0\/snippets\/([^\/]+\/[^\/]+\/[^\/]+)\/files\/(.+?)(?:\?.*)?$/i,
+    "https://bb.githack.com/!api/2.0/snippets/$2/files/$3"
+  ],
+  [/^(rawgit:)(.+?\/[0-9a-f]+\/raw\/(?:[0-9a-f]+\/)?.+)$/i, "https://gist.githack.com/$2"],
+  [
+    /^(rawgit:|https:\/\/raw\.githubusercontent\.com)(\/[^\/]+\/[^\/]+|[0-9A-Za-z-]+\/[0-9a-f]+\/raw)\/(.+)/i,
+    "https://deno.bundlejs.com/?file&q=https://raw.githack.com/$2/$3"
+  ]
+];
+
+// src/livecodes/utils/compression.ts
 var import_lz_string = __toESM(require_lz_string());
-async function createPlayground(container, options = {}) {
-  if (typeof container === "object" && !(container instanceof HTMLElement) && (container.headless || container.view === "headless")) {
-    options = container;
-    container = null;
-  }
-  const { config = {}, headless, loading = "lazy", view } = options;
-  const isHeadless = headless || view === "headless";
-  let containerElement = null;
-  let appVersion = null;
-  if (typeof container === "string") {
-    containerElement = document.querySelector(container);
-  } else if (container instanceof HTMLElement) {
-    containerElement = container;
-  } else if (!(isHeadless && typeof container === "object")) {
-    throw new Error("A valid container element is required.");
-  }
-  if (!containerElement) {
-    if (isHeadless) {
-      containerElement = document.createElement("div");
-      hideElement(containerElement);
-      document.body.appendChild(containerElement);
-    } else {
-      throw new Error(`Cannot find element: "${container}"`);
-    }
-  }
-  const playgroundUrl = new URL(getPlaygroundUrl(options));
-  const origin = playgroundUrl.origin;
-  playgroundUrl.searchParams.set("embed", "true");
-  playgroundUrl.searchParams.set("loading", isHeadless ? "eager" : loading);
-  playgroundUrl.searchParams.set("sdkVersion", "0.12.0");
-  if (typeof config === "object" && Object.keys(config).length > 0) {
-    playgroundUrl.searchParams.set("config", "sdk");
-  }
-  const params = options.params;
-  if (typeof params === "object" && Object.keys(params).length > 0 && JSON.stringify(params).length < 1800) {
-    Object.keys(params).forEach((param) => {
-      playgroundUrl.searchParams.set(param, encodeURIComponent(String(params[param])));
-    });
-  }
-  let destroyed = false;
-  const alreadyDestroyedMessage = "Cannot call API methods after calling `destroy()`.";
-  const eventHandlers = [];
-  const registerEventHandler = (handler, eventType = "message") => {
-    addEventListener(eventType, handler);
-    eventHandlers.push(handler);
-  };
-  const createIframe = () => new Promise((resolve) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
-    if (!containerElement)
-      return;
-    const height = containerElement.dataset.height || containerElement.style.height;
-    if (height && !isHeadless) {
-      const cssHeight = isNaN(Number(height)) ? height : height + "px";
-      containerElement.style.height = cssHeight;
-    }
-    if (containerElement.dataset.defaultStyles !== "false" && !isHeadless) {
-      (_a = containerElement.style).backgroundColor || (_a.backgroundColor = "#fff");
-      (_b = containerElement.style).border || (_b.border = "1px solid black");
-      (_c = containerElement.style).borderRadius || (_c.borderRadius = "8px");
-      (_d = containerElement.style).boxSizing || (_d.boxSizing = "border-box");
-      (_e = containerElement.style).padding || (_e.padding = "0");
-      (_f = containerElement.style).width || (_f.width = "100%");
-      (_g = containerElement.style).height || (_g.height = containerElement.style.height || "300px");
-      containerElement.style.minHeight = "200px";
-      containerElement.style.flexGrow = "1";
-      (_h = containerElement.style).overflow || (_h.overflow = "hidden");
-      (_i = containerElement.style).resize || (_i.resize = "vertical");
-    }
-    const className = "livecodes";
-    const preExistingIframe = containerElement.querySelector(
-      `iframe.${className}`
-    );
-    const frame = preExistingIframe || document.createElement("iframe");
-    frame.classList.add(className);
-    frame.setAttribute(
-      "allow",
-      "accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share"
-    );
-    frame.setAttribute("allowtransparency", "true");
-    frame.setAttribute("allowpaymentrequest", "true");
-    frame.setAttribute("allowfullscreen", "true");
-    frame.setAttribute(
-      "sandbox",
-      "allow-same-origin allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts"
-    );
-    const iframeLoading = loading === "eager" ? "eager" : "lazy";
-    frame.setAttribute("loading", iframeLoading);
-    if (isHeadless) {
-      hideElement(frame);
-    } else {
-      frame.style.height = "100%";
-      frame.style.minHeight = "200px";
-      frame.style.width = "100%";
-      frame.style.margin = "0";
-      frame.style.border = "0";
-      frame.style.borderRadius = containerElement.style.borderRadius;
-    }
-    registerEventHandler(function initHandler(e) {
-      var _a2;
-      if (e.source !== frame.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-init") {
-        return;
-      }
-      removeEventListener("message", initHandler);
-      appVersion = Number(e.data.payload.appVersion.replace(/^v/, ""));
-    });
-    if (!appVersion || appVersion < 46) {
-      registerEventHandler(function configHandler(e) {
-        var _a2, _b2;
-        if (e.source !== frame.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-get-config") {
-          return;
-        }
-        removeEventListener("message", configHandler);
-        (_b2 = frame.contentWindow) == null ? void 0 : _b2.postMessage({ type: "livecodes-config", payload: config }, origin);
-      });
-    }
-    frame.onload = () => {
-      resolve(frame);
-    };
-    frame.src = playgroundUrl.href;
-    if (!preExistingIframe) {
-      containerElement.appendChild(frame);
-    }
-  });
-  const iframe = await createIframe();
-  const livecodesReady = new Promise((resolve) => {
-    registerEventHandler(function readyHandler(e) {
-      var _a;
-      if (e.source !== iframe.contentWindow || e.origin !== origin || ((_a = e.data) == null ? void 0 : _a.type) !== "livecodes-ready") {
-        return;
-      }
-      removeEventListener("message", readyHandler);
-      resolve();
-      livecodesReady.settled = true;
-    });
-  });
-  const loadLivecodes = () => destroyed ? Promise.reject(alreadyDestroyedMessage) : new Promise(async (resolve) => {
-    var _a;
-    if (livecodesReady.settled)
-      resolve();
-    const message = { type: "livecodes-load" };
-    (_a = iframe.contentWindow) == null ? void 0 : _a.postMessage(message, origin);
-    await livecodesReady;
-    resolve();
-  });
-  const callAPI = (method, args) => new Promise(async (resolve, reject) => {
-    var _a;
-    if (destroyed) {
-      return reject(alreadyDestroyedMessage);
-    }
-    await loadLivecodes();
-    const id = getRandomString();
-    registerEventHandler(function handler(e) {
-      var _a2, _b;
-      if (e.source !== iframe.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-api-response" || ((_b = e.data) == null ? void 0 : _b.id) !== id) {
-        return;
-      }
-      if (e.data.method === method) {
-        removeEventListener("message", handler);
-        const payload = e.data.payload;
-        if (payload == null ? void 0 : payload.error) {
-          reject(payload.error);
-        } else {
-          resolve(payload);
-        }
-      }
-    });
-    (_a = iframe.contentWindow) == null ? void 0 : _a.postMessage({ method, id, args }, origin);
-  });
-  const watchers = {};
-  const sdkEvents = ["load", "ready", "code", "console", "tests", "destroy"];
-  const watch = (event, fn) => {
-    var _a;
-    if (destroyed) {
-      throw new Error(alreadyDestroyedMessage);
-    }
-    if (!sdkEvents.includes(event))
-      return { remove: () => void 0 };
-    callAPI("watch", [event]);
-    if (!watchers[event]) {
-      watchers[event] = [];
-    }
-    (_a = watchers[event]) == null ? void 0 : _a.push(fn);
+
+// src/livecodes/events/pub.ts
+var createPub = () => {
+  const subscribers = [];
+  const subscribe = (fn) => {
+    subscribers.push(fn);
     return {
-      remove: () => {
-        var _a2, _b;
-        watchers[event] = (_a2 = watchers[event]) == null ? void 0 : _a2.filter((w) => w !== fn);
-        if (((_b = watchers[event]) == null ? void 0 : _b.length) === 0) {
-          callAPI("watch", [event, "unsubscribe"]);
-        }
+      unsubscribe: () => {
+        subscribers.splice(subscribers.indexOf(fn), 1);
       }
     };
   };
-  const mapEvent = (event) => ({
-    "livecodes-app-loaded": "load",
-    "livecodes-ready": "ready",
-    "livecodes-change": "code",
-    "livecodes-console": "console",
-    "livecodes-test-results": "tests",
-    "livecodes-destroy": "destroy"
-  })[event];
-  registerEventHandler(async function watchHandler(e) {
-    var _a, _b, _c, _d;
-    const sdkEvent = mapEvent((_b = (_a = e.data) == null ? void 0 : _a.type) != null ? _b : "");
-    if (e.source !== iframe.contentWindow || e.origin !== origin || !sdkEvent || !watchers[sdkEvent]) {
-      return;
-    }
-    const data = (_c = e.data) == null ? void 0 : _c.payload;
-    (_d = watchers[sdkEvent]) == null ? void 0 : _d.forEach((fn) => {
+  const notify = (data) => {
+    subscribers.forEach((fn) => {
       fn(data);
     });
-  });
-  const destroy = () => {
-    var _a;
-    (_a = iframe == null ? void 0 : iframe.remove) == null ? void 0 : _a.call(iframe);
-    Object.values(watchers).forEach((watcher) => {
-      watcher.length = 0;
-    });
-    eventHandlers.forEach((handler) => removeEventListener("message", handler));
-    eventHandlers.length = 0;
-    if (observer && containerElement) {
-      observer.unobserve(containerElement);
-    }
-    destroyed = true;
   };
-  let observer;
-  if (loading === "lazy" && "IntersectionObserver" in window) {
-    observer = new IntersectionObserver(
-      (entries, observer2) => {
-        entries.forEach(async (entry) => {
-          if (entry.isIntersecting) {
-            await loadLivecodes();
-            observer2.unobserve(containerElement);
-          }
-        });
-      },
-      { rootMargin: "150px" }
-    );
-    observer.observe(containerElement);
-  }
-  function hideElement(el) {
-    el.style.position = "absolute";
-    el.style.top = "0";
-    el.style.visibility = "hidden";
-    el.style.opacity = "0";
-  }
-  const getRandomString = () => (String(Math.random()) + Date.now().toFixed()).replace("0.", "");
+  const unsubscribeAll = () => {
+    subscribers.length = 0;
+  };
+  const hasSubscribers = () => subscribers.length > 0;
   return {
-    load: () => loadLivecodes(),
-    run: () => callAPI("run"),
-    format: (allEditors) => callAPI("format", [allEditors]),
-    getShareUrl: (shortUrl) => callAPI("getShareUrl", [shortUrl]),
-    getConfig: (contentOnly) => callAPI("getConfig", [contentOnly]),
-    setConfig: (config2) => callAPI("setConfig", [config2]),
-    getCode: () => callAPI("getCode"),
-    show: (pane, options2) => callAPI("show", [pane, options2]),
-    runTests: () => callAPI("runTests"),
-    onChange: (fn) => watch("code", fn),
-    watch,
-    exec: (command, ...args) => callAPI("exec", [command, ...args]),
-    destroy: () => {
-      if (destroyed) {
-        return Promise.reject(alreadyDestroyedMessage);
-      }
-      destroy();
-      return Promise.resolve();
+    subscribe,
+    notify,
+    hasSubscribers,
+    unsubscribeAll
+  };
+};
+
+// src/livecodes/utils/utils.ts
+var cloneObject = (x) => (globalThis.structuredClone || ((obj) => JSON.parse(JSON.stringify(obj, (_k, v) => v === void 0 ? null : v))))(x);
+var getRandomString = () => String(Math.random()) + "-" + Date.now().toFixed();
+var callWorker = async (worker2, message) => new Promise((resolve) => {
+  const messageId = getRandomString();
+  const handler = (event) => {
+    const received = event.data;
+    if (received.method === message.method && received.messageId === messageId) {
+      worker2.removeEventListener("message", handler);
+      resolve(received.data);
     }
   };
-}
-function getPlaygroundUrl(options = {}) {
-  const {
-    appUrl = "https://livecodes.io",
-    params = {},
-    config = {},
-    headless,
-    import: importId,
-    lite,
-    view,
-    ...otherOptions
-  } = options;
-  let playgroundUrl;
-  try {
-    playgroundUrl = new URL(appUrl);
-  } catch (e) {
-    throw new Error(`${appUrl} is not a valid URL.`);
-  }
-  const hashParams = new URLSearchParams();
-  Object.entries(otherOptions).forEach(([key, value]) => {
-    if (value !== void 0) {
-      playgroundUrl.searchParams.set(key, String(value));
-    }
+  worker2.addEventListener("message", handler);
+  worker2.postMessage({
+    ...message,
+    messageId
   });
-  const isHeadless = options.view === "headless" || headless;
-  if (lite) {
-    console.warn(
-      `Deprecation notice: "lite" option is deprecated. Use "config: { mode: 'lite' }" instead.`
-    );
-    if (typeof config === "object" && config.mode == null) {
-      config.mode = "lite";
-    } else {
-      playgroundUrl.searchParams.set("lite", "true");
-    }
-  }
-  if (view) {
-    console.warn(
-      `Deprecation notice: The "view" option has been moved to "config.view". For headless mode use "headless: true".`
-    );
-    if (typeof config === "object" && config.view == null && view !== "headless") {
-      config.view = view;
-    } else {
-      playgroundUrl.searchParams.set("view", view);
-    }
-  }
-  if (typeof config === "string") {
+});
+
+// src/livecodes/vendors.ts
+var { getUrl, getModuleUrl } = modulesService;
+
+// src/livecodes/storage/fake-storage.ts
+var fakeSimpleStorage = {
+  getValue: () => null,
+  setValue: () => void 0,
+  clear: () => void 0,
+  subscribe: () => ({ unsubscribe: () => void 0 }),
+  unsubscribeAll: () => void 0
+};
+
+// src/livecodes/storage/simple-storage.ts
+var createSimpleStorage = (name, isEmbed) => {
+  if (isEmbed)
+    return fakeSimpleStorage;
+  const pub = createPub();
+  const subscribe = (fn) => pub.subscribe(fn);
+  const unsubscribeAll = () => {
+    pub.unsubscribeAll();
+  };
+  const notifyPub = () => {
+    pub.notify(getValue());
+  };
+  const setValue = (value) => {
+    window.localStorage.setItem(name, JSON.stringify(value));
+    notifyPub();
+  };
+  const getValue = () => {
+    const value = window.localStorage.getItem(name);
+    if (!value)
+      return null;
     try {
-      new URL(config);
-      playgroundUrl.searchParams.set("config", encodeURIComponent(config));
-    } catch (e) {
-      throw new Error(`"config" is not a valid URL or configuration object.`);
+      return JSON.parse(value);
+    } catch {
+      return null;
     }
-  } else if (config && typeof config === "object" && Object.keys(config).length > 0) {
-    if (config.title && config.title !== "Untitled Project") {
-      playgroundUrl.searchParams.set("title", config.title);
+  };
+  const clear = () => {
+    setValue(null);
+    notifyPub();
+  };
+  return {
+    getValue,
+    setValue,
+    clear,
+    subscribe,
+    unsubscribeAll
+  };
+};
+
+// src/livecodes/storage/stores.ts
+var createStores = () => cloneObject({
+  projects: null,
+  templates: null,
+  assets: null,
+  snippets: null,
+  recover: null,
+  userConfig: null,
+  userData: null,
+  appData: null,
+  sync: null
+});
+var initializeSimpleStores = async (stores, isEmbed) => {
+  if (isEmbed)
+    return;
+  stores.recover = createSimpleStorage("__livecodes_project_recover__", isEmbed);
+  stores.userConfig = createSimpleStorage("__livecodes_user_config__", isEmbed);
+  stores.appData = createSimpleStorage("__livecodes_app_data__", isEmbed);
+};
+
+// src/livecodes/sync/sync.ts
+var worker;
+var init = (baseUrl) => {
+  worker = worker || new Worker(baseUrl + "sync.worker.js?appCDN=" + getAppCDN());
+  let stores;
+  worker.addEventListener("message", async (event) => {
+    const message = event.data;
+    const method = message.method;
+    const args = message.args || {};
+    if (method !== "getValue" && method !== "setValue")
+      return;
+    if (!stores) {
+      stores = createStores();
+      await initializeSimpleStores(stores, false);
     }
-    if (config.description && config.description.length > 0) {
-      playgroundUrl.searchParams.set("description", config.description);
+    let data;
+    const { storeKey, value } = args;
+    const storage = stores[storeKey];
+    if (!storage || !storeKey)
+      return;
+    if (method === "getValue" && "getValue" in storage) {
+      data = storage.getValue();
     }
-    hashParams.set("config", "code/" + (0, import_lz_string.compressToEncodedURIComponent)(JSON.stringify(config)));
-  }
-  if (params && typeof params === "object" && Object.keys(params).length > 0) {
-    try {
-      hashParams.set("params", (0, import_lz_string.compressToEncodedURIComponent)(JSON.stringify(params)));
-    } catch (e) {
-      Object.keys(params).forEach((param) => {
-        playgroundUrl.searchParams.set(param, encodeURIComponent(String(params[param])));
-      });
+    if (method === "setValue" && "setValue" in storage && value != null) {
+      storage.setValue(value);
     }
-  }
-  if (importId) {
-    playgroundUrl.searchParams.set("x", encodeURIComponent(importId));
-  }
-  if (isHeadless) {
-    playgroundUrl.searchParams.set("headless", "true");
-  }
-  if (hashParams.toString().length > 0) {
-    playgroundUrl.hash = hashParams.toString();
-  }
-  return playgroundUrl.href;
-}
+    worker.postMessage({ ...message, data });
+  });
+};
+var sync = async (...args) => callWorker(worker, {
+  method: "sync",
+  args
+});
+var exportToLocalSync = async (...args) => callWorker(worker, {
+  method: "exportToLocalSync",
+  args
+});
+var exportStoreAsBase64Update = async (...args) => callWorker(worker, {
+  method: "exportStoreAsBase64Update",
+  args
+});
+var restoreFromUpdate = async (...args) => callWorker(worker, {
+  method: "restoreFromUpdate",
+  args
+});
+var restoreFromLocalSync = async (...args) => callWorker(worker, {
+  method: "restoreFromLocalSync",
+  args
+});
+export {
+  exportStoreAsBase64Update,
+  exportToLocalSync,
+  init,
+  restoreFromLocalSync,
+  restoreFromUpdate,
+  sync
+};

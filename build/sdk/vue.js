@@ -1,1 +1,919 @@
-var te=Object.create;var X=Object.defineProperty;var ne=Object.getOwnPropertyDescriptor;var oe=Object.getOwnPropertyNames;var re=Object.getPrototypeOf,se=Object.prototype.hasOwnProperty;var ie=(c,g)=>()=>(g||c((g={exports:{}}).exports,g),g.exports);var ae=(c,g,b,p)=>{if(g&&typeof g=="object"||typeof g=="function")for(let O of oe(g))!se.call(c,O)&&O!==b&&X(c,O,{get:()=>g[O],enumerable:!(p=ne(g,O))||p.enumerable});return c};var le=(c,g,b)=>(b=c!=null?te(re(c)):{},ae(g||!c||!c.__esModule?X(b,"default",{value:c,enumerable:!0}):b,c));var Y=ie((ve,D)=>{var ce=function(){var c=String.fromCharCode,g="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",b="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$",p={};function O(o,e){if(!p[o]){p[o]={};for(var l=0;l<o.length;l++)p[o][o.charAt(l)]=l}return p[o][e]}var x={compressToBase64:function(o){if(o==null)return"";var e=x._compress(o,6,function(l){return g.charAt(l)});switch(e.length%4){default:case 0:return e;case 1:return e+"===";case 2:return e+"==";case 3:return e+"="}},decompressFromBase64:function(o){return o==null?"":o==""?null:x._decompress(o.length,32,function(e){return O(g,o.charAt(e))})},compressToUTF16:function(o){return o==null?"":x._compress(o,15,function(e){return c(e+32)})+" "},decompressFromUTF16:function(o){return o==null?"":o==""?null:x._decompress(o.length,16384,function(e){return o.charCodeAt(e)-32})},compressToUint8Array:function(o){for(var e=x.compress(o),l=new Uint8Array(e.length*2),t=0,s=e.length;t<s;t++){var d=e.charCodeAt(t);l[t*2]=d>>>8,l[t*2+1]=d%256}return l},decompressFromUint8Array:function(o){if(o==null)return x.decompress(o);for(var e=new Array(o.length/2),l=0,t=e.length;l<t;l++)e[l]=o[l*2]*256+o[l*2+1];var s=[];return e.forEach(function(d){s.push(c(d))}),x.decompress(s.join(""))},compressToEncodedURIComponent:function(o){return o==null?"":x._compress(o,6,function(e){return b.charAt(e)})},decompressFromEncodedURIComponent:function(o){return o==null?"":o==""?null:(o=o.replace(/ /g,"+"),x._decompress(o.length,32,function(e){return O(b,o.charAt(e))}))},compress:function(o){return x._compress(o,16,function(e){return c(e)})},_compress:function(o,e,l){if(o==null)return"";var t,s,d={},v={},w="",P="",h="",S=2,E=3,f=2,u=[],n=0,r=0,M;for(M=0;M<o.length;M+=1)if(w=o.charAt(M),Object.prototype.hasOwnProperty.call(d,w)||(d[w]=E++,v[w]=!0),P=h+w,Object.prototype.hasOwnProperty.call(d,P))h=P;else{if(Object.prototype.hasOwnProperty.call(v,h)){if(h.charCodeAt(0)<256){for(t=0;t<f;t++)n=n<<1,r==e-1?(r=0,u.push(l(n)),n=0):r++;for(s=h.charCodeAt(0),t=0;t<8;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1}else{for(s=1,t=0;t<f;t++)n=n<<1|s,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=0;for(s=h.charCodeAt(0),t=0;t<16;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1}S--,S==0&&(S=Math.pow(2,f),f++),delete v[h]}else for(s=d[h],t=0;t<f;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1;S--,S==0&&(S=Math.pow(2,f),f++),d[P]=E++,h=String(w)}if(h!==""){if(Object.prototype.hasOwnProperty.call(v,h)){if(h.charCodeAt(0)<256){for(t=0;t<f;t++)n=n<<1,r==e-1?(r=0,u.push(l(n)),n=0):r++;for(s=h.charCodeAt(0),t=0;t<8;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1}else{for(s=1,t=0;t<f;t++)n=n<<1|s,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=0;for(s=h.charCodeAt(0),t=0;t<16;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1}S--,S==0&&(S=Math.pow(2,f),f++),delete v[h]}else for(s=d[h],t=0;t<f;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1;S--,S==0&&(S=Math.pow(2,f),f++)}for(s=2,t=0;t<f;t++)n=n<<1|s&1,r==e-1?(r=0,u.push(l(n)),n=0):r++,s=s>>1;for(;;)if(n=n<<1,r==e-1){u.push(l(n));break}else r++;return u.join("")},decompress:function(o){return o==null?"":o==""?null:x._decompress(o.length,32768,function(e){return o.charCodeAt(e)})},_decompress:function(o,e,l){var t=[],s,d=4,v=4,w=3,P="",h=[],S,E,f,u,n,r,M,a={val:l(0),position:e,index:1};for(S=0;S<3;S+=1)t[S]=S;for(f=0,n=Math.pow(2,2),r=1;r!=n;)u=a.val&a.position,a.position>>=1,a.position==0&&(a.position=e,a.val=l(a.index++)),f|=(u>0?1:0)*r,r<<=1;switch(s=f){case 0:for(f=0,n=Math.pow(2,8),r=1;r!=n;)u=a.val&a.position,a.position>>=1,a.position==0&&(a.position=e,a.val=l(a.index++)),f|=(u>0?1:0)*r,r<<=1;M=c(f);break;case 1:for(f=0,n=Math.pow(2,16),r=1;r!=n;)u=a.val&a.position,a.position>>=1,a.position==0&&(a.position=e,a.val=l(a.index++)),f|=(u>0?1:0)*r,r<<=1;M=c(f);break;case 2:return""}for(t[3]=M,E=M,h.push(M);;){if(a.index>o)return"";for(f=0,n=Math.pow(2,w),r=1;r!=n;)u=a.val&a.position,a.position>>=1,a.position==0&&(a.position=e,a.val=l(a.index++)),f|=(u>0?1:0)*r,r<<=1;switch(M=f){case 0:for(f=0,n=Math.pow(2,8),r=1;r!=n;)u=a.val&a.position,a.position>>=1,a.position==0&&(a.position=e,a.val=l(a.index++)),f|=(u>0?1:0)*r,r<<=1;t[v++]=c(f),M=v-1,d--;break;case 1:for(f=0,n=Math.pow(2,16),r=1;r!=n;)u=a.val&a.position,a.position>>=1,a.position==0&&(a.position=e,a.val=l(a.index++)),f|=(u>0?1:0)*r,r<<=1;t[v++]=c(f),M=v-1,d--;break;case 2:return h.join("")}if(d==0&&(d=Math.pow(2,w),w++),t[M])P=t[M];else if(M===v)P=E+E.charAt(0);else return null;h.push(P),t[v++]=E+P.charAt(0),d--,E=P,d==0&&(d=Math.pow(2,w),w++)}}};return x}();typeof D!="undefined"&&D!=null&&(D.exports=ce)});import{h as fe,onMounted as pe,onUnmounted as ue,ref as B,watch as ye}from"vue";var J=le(Y());async function K(c,g={}){typeof c=="object"&&!(c instanceof HTMLElement)&&(c.headless||c.view==="headless")&&(g=c,c=null);let{config:b={},headless:p,loading:O="lazy",view:x}=g,o=p||x==="headless",e=null,l=null;if(typeof c=="string")e=document.querySelector(c);else if(c instanceof HTMLElement)e=c;else if(!(o&&typeof c=="object"))throw new Error("A valid container element is required.");if(!e)if(o)e=document.createElement("div"),z(e),document.body.appendChild(e);else throw new Error(`Cannot find element: "${c}"`);let t=new URL(de(g)),s=t.origin;t.searchParams.set("embed","true"),t.searchParams.set("loading",o?"eager":O),t.searchParams.set("sdkVersion","0.12.0"),typeof b=="object"&&Object.keys(b).length>0&&t.searchParams.set("config","sdk");let d=g.params;typeof d=="object"&&Object.keys(d).length>0&&JSON.stringify(d).length<1800&&Object.keys(d).forEach(i=>{t.searchParams.set(i,encodeURIComponent(String(d[i])))});let v=!1,w="Cannot call API methods after calling `destroy()`.",P=[],h=(i,y="message")=>{addEventListener(y,i),P.push(i)},E=await new Promise(i=>{var k,L,j,H,U,q,Q,Z,$;if(!e)return;let y=e.dataset.height||e.style.height;if(y&&!o){let _=isNaN(Number(y))?y:y+"px";e.style.height=_}e.dataset.defaultStyles!=="false"&&!o&&((k=e.style).backgroundColor||(k.backgroundColor="#fff"),(L=e.style).border||(L.border="1px solid black"),(j=e.style).borderRadius||(j.borderRadius="8px"),(H=e.style).boxSizing||(H.boxSizing="border-box"),(U=e.style).padding||(U.padding="0"),(q=e.style).width||(q.width="100%"),(Q=e.style).height||(Q.height=e.style.height||"300px"),e.style.minHeight="200px",e.style.flexGrow="1",(Z=e.style).overflow||(Z.overflow="hidden"),($=e.style).resize||($.resize="vertical"));let C="livecodes",A=e.querySelector(`iframe.${C}`),m=A||document.createElement("iframe");m.classList.add(C),m.setAttribute("allow","accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share"),m.setAttribute("allowtransparency","true"),m.setAttribute("allowpaymentrequest","true"),m.setAttribute("allowfullscreen","true"),m.setAttribute("sandbox","allow-same-origin allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts");let R=O==="eager"?"eager":"lazy";m.setAttribute("loading",R),o?z(m):(m.style.height="100%",m.style.minHeight="200px",m.style.width="100%",m.style.margin="0",m.style.border="0",m.style.borderRadius=e.style.borderRadius),h(function _(T){var I;T.source!==m.contentWindow||T.origin!==s||((I=T.data)==null?void 0:I.type)!=="livecodes-init"||(removeEventListener("message",_),l=Number(T.data.payload.appVersion.replace(/^v/,"")))}),(!l||l<46)&&h(function _(T){var I,G;T.source!==m.contentWindow||T.origin!==s||((I=T.data)==null?void 0:I.type)!=="livecodes-get-config"||(removeEventListener("message",_),(G=m.contentWindow)==null||G.postMessage({type:"livecodes-config",payload:b},s))}),m.onload=()=>{i(m)},m.src=t.href,A||e.appendChild(m)}),f=new Promise(i=>{h(function y(C){var A;C.source!==E.contentWindow||C.origin!==s||((A=C.data)==null?void 0:A.type)!=="livecodes-ready"||(removeEventListener("message",y),i(),f.settled=!0)})}),u=()=>v?Promise.reject(w):new Promise(async i=>{var C;f.settled&&i();let y={type:"livecodes-load"};(C=E.contentWindow)==null||C.postMessage(y,s),await f,i()}),n=(i,y)=>new Promise(async(C,A)=>{var R;if(v)return A(w);await u();let m=ee();h(function k(L){var j,H;if(!(L.source!==E.contentWindow||L.origin!==s||((j=L.data)==null?void 0:j.type)!=="livecodes-api-response"||((H=L.data)==null?void 0:H.id)!==m)&&L.data.method===i){removeEventListener("message",k);let U=L.data.payload;U!=null&&U.error?A(U.error):C(U)}}),(R=E.contentWindow)==null||R.postMessage({method:i,id:m,args:y},s)}),r={},M=["load","ready","code","console","tests","destroy"],a=(i,y)=>{var C;if(v)throw new Error(w);return M.includes(i)?(n("watch",[i]),r[i]||(r[i]=[]),(C=r[i])==null||C.push(y),{remove:()=>{var A,m;r[i]=(A=r[i])==null?void 0:A.filter(R=>R!==y),((m=r[i])==null?void 0:m.length)===0&&n("watch",[i,"unsubscribe"])}}):{remove:()=>{}}},F=i=>({"livecodes-app-loaded":"load","livecodes-ready":"ready","livecodes-change":"code","livecodes-console":"console","livecodes-test-results":"tests","livecodes-destroy":"destroy"})[i];h(async function(y){var m,R,k,L;let C=F((R=(m=y.data)==null?void 0:m.type)!=null?R:"");if(y.source!==E.contentWindow||y.origin!==s||!C||!r[C])return;let A=(k=y.data)==null?void 0:k.payload;(L=r[C])==null||L.forEach(j=>{j(A)})});let V=()=>{var i;(i=E==null?void 0:E.remove)==null||i.call(E),Object.values(r).forEach(y=>{y.length=0}),P.forEach(y=>removeEventListener("message",y)),P.length=0,N&&e&&N.unobserve(e),v=!0},N;O==="lazy"&&"IntersectionObserver"in window&&(N=new IntersectionObserver((i,y)=>{i.forEach(async C=>{C.isIntersecting&&(await u(),y.unobserve(e))})},{rootMargin:"150px"}),N.observe(e));function z(i){i.style.position="absolute",i.style.top="0",i.style.visibility="hidden",i.style.opacity="0"}let ee=()=>(String(Math.random())+Date.now().toFixed()).replace("0.","");return{load:()=>u(),run:()=>n("run"),format:i=>n("format",[i]),getShareUrl:i=>n("getShareUrl",[i]),getConfig:i=>n("getConfig",[i]),setConfig:i=>n("setConfig",[i]),getCode:()=>n("getCode"),show:(i,y)=>n("show",[i,y]),runTests:()=>n("runTests"),onChange:i=>a("code",i),watch:a,exec:(i,...y)=>n("exec",[i,...y]),destroy:()=>v?Promise.reject(w):(V(),Promise.resolve())}}function de(c={}){let{appUrl:g="https://livecodes.io",params:b={},config:p={},headless:O,import:x,lite:o,view:e,...l}=c,t;try{t=new URL(g)}catch(v){throw new Error(`${g} is not a valid URL.`)}let s=new URLSearchParams;Object.entries(l).forEach(([v,w])=>{w!==void 0&&t.searchParams.set(v,String(w))});let d=c.view==="headless"||O;if(o&&(console.warn(`Deprecation notice: "lite" option is deprecated. Use "config: { mode: 'lite' }" instead.`),typeof p=="object"&&p.mode==null?p.mode="lite":t.searchParams.set("lite","true")),e&&(console.warn('Deprecation notice: The "view" option has been moved to "config.view". For headless mode use "headless: true".'),typeof p=="object"&&p.view==null&&e!=="headless"?p.view=e:t.searchParams.set("view",e)),typeof p=="string")try{new URL(p),t.searchParams.set("config",encodeURIComponent(p))}catch(v){throw new Error('"config" is not a valid URL or configuration object.')}else p&&typeof p=="object"&&Object.keys(p).length>0&&(p.title&&p.title!=="Untitled Project"&&t.searchParams.set("title",p.title),p.description&&p.description.length>0&&t.searchParams.set("description",p.description),s.set("config","code/"+(0,J.compressToEncodedURIComponent)(JSON.stringify(p))));if(b&&typeof b=="object"&&Object.keys(b).length>0)try{s.set("params",(0,J.compressToEncodedURIComponent)(JSON.stringify(b)))}catch(v){Object.keys(b).forEach(w=>{t.searchParams.set(w,encodeURIComponent(String(b[w])))})}return x&&t.searchParams.set("x",encodeURIComponent(x)),d&&t.searchParams.set("headless","true"),s.toString().length>0&&(t.hash=s.toString()),t.href}var me={appUrl:String,config:[Object,String],headless:Boolean,import:String,lite:Boolean,loading:String,params:Object,template:String,view:String,height:String},W=c=>JSON.parse(JSON.stringify(c)),he={props:me,emits:["sdkReady"],setup(c,g){let{height:b,...p}=c,O=B(),x=B(b||""),o=B(),{config:e,...l}=p,t=JSON.stringify(e),s=JSON.stringify(l);return pe(()=>{O.value&&K(O.value,W(p)).then(d=>{o.value=d,g.emit("sdkReady",d)})}),ye(c,async d=>{var S;if(!O.value||!o.value)return;let{height:v,...w}=d;x.value=v||"";let{config:P,...h}=w;typeof P=="string"&&(P=await fetch(P).then(E=>E.json())),JSON.stringify(h)!==s?(await((S=o.value)==null?void 0:S.destroy()),K(O.value,W(w)).then(E=>{o.value=E,g.emit("sdkReady",E)})):JSON.stringify(P)!==t&&o.value.setConfig(W(P)||{}),t=JSON.stringify(P),s=JSON.stringify(h)}),ue(()=>{var d;(d=o.value)==null||d.destroy()}),()=>{var d,v;return fe("div",{ref:O,"data-height":x.value},((v=(d=g.slots).default)==null?void 0:v.call(d))||"")}}},be=he;export{be as default};
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __commonJS = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+
+// node_modules/lz-string/libs/lz-string.js
+var require_lz_string = __commonJS({
+  "node_modules/lz-string/libs/lz-string.js"(exports, module) {
+    var LZString = function() {
+      var f = String.fromCharCode;
+      var keyStrBase64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+      var keyStrUriSafe = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$";
+      var baseReverseDic = {};
+      function getBaseValue(alphabet, character) {
+        if (!baseReverseDic[alphabet]) {
+          baseReverseDic[alphabet] = {};
+          for (var i = 0; i < alphabet.length; i++) {
+            baseReverseDic[alphabet][alphabet.charAt(i)] = i;
+          }
+        }
+        return baseReverseDic[alphabet][character];
+      }
+      var LZString2 = {
+        compressToBase64: function(input) {
+          if (input == null)
+            return "";
+          var res = LZString2._compress(input, 6, function(a) {
+            return keyStrBase64.charAt(a);
+          });
+          switch (res.length % 4) {
+            default:
+            case 0:
+              return res;
+            case 1:
+              return res + "===";
+            case 2:
+              return res + "==";
+            case 3:
+              return res + "=";
+          }
+        },
+        decompressFromBase64: function(input) {
+          if (input == null)
+            return "";
+          if (input == "")
+            return null;
+          return LZString2._decompress(input.length, 32, function(index) {
+            return getBaseValue(keyStrBase64, input.charAt(index));
+          });
+        },
+        compressToUTF16: function(input) {
+          if (input == null)
+            return "";
+          return LZString2._compress(input, 15, function(a) {
+            return f(a + 32);
+          }) + " ";
+        },
+        decompressFromUTF16: function(compressed) {
+          if (compressed == null)
+            return "";
+          if (compressed == "")
+            return null;
+          return LZString2._decompress(compressed.length, 16384, function(index) {
+            return compressed.charCodeAt(index) - 32;
+          });
+        },
+        //compress into uint8array (UCS-2 big endian format)
+        compressToUint8Array: function(uncompressed) {
+          var compressed = LZString2.compress(uncompressed);
+          var buf = new Uint8Array(compressed.length * 2);
+          for (var i = 0, TotalLen = compressed.length; i < TotalLen; i++) {
+            var current_value = compressed.charCodeAt(i);
+            buf[i * 2] = current_value >>> 8;
+            buf[i * 2 + 1] = current_value % 256;
+          }
+          return buf;
+        },
+        //decompress from uint8array (UCS-2 big endian format)
+        decompressFromUint8Array: function(compressed) {
+          if (compressed === null || compressed === void 0) {
+            return LZString2.decompress(compressed);
+          } else {
+            var buf = new Array(compressed.length / 2);
+            for (var i = 0, TotalLen = buf.length; i < TotalLen; i++) {
+              buf[i] = compressed[i * 2] * 256 + compressed[i * 2 + 1];
+            }
+            var result = [];
+            buf.forEach(function(c) {
+              result.push(f(c));
+            });
+            return LZString2.decompress(result.join(""));
+          }
+        },
+        //compress into a string that is already URI encoded
+        compressToEncodedURIComponent: function(input) {
+          if (input == null)
+            return "";
+          return LZString2._compress(input, 6, function(a) {
+            return keyStrUriSafe.charAt(a);
+          });
+        },
+        //decompress from an output of compressToEncodedURIComponent
+        decompressFromEncodedURIComponent: function(input) {
+          if (input == null)
+            return "";
+          if (input == "")
+            return null;
+          input = input.replace(/ /g, "+");
+          return LZString2._decompress(input.length, 32, function(index) {
+            return getBaseValue(keyStrUriSafe, input.charAt(index));
+          });
+        },
+        compress: function(uncompressed) {
+          return LZString2._compress(uncompressed, 16, function(a) {
+            return f(a);
+          });
+        },
+        _compress: function(uncompressed, bitsPerChar, getCharFromInt) {
+          if (uncompressed == null)
+            return "";
+          var i, value, context_dictionary = {}, context_dictionaryToCreate = {}, context_c = "", context_wc = "", context_w = "", context_enlargeIn = 2, context_dictSize = 3, context_numBits = 2, context_data = [], context_data_val = 0, context_data_position = 0, ii;
+          for (ii = 0; ii < uncompressed.length; ii += 1) {
+            context_c = uncompressed.charAt(ii);
+            if (!Object.prototype.hasOwnProperty.call(context_dictionary, context_c)) {
+              context_dictionary[context_c] = context_dictSize++;
+              context_dictionaryToCreate[context_c] = true;
+            }
+            context_wc = context_w + context_c;
+            if (Object.prototype.hasOwnProperty.call(context_dictionary, context_wc)) {
+              context_w = context_wc;
+            } else {
+              if (Object.prototype.hasOwnProperty.call(context_dictionaryToCreate, context_w)) {
+                if (context_w.charCodeAt(0) < 256) {
+                  for (i = 0; i < context_numBits; i++) {
+                    context_data_val = context_data_val << 1;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                  }
+                  value = context_w.charCodeAt(0);
+                  for (i = 0; i < 8; i++) {
+                    context_data_val = context_data_val << 1 | value & 1;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                    value = value >> 1;
+                  }
+                } else {
+                  value = 1;
+                  for (i = 0; i < context_numBits; i++) {
+                    context_data_val = context_data_val << 1 | value;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                    value = 0;
+                  }
+                  value = context_w.charCodeAt(0);
+                  for (i = 0; i < 16; i++) {
+                    context_data_val = context_data_val << 1 | value & 1;
+                    if (context_data_position == bitsPerChar - 1) {
+                      context_data_position = 0;
+                      context_data.push(getCharFromInt(context_data_val));
+                      context_data_val = 0;
+                    } else {
+                      context_data_position++;
+                    }
+                    value = value >> 1;
+                  }
+                }
+                context_enlargeIn--;
+                if (context_enlargeIn == 0) {
+                  context_enlargeIn = Math.pow(2, context_numBits);
+                  context_numBits++;
+                }
+                delete context_dictionaryToCreate[context_w];
+              } else {
+                value = context_dictionary[context_w];
+                for (i = 0; i < context_numBits; i++) {
+                  context_data_val = context_data_val << 1 | value & 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = value >> 1;
+                }
+              }
+              context_enlargeIn--;
+              if (context_enlargeIn == 0) {
+                context_enlargeIn = Math.pow(2, context_numBits);
+                context_numBits++;
+              }
+              context_dictionary[context_wc] = context_dictSize++;
+              context_w = String(context_c);
+            }
+          }
+          if (context_w !== "") {
+            if (Object.prototype.hasOwnProperty.call(context_dictionaryToCreate, context_w)) {
+              if (context_w.charCodeAt(0) < 256) {
+                for (i = 0; i < context_numBits; i++) {
+                  context_data_val = context_data_val << 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                }
+                value = context_w.charCodeAt(0);
+                for (i = 0; i < 8; i++) {
+                  context_data_val = context_data_val << 1 | value & 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = value >> 1;
+                }
+              } else {
+                value = 1;
+                for (i = 0; i < context_numBits; i++) {
+                  context_data_val = context_data_val << 1 | value;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = 0;
+                }
+                value = context_w.charCodeAt(0);
+                for (i = 0; i < 16; i++) {
+                  context_data_val = context_data_val << 1 | value & 1;
+                  if (context_data_position == bitsPerChar - 1) {
+                    context_data_position = 0;
+                    context_data.push(getCharFromInt(context_data_val));
+                    context_data_val = 0;
+                  } else {
+                    context_data_position++;
+                  }
+                  value = value >> 1;
+                }
+              }
+              context_enlargeIn--;
+              if (context_enlargeIn == 0) {
+                context_enlargeIn = Math.pow(2, context_numBits);
+                context_numBits++;
+              }
+              delete context_dictionaryToCreate[context_w];
+            } else {
+              value = context_dictionary[context_w];
+              for (i = 0; i < context_numBits; i++) {
+                context_data_val = context_data_val << 1 | value & 1;
+                if (context_data_position == bitsPerChar - 1) {
+                  context_data_position = 0;
+                  context_data.push(getCharFromInt(context_data_val));
+                  context_data_val = 0;
+                } else {
+                  context_data_position++;
+                }
+                value = value >> 1;
+              }
+            }
+            context_enlargeIn--;
+            if (context_enlargeIn == 0) {
+              context_enlargeIn = Math.pow(2, context_numBits);
+              context_numBits++;
+            }
+          }
+          value = 2;
+          for (i = 0; i < context_numBits; i++) {
+            context_data_val = context_data_val << 1 | value & 1;
+            if (context_data_position == bitsPerChar - 1) {
+              context_data_position = 0;
+              context_data.push(getCharFromInt(context_data_val));
+              context_data_val = 0;
+            } else {
+              context_data_position++;
+            }
+            value = value >> 1;
+          }
+          while (true) {
+            context_data_val = context_data_val << 1;
+            if (context_data_position == bitsPerChar - 1) {
+              context_data.push(getCharFromInt(context_data_val));
+              break;
+            } else
+              context_data_position++;
+          }
+          return context_data.join("");
+        },
+        decompress: function(compressed) {
+          if (compressed == null)
+            return "";
+          if (compressed == "")
+            return null;
+          return LZString2._decompress(compressed.length, 32768, function(index) {
+            return compressed.charCodeAt(index);
+          });
+        },
+        _decompress: function(length, resetValue, getNextValue) {
+          var dictionary = [], next, enlargeIn = 4, dictSize = 4, numBits = 3, entry = "", result = [], i, w, bits, resb, maxpower, power, c, data = { val: getNextValue(0), position: resetValue, index: 1 };
+          for (i = 0; i < 3; i += 1) {
+            dictionary[i] = i;
+          }
+          bits = 0;
+          maxpower = Math.pow(2, 2);
+          power = 1;
+          while (power != maxpower) {
+            resb = data.val & data.position;
+            data.position >>= 1;
+            if (data.position == 0) {
+              data.position = resetValue;
+              data.val = getNextValue(data.index++);
+            }
+            bits |= (resb > 0 ? 1 : 0) * power;
+            power <<= 1;
+          }
+          switch (next = bits) {
+            case 0:
+              bits = 0;
+              maxpower = Math.pow(2, 8);
+              power = 1;
+              while (power != maxpower) {
+                resb = data.val & data.position;
+                data.position >>= 1;
+                if (data.position == 0) {
+                  data.position = resetValue;
+                  data.val = getNextValue(data.index++);
+                }
+                bits |= (resb > 0 ? 1 : 0) * power;
+                power <<= 1;
+              }
+              c = f(bits);
+              break;
+            case 1:
+              bits = 0;
+              maxpower = Math.pow(2, 16);
+              power = 1;
+              while (power != maxpower) {
+                resb = data.val & data.position;
+                data.position >>= 1;
+                if (data.position == 0) {
+                  data.position = resetValue;
+                  data.val = getNextValue(data.index++);
+                }
+                bits |= (resb > 0 ? 1 : 0) * power;
+                power <<= 1;
+              }
+              c = f(bits);
+              break;
+            case 2:
+              return "";
+          }
+          dictionary[3] = c;
+          w = c;
+          result.push(c);
+          while (true) {
+            if (data.index > length) {
+              return "";
+            }
+            bits = 0;
+            maxpower = Math.pow(2, numBits);
+            power = 1;
+            while (power != maxpower) {
+              resb = data.val & data.position;
+              data.position >>= 1;
+              if (data.position == 0) {
+                data.position = resetValue;
+                data.val = getNextValue(data.index++);
+              }
+              bits |= (resb > 0 ? 1 : 0) * power;
+              power <<= 1;
+            }
+            switch (c = bits) {
+              case 0:
+                bits = 0;
+                maxpower = Math.pow(2, 8);
+                power = 1;
+                while (power != maxpower) {
+                  resb = data.val & data.position;
+                  data.position >>= 1;
+                  if (data.position == 0) {
+                    data.position = resetValue;
+                    data.val = getNextValue(data.index++);
+                  }
+                  bits |= (resb > 0 ? 1 : 0) * power;
+                  power <<= 1;
+                }
+                dictionary[dictSize++] = f(bits);
+                c = dictSize - 1;
+                enlargeIn--;
+                break;
+              case 1:
+                bits = 0;
+                maxpower = Math.pow(2, 16);
+                power = 1;
+                while (power != maxpower) {
+                  resb = data.val & data.position;
+                  data.position >>= 1;
+                  if (data.position == 0) {
+                    data.position = resetValue;
+                    data.val = getNextValue(data.index++);
+                  }
+                  bits |= (resb > 0 ? 1 : 0) * power;
+                  power <<= 1;
+                }
+                dictionary[dictSize++] = f(bits);
+                c = dictSize - 1;
+                enlargeIn--;
+                break;
+              case 2:
+                return result.join("");
+            }
+            if (enlargeIn == 0) {
+              enlargeIn = Math.pow(2, numBits);
+              numBits++;
+            }
+            if (dictionary[c]) {
+              entry = dictionary[c];
+            } else {
+              if (c === dictSize) {
+                entry = w + w.charAt(0);
+              } else {
+                return null;
+              }
+            }
+            result.push(entry);
+            dictionary[dictSize++] = w + entry.charAt(0);
+            enlargeIn--;
+            w = entry;
+            if (enlargeIn == 0) {
+              enlargeIn = Math.pow(2, numBits);
+              numBits++;
+            }
+          }
+        }
+      };
+      return LZString2;
+    }();
+    if (false) {
+      (void 0)(function() {
+        return LZString;
+      });
+    } else if (typeof module !== "undefined" && module != null) {
+      module.exports = LZString;
+    }
+  }
+});
+
+// src/sdk/vue.ts
+import { h, onMounted, onUnmounted, ref, watch } from "vue";
+
+// src/sdk/index.ts
+var import_lz_string = __toESM(require_lz_string());
+async function createPlayground(container, options = {}) {
+  if (typeof container === "object" && !(container instanceof HTMLElement) && (container.headless || container.view === "headless")) {
+    options = container;
+    container = null;
+  }
+  const { config = {}, headless, loading = "lazy", view } = options;
+  const isHeadless = headless || view === "headless";
+  let containerElement = null;
+  let appVersion = null;
+  if (typeof container === "string") {
+    containerElement = document.querySelector(container);
+  } else if (container instanceof HTMLElement) {
+    containerElement = container;
+  } else if (!(isHeadless && typeof container === "object")) {
+    throw new Error("A valid container element is required.");
+  }
+  if (!containerElement) {
+    if (isHeadless) {
+      containerElement = document.createElement("div");
+      hideElement(containerElement);
+      document.body.appendChild(containerElement);
+    } else {
+      throw new Error(`Cannot find element: "${container}"`);
+    }
+  }
+  const playgroundUrl = new URL(getPlaygroundUrl(options));
+  const origin = playgroundUrl.origin;
+  playgroundUrl.searchParams.set("embed", "true");
+  playgroundUrl.searchParams.set("loading", isHeadless ? "eager" : loading);
+  playgroundUrl.searchParams.set("sdkVersion", "0.12.0");
+  if (typeof config === "object" && Object.keys(config).length > 0) {
+    playgroundUrl.searchParams.set("config", "sdk");
+  }
+  const params = options.params;
+  if (typeof params === "object" && Object.keys(params).length > 0 && JSON.stringify(params).length < 1800) {
+    Object.keys(params).forEach((param) => {
+      playgroundUrl.searchParams.set(param, encodeURIComponent(String(params[param])));
+    });
+  }
+  let destroyed = false;
+  const alreadyDestroyedMessage = "Cannot call API methods after calling `destroy()`.";
+  const eventHandlers = [];
+  const registerEventHandler = (handler, eventType = "message") => {
+    addEventListener(eventType, handler);
+    eventHandlers.push(handler);
+  };
+  const createIframe = () => new Promise((resolve) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+    if (!containerElement)
+      return;
+    const height = containerElement.dataset.height || containerElement.style.height;
+    if (height && !isHeadless) {
+      const cssHeight = isNaN(Number(height)) ? height : height + "px";
+      containerElement.style.height = cssHeight;
+    }
+    if (containerElement.dataset.defaultStyles !== "false" && !isHeadless) {
+      (_a = containerElement.style).backgroundColor || (_a.backgroundColor = "#fff");
+      (_b = containerElement.style).border || (_b.border = "1px solid black");
+      (_c = containerElement.style).borderRadius || (_c.borderRadius = "8px");
+      (_d = containerElement.style).boxSizing || (_d.boxSizing = "border-box");
+      (_e = containerElement.style).padding || (_e.padding = "0");
+      (_f = containerElement.style).width || (_f.width = "100%");
+      (_g = containerElement.style).height || (_g.height = containerElement.style.height || "300px");
+      containerElement.style.minHeight = "200px";
+      containerElement.style.flexGrow = "1";
+      (_h = containerElement.style).overflow || (_h.overflow = "hidden");
+      (_i = containerElement.style).resize || (_i.resize = "vertical");
+    }
+    const className = "livecodes";
+    const preExistingIframe = containerElement.querySelector(
+      `iframe.${className}`
+    );
+    const frame = preExistingIframe || document.createElement("iframe");
+    frame.classList.add(className);
+    frame.setAttribute(
+      "allow",
+      "accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share"
+    );
+    frame.setAttribute("allowtransparency", "true");
+    frame.setAttribute("allowpaymentrequest", "true");
+    frame.setAttribute("allowfullscreen", "true");
+    frame.setAttribute(
+      "sandbox",
+      "allow-same-origin allow-downloads allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-presentation allow-scripts"
+    );
+    const iframeLoading = loading === "eager" ? "eager" : "lazy";
+    frame.setAttribute("loading", iframeLoading);
+    if (isHeadless) {
+      hideElement(frame);
+    } else {
+      frame.style.height = "100%";
+      frame.style.minHeight = "200px";
+      frame.style.width = "100%";
+      frame.style.margin = "0";
+      frame.style.border = "0";
+      frame.style.borderRadius = containerElement.style.borderRadius;
+    }
+    registerEventHandler(function initHandler(e) {
+      var _a2;
+      if (e.source !== frame.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-init") {
+        return;
+      }
+      removeEventListener("message", initHandler);
+      appVersion = Number(e.data.payload.appVersion.replace(/^v/, ""));
+    });
+    if (!appVersion || appVersion < 46) {
+      registerEventHandler(function configHandler(e) {
+        var _a2, _b2;
+        if (e.source !== frame.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-get-config") {
+          return;
+        }
+        removeEventListener("message", configHandler);
+        (_b2 = frame.contentWindow) == null ? void 0 : _b2.postMessage({ type: "livecodes-config", payload: config }, origin);
+      });
+    }
+    frame.onload = () => {
+      resolve(frame);
+    };
+    frame.src = playgroundUrl.href;
+    if (!preExistingIframe) {
+      containerElement.appendChild(frame);
+    }
+  });
+  const iframe = await createIframe();
+  const livecodesReady = new Promise((resolve) => {
+    registerEventHandler(function readyHandler(e) {
+      var _a;
+      if (e.source !== iframe.contentWindow || e.origin !== origin || ((_a = e.data) == null ? void 0 : _a.type) !== "livecodes-ready") {
+        return;
+      }
+      removeEventListener("message", readyHandler);
+      resolve();
+      livecodesReady.settled = true;
+    });
+  });
+  const loadLivecodes = () => destroyed ? Promise.reject(alreadyDestroyedMessage) : new Promise(async (resolve) => {
+    var _a;
+    if (livecodesReady.settled)
+      resolve();
+    const message = { type: "livecodes-load" };
+    (_a = iframe.contentWindow) == null ? void 0 : _a.postMessage(message, origin);
+    await livecodesReady;
+    resolve();
+  });
+  const callAPI = (method, args) => new Promise(async (resolve, reject) => {
+    var _a;
+    if (destroyed) {
+      return reject(alreadyDestroyedMessage);
+    }
+    await loadLivecodes();
+    const id = getRandomString();
+    registerEventHandler(function handler(e) {
+      var _a2, _b;
+      if (e.source !== iframe.contentWindow || e.origin !== origin || ((_a2 = e.data) == null ? void 0 : _a2.type) !== "livecodes-api-response" || ((_b = e.data) == null ? void 0 : _b.id) !== id) {
+        return;
+      }
+      if (e.data.method === method) {
+        removeEventListener("message", handler);
+        const payload = e.data.payload;
+        if (payload == null ? void 0 : payload.error) {
+          reject(payload.error);
+        } else {
+          resolve(payload);
+        }
+      }
+    });
+    (_a = iframe.contentWindow) == null ? void 0 : _a.postMessage({ method, id, args }, origin);
+  });
+  const watchers = {};
+  const sdkEvents = ["load", "ready", "code", "console", "tests", "destroy"];
+  const watch2 = (event, fn) => {
+    var _a;
+    if (destroyed) {
+      throw new Error(alreadyDestroyedMessage);
+    }
+    if (!sdkEvents.includes(event))
+      return { remove: () => void 0 };
+    callAPI("watch", [event]);
+    if (!watchers[event]) {
+      watchers[event] = [];
+    }
+    (_a = watchers[event]) == null ? void 0 : _a.push(fn);
+    return {
+      remove: () => {
+        var _a2, _b;
+        watchers[event] = (_a2 = watchers[event]) == null ? void 0 : _a2.filter((w) => w !== fn);
+        if (((_b = watchers[event]) == null ? void 0 : _b.length) === 0) {
+          callAPI("watch", [event, "unsubscribe"]);
+        }
+      }
+    };
+  };
+  const mapEvent = (event) => ({
+    "livecodes-app-loaded": "load",
+    "livecodes-ready": "ready",
+    "livecodes-change": "code",
+    "livecodes-console": "console",
+    "livecodes-test-results": "tests",
+    "livecodes-destroy": "destroy"
+  })[event];
+  registerEventHandler(async function watchHandler(e) {
+    var _a, _b, _c, _d;
+    const sdkEvent = mapEvent((_b = (_a = e.data) == null ? void 0 : _a.type) != null ? _b : "");
+    if (e.source !== iframe.contentWindow || e.origin !== origin || !sdkEvent || !watchers[sdkEvent]) {
+      return;
+    }
+    const data = (_c = e.data) == null ? void 0 : _c.payload;
+    (_d = watchers[sdkEvent]) == null ? void 0 : _d.forEach((fn) => {
+      fn(data);
+    });
+  });
+  const destroy = () => {
+    var _a;
+    (_a = iframe == null ? void 0 : iframe.remove) == null ? void 0 : _a.call(iframe);
+    Object.values(watchers).forEach((watcher) => {
+      watcher.length = 0;
+    });
+    eventHandlers.forEach((handler) => removeEventListener("message", handler));
+    eventHandlers.length = 0;
+    if (observer && containerElement) {
+      observer.unobserve(containerElement);
+    }
+    destroyed = true;
+  };
+  let observer;
+  if (loading === "lazy" && "IntersectionObserver" in window) {
+    observer = new IntersectionObserver(
+      (entries, observer2) => {
+        entries.forEach(async (entry) => {
+          if (entry.isIntersecting) {
+            await loadLivecodes();
+            observer2.unobserve(containerElement);
+          }
+        });
+      },
+      { rootMargin: "150px" }
+    );
+    observer.observe(containerElement);
+  }
+  function hideElement(el) {
+    el.style.position = "absolute";
+    el.style.top = "0";
+    el.style.visibility = "hidden";
+    el.style.opacity = "0";
+  }
+  const getRandomString = () => (String(Math.random()) + Date.now().toFixed()).replace("0.", "");
+  return {
+    load: () => loadLivecodes(),
+    run: () => callAPI("run"),
+    format: (allEditors) => callAPI("format", [allEditors]),
+    getShareUrl: (shortUrl) => callAPI("getShareUrl", [shortUrl]),
+    getConfig: (contentOnly) => callAPI("getConfig", [contentOnly]),
+    setConfig: (config2) => callAPI("setConfig", [config2]),
+    getCode: () => callAPI("getCode"),
+    show: (pane, options2) => callAPI("show", [pane, options2]),
+    runTests: () => callAPI("runTests"),
+    onChange: (fn) => watch2("code", fn),
+    watch: watch2,
+    exec: (command, ...args) => callAPI("exec", [command, ...args]),
+    destroy: () => {
+      if (destroyed) {
+        return Promise.reject(alreadyDestroyedMessage);
+      }
+      destroy();
+      return Promise.resolve();
+    }
+  };
+}
+function getPlaygroundUrl(options = {}) {
+  const {
+    appUrl = "https://livecodes.io",
+    params = {},
+    config = {},
+    headless,
+    import: importId,
+    lite,
+    view,
+    ...otherOptions
+  } = options;
+  let playgroundUrl;
+  try {
+    playgroundUrl = new URL(appUrl);
+  } catch (e) {
+    throw new Error(`${appUrl} is not a valid URL.`);
+  }
+  const hashParams = new URLSearchParams();
+  Object.entries(otherOptions).forEach(([key, value]) => {
+    if (value !== void 0) {
+      playgroundUrl.searchParams.set(key, String(value));
+    }
+  });
+  const isHeadless = options.view === "headless" || headless;
+  if (lite) {
+    console.warn(
+      `Deprecation notice: "lite" option is deprecated. Use "config: { mode: 'lite' }" instead.`
+    );
+    if (typeof config === "object" && config.mode == null) {
+      config.mode = "lite";
+    } else {
+      playgroundUrl.searchParams.set("lite", "true");
+    }
+  }
+  if (view) {
+    console.warn(
+      `Deprecation notice: The "view" option has been moved to "config.view". For headless mode use "headless: true".`
+    );
+    if (typeof config === "object" && config.view == null && view !== "headless") {
+      config.view = view;
+    } else {
+      playgroundUrl.searchParams.set("view", view);
+    }
+  }
+  if (typeof config === "string") {
+    try {
+      new URL(config);
+      playgroundUrl.searchParams.set("config", encodeURIComponent(config));
+    } catch (e) {
+      throw new Error(`"config" is not a valid URL or configuration object.`);
+    }
+  } else if (config && typeof config === "object" && Object.keys(config).length > 0) {
+    if (config.title && config.title !== "Untitled Project") {
+      playgroundUrl.searchParams.set("title", config.title);
+    }
+    if (config.description && config.description.length > 0) {
+      playgroundUrl.searchParams.set("description", config.description);
+    }
+    hashParams.set("config", "code/" + (0, import_lz_string.compressToEncodedURIComponent)(JSON.stringify(config)));
+  }
+  if (params && typeof params === "object" && Object.keys(params).length > 0) {
+    try {
+      hashParams.set("params", (0, import_lz_string.compressToEncodedURIComponent)(JSON.stringify(params)));
+    } catch (e) {
+      Object.keys(params).forEach((param) => {
+        playgroundUrl.searchParams.set(param, encodeURIComponent(String(params[param])));
+      });
+    }
+  }
+  if (importId) {
+    playgroundUrl.searchParams.set("x", encodeURIComponent(importId));
+  }
+  if (isHeadless) {
+    playgroundUrl.searchParams.set("headless", "true");
+  }
+  if (hashParams.toString().length > 0) {
+    playgroundUrl.hash = hashParams.toString();
+  }
+  return playgroundUrl.href;
+}
+
+// src/sdk/vue.ts
+var props = {
+  appUrl: String,
+  config: [Object, String],
+  headless: Boolean,
+  import: String,
+  lite: Boolean,
+  loading: String,
+  params: Object,
+  template: String,
+  view: String,
+  height: String
+};
+var clone = (obj) => JSON.parse(JSON.stringify(obj));
+var LiveCodes = {
+  props,
+  emits: ["sdkReady"],
+  setup(props2, ctx) {
+    const { height: _height, ...options } = props2;
+    const containerRef = ref();
+    const height = ref(_height || "");
+    const playground = ref();
+    const { config, ...otherOptions } = options;
+    let configCache = JSON.stringify(config);
+    let otherOptionsCache = JSON.stringify(otherOptions);
+    onMounted(() => {
+      if (!containerRef.value)
+        return;
+      createPlayground(containerRef.value, clone(options)).then((sdk) => {
+        playground.value = sdk;
+        ctx.emit("sdkReady", sdk);
+      });
+    });
+    watch(props2, async (newProps) => {
+      var _a;
+      if (!containerRef.value || !playground.value)
+        return;
+      const { height: _height2, ...options2 } = newProps;
+      height.value = _height2 || "";
+      let { config: config2, ...otherOptions2 } = options2;
+      if (typeof config2 === "string") {
+        config2 = await fetch(config2).then((res) => res.json());
+      }
+      if (JSON.stringify(otherOptions2) !== otherOptionsCache) {
+        await ((_a = playground.value) == null ? void 0 : _a.destroy());
+        createPlayground(containerRef.value, clone(options2)).then((sdk) => {
+          playground.value = sdk;
+          ctx.emit("sdkReady", sdk);
+        });
+      } else if (JSON.stringify(config2) !== configCache) {
+        playground.value.setConfig(clone(config2) || {});
+      }
+      configCache = JSON.stringify(config2);
+      otherOptionsCache = JSON.stringify(otherOptions2);
+    });
+    onUnmounted(() => {
+      var _a;
+      (_a = playground.value) == null ? void 0 : _a.destroy();
+    });
+    return () => {
+      var _a, _b;
+      return h(
+        "div",
+        {
+          ref: containerRef,
+          "data-height": height.value
+        },
+        ((_b = (_a = ctx.slots).default) == null ? void 0 : _b.call(_a)) || ""
+      );
+    };
+  }
+};
+var vue_default = LiveCodes;
+export {
+  vue_default as default
+};
