@@ -2,9 +2,9 @@
 
 An object that represents the LiveCodes playground instance.
 
-The object exposes multiple [methods](https://livecodes.io/docs/sdk/js-ts/#sdk-methods) that can be used to interact with the playground.
+The object exposes multiple [methods](https://play.nitrocode.ir/docs/sdk/js-ts/#sdk-methods) that can be used to interact with the playground.
 
-See [docs](https://livecodes.io/docs/sdk/js-ts) for details.
+See [docs](https://play.nitrocode.ir/docs/sdk/js-ts) for details.
 
 ## Extends
 
@@ -42,7 +42,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:211](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L211)
+[models.ts:211](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L211)
 
 ***
 
@@ -52,7 +52,7 @@ createPlayground("#container").then(async (playground) => {
 
 Executes custom commands, including: `"setBroadcastToken"` and `"showVersion"`.
 
-See [docs](https://livecodes.io/docs/sdk/js-ts#exec) for details.
+See [docs](https://play.nitrocode.ir/docs/sdk/js-ts#exec) for details.
 
 #### Parameters
 
@@ -70,7 +70,7 @@ See [docs](https://livecodes.io/docs/sdk/js-ts#exec) for details.
 
 #### Defined in
 
-[models.ts:194](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L194)
+[models.ts:194](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L194)
 
 ***
 
@@ -108,7 +108,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:31](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L31)
+[models.ts:31](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L31)
 
 ***
 
@@ -118,7 +118,7 @@ createPlayground("#container").then(async (playground) => {
 
 Gets the playground code (including source code, source language and compiled code) for each editor (markup, style, script), in addition to result page HTML.
 
-See [Code](https://livecodes.io/docs/api/interfaces/Code) for the structure of the returned object.
+See [Code](https://play.nitrocode.ir/docs/api/interfaces/Code) for the structure of the returned object.
 
 #### Returns
 
@@ -146,7 +146,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:105](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L105)
+[models.ts:105](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L105)
 
 ***
 
@@ -154,10 +154,10 @@ createPlayground("#container").then(async (playground) => {
 
 > **getConfig**: (`contentOnly`?) => `Promise`\<[`Config`](Config.md)\>
 
-Gets a [configuration object](https://livecodes.io/docs/configuration/configuration-object) representing the playground state.
+Gets a [configuration object](https://play.nitrocode.ir/docs/configuration/configuration-object) representing the playground state.
 
-This can be used to restore state if passed as an [EmbedOptions](https://livecodes.io/docs/sdk/js-ts#embed-options) property when [creating playgrounds](https://livecodes.io/docs/sdk/js-ts/#createplayground),
-or can be manipulated and loaded in run-time using [`setConfig`](https://livecodes.io/docs/sdk/js-ts#setconfig) method.
+This can be used to restore state if passed as an [EmbedOptions](https://play.nitrocode.ir/docs/sdk/js-ts#embed-options) property when [creating playgrounds](https://play.nitrocode.ir/docs/sdk/js-ts/#createplayground),
+or can be manipulated and loaded in run-time using [`setConfig`](https://play.nitrocode.ir/docs/sdk/js-ts#setconfig) method.
 
 #### Parameters
 
@@ -183,7 +183,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:64](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L64)
+[models.ts:64](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L64)
 
 ***
 
@@ -191,7 +191,7 @@ createPlayground("#container").then(async (playground) => {
 
 > **getShareUrl**: (`shortUrl`?) => `Promise`\<`string`\>
 
-Gets a [share url](https://livecodes.io/docs/features/share) for the current project.
+Gets a [share url](https://play.nitrocode.ir/docs/features/share) for the current project.
 
 By default, the url has a long query string representing the compressed encoded config object.
 If the argument `shortUrl` was set to `true`, a short url is generated.
@@ -221,7 +221,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:48](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L48)
+[models.ts:48](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L48)
 
 ***
 
@@ -231,7 +231,7 @@ createPlayground("#container").then(async (playground) => {
 
 Loads the playground, if not already loaded.
 
-When the embed option [loading](https://livecodes.io/docs/sdk/js-ts#loading) is set to `"click"`, the playground is not loaded automatically.
+When the embed option [loading](https://play.nitrocode.ir/docs/sdk/js-ts#loading) is set to `"click"`, the playground is not loaded automatically.
 Instead, a screen is shown with "Click to load" button. Calling the SDK method `load()` allows loading the playground.
 
 If the playground was not loaded, calling any other method will load the playground first before executing.
@@ -242,7 +242,7 @@ If the playground was not loaded, calling any other method will load the playgro
 
 #### Defined in
 
-[models.ts:298](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L298)
+[models.ts:298](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L298)
 
 ***
 
@@ -270,7 +270,7 @@ Runs a callback function when code changes.
 
 #### Deprecated
 
-Use [`watch`](https://livecodes.io/docs/sdk/js-ts#watch) method instead.
+Use [`watch`](https://play.nitrocode.ir/docs/sdk/js-ts#watch) method instead.
 
 #### Inherited from
 
@@ -278,7 +278,7 @@ Use [`watch`](https://livecodes.io/docs/sdk/js-ts#watch) method instead.
 
 #### Defined in
 
-[models.ts:142](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L142)
+[models.ts:142](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L142)
 
 ***
 
@@ -286,7 +286,7 @@ Use [`watch`](https://livecodes.io/docs/sdk/js-ts#watch) method instead.
 
 > **run**: () => `Promise`\<`void`\>
 
-Runs the [result page](https://livecodes.io/docs/features/result) (after any required compilation for code).
+Runs the [result page](https://play.nitrocode.ir/docs/features/result) (after any required compilation for code).
 
 #### Returns
 
@@ -309,7 +309,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:14](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L14)
+[models.ts:14](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L14)
 
 ***
 
@@ -317,7 +317,7 @@ createPlayground("#container").then(async (playground) => {
 
 > **runTests**: () => `Promise`\<`object`\>
 
-Runs project [tests](https://livecodes.io/docs/features/tests) (if present) and gets test results.
+Runs project [tests](https://play.nitrocode.ir/docs/features/tests) (if present) and gets test results.
 
 #### Returns
 
@@ -343,7 +343,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:135](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L135)
+[models.ts:135](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L135)
 
 ***
 
@@ -384,7 +384,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:84](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L84)
+[models.ts:84](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L84)
 
 ***
 
@@ -394,7 +394,7 @@ createPlayground("#container").then(async (playground) => {
 
 Shows the selected panel.
 
-See [docs](https://livecodes.io/docs/sdk/js-ts#show) for details.
+See [docs](https://play.nitrocode.ir/docs/sdk/js-ts#show) for details.
 
 #### Parameters
 
@@ -431,7 +431,7 @@ await playground.show("console", { full: true });
 
 #### Defined in
 
-[models.ts:119](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L119)
+[models.ts:119](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L119)
 
 ***
 
@@ -448,7 +448,7 @@ In some events, the callback function will be called with an object that supplie
 
 The watch method returns an object with a single method (`remove`), which when called will remove the callback from watching further events.
 
-See [docs](https://livecodes.io/docs/sdk/js-ts#watch) for details.
+See [docs](https://play.nitrocode.ir/docs/sdk/js-ts#watch) for details.
 
 #### Example
 
@@ -489,4 +489,4 @@ createPlayground("#container").then((playground) => {
 
 #### Defined in
 
-[models.ts:187](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L187)
+[models.ts:187](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L187)

@@ -1,6 +1,6 @@
 # Interface: ContentConfig
 
-The properties that define the content of the current [project](https://livecodes.io/docs/features/projects).
+The properties that define the content of the current [project](https://play.nitrocode.ir/docs/features/projects).
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 #### Defined in
 
-[models.ts:455](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L455)
+[models.ts:455](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L455)
 
 ***
 
@@ -26,11 +26,11 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 > **cssPreset**: [`CssPresetId`](../type-aliases/CssPresetId.md)
 
-[CSS Preset](https://livecodes.io/docs/features/external-resources#css-presets) to use.
+[CSS Preset](https://play.nitrocode.ir/docs/features/external-resources#css-presets) to use.
 
 #### Defined in
 
-[models.ts:502](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L502)
+[models.ts:502](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L502)
 
 ***
 
@@ -38,7 +38,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 > **customSettings**: `object`
 
-Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) for the current project.
+Defines [custom settings](https://play.nitrocode.ir/docs/advanced/custom-settings) for the current project.
 
 #### adoc
 
@@ -950,7 +950,7 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 #### Defined in
 
-[models.ts:514](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L514)
+[models.ts:514](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L514)
 
 ***
 
@@ -958,8 +958,8 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **description**: `string`
 
-Project description. Used in [project](https://livecodes.io/docs/features/projects) search
-and [result page](https://livecodes.io/docs/features/result) description meta tag.
+Project description. Used in [project](https://play.nitrocode.ir/docs/features/projects) search
+and [result page](https://play.nitrocode.ir/docs/features/result) description meta tag.
 
 #### Default
 
@@ -969,7 +969,7 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 
 #### Defined in
 
-[models.ts:425](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L425)
+[models.ts:425](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L425)
 
 ***
 
@@ -977,7 +977,7 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 
 > **head**: `string`
 
-Content added to the [result page](https://livecodes.io/docs/features/result) `<head>` element.
+Content added to the [result page](https://play.nitrocode.ir/docs/features/result) `<head>` element.
 
 #### Default
 
@@ -987,7 +987,7 @@ Content added to the [result page](https://livecodes.io/docs/features/result) `<
 
 #### Defined in
 
-[models.ts:431](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L431)
+[models.ts:431](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L431)
 
 ***
 
@@ -995,7 +995,7 @@ Content added to the [result page](https://livecodes.io/docs/features/result) `<
 
 > **htmlAttrs**: `string` \| `Record`\<`string`, `string`\>
 
-Attributes added to the [result page](https://livecodes.io/docs/features/result) `<html>` element.
+Attributes added to the [result page](https://play.nitrocode.ir/docs/features/result) `<html>` element.
 It can be an object or a string.
 
 #### Example
@@ -1007,7 +1007,7 @@ It can be an object or a string.
 
 #### Defined in
 
-[models.ts:440](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L440)
+[models.ts:440](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L440)
 
 ***
 
@@ -1015,7 +1015,7 @@ It can be an object or a string.
 
 > **imports**: `object`
 
-Allows specifying custom [import maps](https://github.com/WICG/import-maps) for [module imports](https://livecodes.io/docs/features/module-resolution#custom-module-resolution).
+Allows specifying custom [import maps](https://github.com/WICG/import-maps) for [module imports](https://play.nitrocode.ir/docs/features/module-resolution#custom-module-resolution).
 
 **Example**
 
@@ -1035,8 +1035,8 @@ results in the following import map:
   }
 </script>
 ```
-See docs for [Imports](https://livecodes.io/docs/configuration/configuration-object#imports)
-and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolution/#custom-module-resolution)
+See docs for [Imports](https://play.nitrocode.ir/docs/configuration/configuration-object#imports)
+and [Custom Module Resolution](https://play.nitrocode.ir/docs/features/module-resolution/#custom-module-resolution)
 
 #### Index Signature
 
@@ -1044,7 +1044,7 @@ and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolut
 
 #### Defined in
 
-[models.ts:540](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L540)
+[models.ts:540](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L540)
 
 ***
 
@@ -1054,11 +1054,11 @@ and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolut
 
 List of enabled languages.
 
-Defaults to all supported languages in full app and only current editor languages in [embeds](https://livecodes.io/docs/features/embeds).
+Defaults to all supported languages in full app and only current editor languages in [embeds](https://play.nitrocode.ir/docs/features/embeds).
 
 #### Defined in
 
-[models.ts:462](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L462)
+[models.ts:462](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L462)
 
 ***
 
@@ -1068,7 +1068,7 @@ Defaults to all supported languages in full app and only current editor language
 
 An object that configures the language and content of the markup editor.
 
-See [docs](https://livecodes.io/docs/configuration/configuration-object/#markup) for details.
+See [docs](https://play.nitrocode.ir/docs/configuration/configuration-object/#markup) for details.
 
 #### content?
 
@@ -1132,9 +1132,9 @@ This can be useful in embedded playgrounds (e.g. for hiding unnecessary code).
 
 > **language**: [`Language`](../../type-aliases/Language.md)
 
-A language name, extension or alias (as defined in [language documentations](https://livecodes.io/docs/languages/)).
+A language name, extension or alias (as defined in [language documentations](https://play.nitrocode.ir/docs/languages/)).
 
-For the list of supported values, see [Language](https://livecodes.io/docs/api/type-aliases/Language)
+For the list of supported values, see [Language](https://play.nitrocode.ir/docs/api/type-aliases/Language)
 
 #### order?
 
@@ -1164,7 +1164,7 @@ The initial position of the cursor in the code editor.
 
 > `optional` **selector**: `string`
 
-A CSS selector to load content from [DOM import](https://livecodes.io/docs/features/import#import-code-from-dom).
+A CSS selector to load content from [DOM import](https://play.nitrocode.ir/docs/features/import#import-code-from-dom).
 
 #### title?
 
@@ -1182,7 +1182,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:470](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L470)
+[models.ts:470](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L470)
 
 ***
 
@@ -1190,13 +1190,13 @@ overriding the default title set to the language name
 
 > **processors**: [`Processor`](../type-aliases/Processor.md)[]
 
-List of enabled [CSS processors](https://livecodes.io/docs/features/css/#css-processors).
+List of enabled [CSS processors](https://play.nitrocode.ir/docs/features/css/#css-processors).
 
-For the list of available processors, see [Processor](https://livecodes.io/docs/api/internal/type-aliases/Processor)
+For the list of available processors, see [Processor](https://play.nitrocode.ir/docs/api/internal/type-aliases/Processor)
 
 #### Defined in
 
-[models.ts:509](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L509)
+[models.ts:509](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L509)
 
 ***
 
@@ -1206,7 +1206,7 @@ For the list of available processors, see [Processor](https://livecodes.io/docs/
 
 An object that configures the language and content of the script editor.
 
-See [docs](https://livecodes.io/docs/configuration/configuration-object/#markup) for details.
+See [docs](https://play.nitrocode.ir/docs/configuration/configuration-object/#markup) for details.
 
 #### content?
 
@@ -1270,9 +1270,9 @@ This can be useful in embedded playgrounds (e.g. for hiding unnecessary code).
 
 > **language**: [`Language`](../../type-aliases/Language.md)
 
-A language name, extension or alias (as defined in [language documentations](https://livecodes.io/docs/languages/)).
+A language name, extension or alias (as defined in [language documentations](https://play.nitrocode.ir/docs/languages/)).
 
-For the list of supported values, see [Language](https://livecodes.io/docs/api/type-aliases/Language)
+For the list of supported values, see [Language](https://play.nitrocode.ir/docs/api/type-aliases/Language)
 
 #### order?
 
@@ -1302,7 +1302,7 @@ The initial position of the cursor in the code editor.
 
 > `optional` **selector**: `string`
 
-A CSS selector to load content from [DOM import](https://livecodes.io/docs/features/import#import-code-from-dom).
+A CSS selector to load content from [DOM import](https://play.nitrocode.ir/docs/features/import#import-code-from-dom).
 
 #### title?
 
@@ -1320,7 +1320,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:486](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L486)
+[models.ts:486](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L486)
 
 ***
 
@@ -1328,11 +1328,11 @@ overriding the default title set to the language name
 
 > **scripts**: `string`[]
 
-List of URLs for [external scripts](https://livecodes.io/docs/features/external-resources) to add to the [result page](https://livecodes.io/docs/features/result).
+List of URLs for [external scripts](https://play.nitrocode.ir/docs/features/external-resources) to add to the [result page](https://play.nitrocode.ir/docs/features/result).
 
 #### Defined in
 
-[models.ts:496](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L496)
+[models.ts:496](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L496)
 
 ***
 
@@ -1342,7 +1342,7 @@ List of URLs for [external scripts](https://livecodes.io/docs/features/external-
 
 An object that configures the language and content of the style editor.
 
-See [docs](https://livecodes.io/docs/configuration/configuration-object/#markup) for details.
+See [docs](https://play.nitrocode.ir/docs/configuration/configuration-object/#markup) for details.
 
 #### content?
 
@@ -1406,9 +1406,9 @@ This can be useful in embedded playgrounds (e.g. for hiding unnecessary code).
 
 > **language**: [`Language`](../../type-aliases/Language.md)
 
-A language name, extension or alias (as defined in [language documentations](https://livecodes.io/docs/languages/)).
+A language name, extension or alias (as defined in [language documentations](https://play.nitrocode.ir/docs/languages/)).
 
-For the list of supported values, see [Language](https://livecodes.io/docs/api/type-aliases/Language)
+For the list of supported values, see [Language](https://play.nitrocode.ir/docs/api/type-aliases/Language)
 
 #### order?
 
@@ -1438,7 +1438,7 @@ The initial position of the cursor in the code editor.
 
 > `optional` **selector**: `string`
 
-A CSS selector to load content from [DOM import](https://livecodes.io/docs/features/import#import-code-from-dom).
+A CSS selector to load content from [DOM import](https://play.nitrocode.ir/docs/features/import#import-code-from-dom).
 
 #### title?
 
@@ -1456,7 +1456,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:478](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L478)
+[models.ts:478](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L478)
 
 ***
 
@@ -1464,11 +1464,11 @@ overriding the default title set to the language name
 
 > **stylesheets**: `string`[]
 
-List of URLs for [external stylesheets](https://livecodes.io/docs/features/external-resources) to add to the [result page](https://livecodes.io/docs/features/result).
+List of URLs for [external stylesheets](https://play.nitrocode.ir/docs/features/external-resources) to add to the [result page](https://play.nitrocode.ir/docs/features/result).
 
 #### Defined in
 
-[models.ts:491](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L491)
+[models.ts:491](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L491)
 
 ***
 
@@ -1477,7 +1477,7 @@ List of URLs for [external stylesheets](https://livecodes.io/docs/features/exter
 > **tags**: `string`[]
 
 Project tags.
-Used in [project](https://livecodes.io/docs/features/projects) filter and search.
+Used in [project](https://play.nitrocode.ir/docs/features/projects) filter and search.
 
 #### Default
 
@@ -1487,7 +1487,7 @@ Used in [project](https://livecodes.io/docs/features/projects) filter and search
 
 #### Defined in
 
-[models.ts:447](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L447)
+[models.ts:447](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L447)
 
 ***
 
@@ -1495,12 +1495,12 @@ Used in [project](https://livecodes.io/docs/features/projects) filter and search
 
 > **tests**: `undefined` \| `object`
 
-Configures the [language](https://livecodes.io/docs/features/tests#supported-languages)
-and content of [tests](https://livecodes.io/docs/features/tests).
+Configures the [language](https://play.nitrocode.ir/docs/features/tests#supported-languages)
+and content of [tests](https://play.nitrocode.ir/docs/features/tests).
 
 #### Defined in
 
-[models.ts:576](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L576)
+[models.ts:576](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L576)
 
 ***
 
@@ -1509,7 +1509,7 @@ and content of [tests](https://livecodes.io/docs/features/tests).
 > **title**: `string`
 
 Project title.
-This is used as [result page](https://livecodes.io/docs/features/result) title and title meta tag.
+This is used as [result page](https://play.nitrocode.ir/docs/features/result) title and title meta tag.
 Also used in project search.
 
 #### Default
@@ -1520,7 +1520,7 @@ Also used in project search.
 
 #### Defined in
 
-[models.ts:418](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L418)
+[models.ts:418](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L418)
 
 ***
 
@@ -1528,12 +1528,12 @@ Also used in project search.
 
 > **types**: `object`
 
-Allows providing custom TypeScript type declarations for better [editor intellisense](https://livecodes.io/docs/features/intellisense).
+Allows providing custom TypeScript type declarations for better [editor intellisense](https://play.nitrocode.ir/docs/features/intellisense).
 
 It is an object where each key represents module name and value represents the types.
 
-See docs for [Types](https://livecodes.io/docs/configuration/configuration-object#types)
-and [Custom Types](https://livecodes.io/docs/features/intellisense#custom-types)
+See docs for [Types](https://play.nitrocode.ir/docs/configuration/configuration-object#types)
+and [Custom Types](https://play.nitrocode.ir/docs/features/intellisense#custom-types)
 
 #### Examples
 
@@ -1558,7 +1558,7 @@ and [Custom Types](https://livecodes.io/docs/features/intellisense#custom-types)
 
 #### Defined in
 
-[models.ts:570](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L570)
+[models.ts:570](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L570)
 
 ***
 
@@ -1568,8 +1568,8 @@ and [Custom Types](https://livecodes.io/docs/features/intellisense#custom-types)
 
 This is a read-only property which specifies the current LiveCodes version.
 
-Version specified in [exported](https://livecodes.io/docs/features/export) projects allows automatically upgrading the project configuration when imported by an app with a newer version.
+Version specified in [exported](https://play.nitrocode.ir/docs/features/export) projects allows automatically upgrading the project configuration when imported by an app with a newer version.
 
 #### Defined in
 
-[models.ts:583](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L583)
+[models.ts:583](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L583)

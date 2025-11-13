@@ -4,6 +4,7 @@ export const allowedOrigin = (origin = location.origin) =>
       (origin.endsWith('livecodes.io') ||
         origin.endsWith('livecodes.pages.dev') ||
         origin.endsWith('localpen.pages.dev') ||
+        origin.endsWith('play.nitrocode.ir') ||
         origin.includes('127.0.0.1') ||
         origin.includes('localhost:') ||
         origin.endsWith('localhost') ||

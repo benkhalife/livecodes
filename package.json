@@ -1,14 +1,15 @@
 {
-  "name": "livecodes",
-  "version": "0.0.0",
+  "name": "@benkhalife/livecodes",
+  "version": "1.0.2",
   "appVersion": "47",
-  "description": "Code Playground That Just Works!",
-  "author": "Hatem Hosny",
+  "description": "My customized LiveCodes build for Nitrocode",
+  "author": "Benyamin khalife info@nitrocode.ir",
   "license": "MIT",
+  "homepage": "https://nitrocode.ir",
   "keywords": [],
-  "private": true,
+  "private": false,
   "repository": {
-    "url": "https://github.com/live-codes/livecodes"
+    "url": "https://github.com/benkhalife/livecodes"
   },
   "scripts": {
     "start": "run-p copy:assets watch serve",
@@ -158,15 +159,39 @@
     "singleQuote": true,
     "trailingComma": "all",
     "printWidth": 100,
-    "plugins": ["prettier-plugin-organize-imports"]
+    "plugins": [
+      "prettier-plugin-organize-imports"
+    ]
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
-    "setupFiles": ["<rootDir>/.jest/setup.ts"],
-    "testPathIgnorePatterns": ["/node_modules/", "/build/", "/src/modules/"],
-    "collectCoverageFrom": ["src/**/*.ts", "!**/build/**", "!**/vendor/**", "!src/modules/**"],
-    "coverageReporters": ["json", "html", "lcov"],
+    "setupFiles": [
+      "<rootDir>/.jest/setup.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/",
+      "/src/modules/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!**/build/**",
+      "!**/vendor/**",
+      "!src/modules/**"
+    ],
+    "coverageReporters": [
+      "json",
+      "html",
+      "lcov"
+    ],
     "resolveJsonModule": true
-  }
+  },
+  "files": [
+    "build/livecodes",
+    "build/sdk",
+    "build/stories",
+    "README.md",
+    "package.json"
+  ]
 }

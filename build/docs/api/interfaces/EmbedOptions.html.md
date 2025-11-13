@@ -2,7 +2,7 @@
 
 An object that represents the playground embed options.
 
-See [docs](https://livecodes.io/docs/sdk/js-ts/#embed-options) for details.
+See [docs](https://play.nitrocode.ir/docs/sdk/js-ts/#embed-options) for details.
 
 ## Properties
 
@@ -11,19 +11,19 @@ See [docs](https://livecodes.io/docs/sdk/js-ts/#embed-options) for details.
 > `optional` **appUrl**: `string`
 
 Allows loading the playground from a custom URL
-(e.g. a [self-hosted app](https://livecodes.io/docs/features/self-hosting) or a [permanent URL](https://livecodes.io/docs/features/permanent-url)).
+(e.g. a [self-hosted app](https://play.nitrocode.ir/docs/features/self-hosting) or a [permanent URL](https://play.nitrocode.ir/docs/features/permanent-url)).
 
 If supplied with an invalid URL, an error is thrown.
 
 #### Default
 
 ```ts
-'https://livecodes.io'
+'https://play.nitrocode.ir'
 ```
 
 #### Defined in
 
-[models.ts:314](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L314)
+[models.ts:314](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L314)
 
 ***
 
@@ -31,7 +31,7 @@ If supplied with an invalid URL, an error is thrown.
 
 > `optional` **config**: `string` \| `Partial`\<[`Config`](Config.md)\>
 
-A [configuration object](https://livecodes.io/docs/configuration/configuration-object) or a URL to a JSON file representing a configuration object to load.
+A [configuration object](https://play.nitrocode.ir/docs/configuration/configuration-object) or a URL to a JSON file representing a configuration object to load.
 
 If supplied and is not an object or a valid URL, an error is thrown.
 
@@ -43,7 +43,7 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 #### Defined in
 
-[models.ts:346](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L346)
+[models.ts:346](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L346)
 
 ***
 
@@ -51,7 +51,7 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 > `optional` **headless**: `boolean`
 
-If `true`, the playground is loaded in [headless mode](https://livecodes.io/docs/sdk/headless).
+If `true`, the playground is loaded in [headless mode](https://play.nitrocode.ir/docs/sdk/headless).
 
 #### Default
 
@@ -61,7 +61,7 @@ false
 
 #### Defined in
 
-[models.ts:352](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L352)
+[models.ts:352](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L352)
 
 ***
 
@@ -69,11 +69,11 @@ false
 
 > `optional` **import**: `string`
 
-A resource to [import](https://livecodes.io/docs/features/import) (from any of the supported [sources](https://livecodes.io/docs/features/import#sources)).
+A resource to [import](https://play.nitrocode.ir/docs/features/import) (from any of the supported [sources](https://play.nitrocode.ir/docs/features/import#sources)).
 
 #### Defined in
 
-[models.ts:357](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L357)
+[models.ts:357](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L357)
 
 ***
 
@@ -85,7 +85,7 @@ A resource to [import](https://livecodes.io/docs/features/import) (from any of t
 
 Use `{ config: { mode: "lite" } }` instead
 
-If `true`, the playground is loaded in [lite mode](https://livecodes.io/docs/features/lite).
+If `true`, the playground is loaded in [lite mode](https://play.nitrocode.ir/docs/features/lite).
 
 #### Default
 
@@ -95,7 +95,7 @@ false
 
 #### Defined in
 
-[models.ts:367](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L367)
+[models.ts:367](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L367)
 
 ***
 
@@ -117,7 +117,7 @@ Sets how the playground loads:
 
 #### Defined in
 
-[models.ts:377](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L377)
+[models.ts:377](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L377)
 
 ***
 
@@ -125,7 +125,7 @@ Sets how the playground loads:
 
 > `optional` **params**: `object`
 
-An object that represents the [URL Query parameters](https://livecodes.io/docs/configuration/query-params), that can be used to configure the playground.
+An object that represents the [URL Query parameters](https://play.nitrocode.ir/docs/configuration/query-params), that can be used to configure the playground.
 
 These 2 snippets produce similar output:
 
@@ -201,14 +201,14 @@ Sets the app UI language used.
 > `optional` **appUrl**: `string`
 
 Allows loading the playground from a custom URL
-(e.g. a [self-hosted app](https://livecodes.io/docs/features/self-hosting) or a [permanent URL](https://livecodes.io/docs/features/permanent-url)).
+(e.g. a [self-hosted app](https://play.nitrocode.ir/docs/features/self-hosting) or a [permanent URL](https://play.nitrocode.ir/docs/features/permanent-url)).
 
 If supplied with an invalid URL, an error is thrown.
 
 ##### Default
 
 ```ts
-'https://livecodes.io'
+'https://play.nitrocode.ir'
 ```
 
 #### art
@@ -272,7 +272,7 @@ If supplied with an invalid URL, an error is thrown.
 > `optional` **autosave**: `boolean`
 
 If `true`, the project is automatically saved on code change,
-after time [delay](https://livecodes.io/docs/configuration/configuration-object#delay).
+after time [delay](https://play.nitrocode.ir/docs/configuration/configuration-object#delay).
 
 ##### Default
 
@@ -297,7 +297,7 @@ false
 > `optional` **autoupdate**: `boolean`
 
 If `true`, the result page is automatically updated on code change,
-after time [delay](https://livecodes.io/docs/configuration/configuration-object#delay).
+after time [delay](https://play.nitrocode.ir/docs/configuration/configuration-object#delay).
 
 ##### Default
 
@@ -501,7 +501,7 @@ true
 
 > `optional` **config**: `string` \| `Partial`\<[`Config`](Config.md)\> & `string`
 
-A [configuration object](https://livecodes.io/docs/configuration/configuration-object) or a URL to a JSON file representing a configuration object to load.
+A [configuration object](https://play.nitrocode.ir/docs/configuration/configuration-object) or a URL to a JSON file representing a configuration object to load.
 
 If supplied and is not an object or a valid URL, an error is thrown.
 
@@ -599,13 +599,13 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 > `optional` **cssPreset**: [`CssPresetId`](../internal/type-aliases/CssPresetId.md)
 
-[CSS Preset](https://livecodes.io/docs/features/external-resources#css-presets) to use.
+[CSS Preset](https://play.nitrocode.ir/docs/features/external-resources#css-presets) to use.
 
 #### customSettings?
 
 > `optional` **customSettings**: `object`
 
-Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) for the current project.
+Defines [custom settings](https://play.nitrocode.ir/docs/advanced/custom-settings) for the current project.
 
 #### customSettings.adoc
 
@@ -1536,8 +1536,8 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 > `optional` **delay**: `number`
 
 Time delay (in milliseconds) following code change,
-after which the result page is updated (if [`autoupdate`](https://livecodes.io/docs/configuration/configuration-object#autoupdate) is `true`)
-and/or the project is saved (if [`autosave`](https://livecodes.io/docs/configuration/configuration-object#autosave) is `true`).
+after which the result page is updated (if [`autoupdate`](https://play.nitrocode.ir/docs/configuration/configuration-object#autoupdate) is `true`)
+and/or the project is saved (if [`autosave`](https://play.nitrocode.ir/docs/configuration/configuration-object#autosave) is `true`).
 
 ##### Default
 
@@ -1549,8 +1549,8 @@ and/or the project is saved (if [`autosave`](https://livecodes.io/docs/configura
 
 > `optional` **description**: `string`
 
-Project description. Used in [project](https://livecodes.io/docs/features/projects) search
-and [result page](https://livecodes.io/docs/features/result) description meta tag.
+Project description. Used in [project](https://play.nitrocode.ir/docs/features/projects) search
+and [result page](https://play.nitrocode.ir/docs/features/result) description meta tag.
 
 ##### Default
 
@@ -1590,7 +1590,7 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 
 > `optional` **editor**: `"auto"` \| `"monaco"` \| `"codemirror"` \| `"codejar"`
 
-Selects the [code editor](https://livecodes.io/docs/features/editor-settings#code-editor) to use.
+Selects the [code editor](https://play.nitrocode.ir/docs/features/editor-settings#code-editor) to use.
 
 If `undefined` (the default), Monaco editor is used on desktop,
 CodeMirror is used on mobile and in `simple` mode,
@@ -1608,15 +1608,15 @@ undefined
 
 > `optional` **editorMode**: `"vim"` \| `"emacs"`
 
-Sets [editor mode](https://livecodes.io/docs/features/editor-settings#editor-modes).
+Sets [editor mode](https://play.nitrocode.ir/docs/features/editor-settings#editor-modes).
 
 #### editorTheme?
 
 > `optional` **editorTheme**: `string` \| [`EditorTheme`](../internal/type-aliases/EditorTheme.md)[]
 
-Sets the [code editor](https://livecodes.io/docs/features/editor-settings) themes.
+Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) themes.
 
-See docs for [editor themes](https://livecodes.io/docs/configuration/configuration-object#editortheme) for details.
+See docs for [editor themes](https://play.nitrocode.ir/docs/configuration/configuration-object#editortheme) for details.
 
 ##### Examples
 
@@ -1664,7 +1664,7 @@ See docs for [editor themes](https://livecodes.io/docs/configuration/configurati
 
 > `optional` **emmet**: `boolean`
 
-Enables [Emmet](https://livecodes.io/docs/features/editor-settings#emmet).
+Enables [Emmet](https://play.nitrocode.ir/docs/features/editor-settings#emmet).
 
 ##### Default
 
@@ -1676,7 +1676,7 @@ true
 
 > `optional` **enableAI**: `boolean`
 
-If `true`, [AI code assistant](https://livecodes.io/docs/features/ai) is enabled.
+If `true`, [AI code assistant](https://play.nitrocode.ir/docs/features/ai) is enabled.
 
 ##### Default
 
@@ -1744,7 +1744,7 @@ false
 
 > `optional` **fontFamily**: `string`
 
-Sets the [code editor](https://livecodes.io/docs/features/editor-settings) font family.
+Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) font family.
 
 #### fontSize?
 
@@ -1752,7 +1752,7 @@ Sets the [code editor](https://livecodes.io/docs/features/editor-settings) font 
 
 Sets the font size.
 
-If `undefined` (the default), the font size is set to 14 for the full app and 12 for [embeds](https://livecodes.io/docs/features/embeds).
+If `undefined` (the default), the font size is set to 14 for the full app and 12 for [embeds](https://play.nitrocode.ir/docs/features/embeds).
 
 ##### Default
 
@@ -1764,7 +1764,7 @@ undefined
 
 > `optional` **formatOnsave**: `boolean`
 
-If `true`, the code is automatically [formatted](https://livecodes.io/docs/features/code-format) on saving the project.
+If `true`, the code is automatically [formatted](https://play.nitrocode.ir/docs/features/code-format) on saving the project.
 
 ##### Default
 
@@ -1856,7 +1856,7 @@ false
 
 > `optional` **head**: `string`
 
-Content added to the [result page](https://livecodes.io/docs/features/result) `<head>` element.
+Content added to the [result page](https://play.nitrocode.ir/docs/features/result) `<head>` element.
 
 ##### Default
 
@@ -1868,7 +1868,7 @@ Content added to the [result page](https://livecodes.io/docs/features/result) `<
 
 > `optional` **headless**: `boolean`
 
-If `true`, the playground is loaded in [headless mode](https://livecodes.io/docs/sdk/headless).
+If `true`, the playground is loaded in [headless mode](https://play.nitrocode.ir/docs/sdk/headless).
 
 ##### Default
 
@@ -1904,7 +1904,7 @@ false
 
 > `optional` **htmlAttrs**: `string` \| `Record`\<`string`, `string`\>
 
-Attributes added to the [result page](https://livecodes.io/docs/features/result) `<html>` element.
+Attributes added to the [result page](https://play.nitrocode.ir/docs/features/result) `<html>` element.
 It can be an object or a string.
 
 ##### Example
@@ -1934,13 +1934,13 @@ It can be an object or a string.
 
 > `optional` **import**: `string`
 
-A resource to [import](https://livecodes.io/docs/features/import) (from any of the supported [sources](https://livecodes.io/docs/features/import#sources)).
+A resource to [import](https://play.nitrocode.ir/docs/features/import) (from any of the supported [sources](https://play.nitrocode.ir/docs/features/import#sources)).
 
 #### imports?
 
 > `optional` **imports**: `object`
 
-Allows specifying custom [import maps](https://github.com/WICG/import-maps) for [module imports](https://livecodes.io/docs/features/module-resolution#custom-module-resolution).
+Allows specifying custom [import maps](https://github.com/WICG/import-maps) for [module imports](https://play.nitrocode.ir/docs/features/module-resolution#custom-module-resolution).
 
 **Example**
 
@@ -1960,8 +1960,8 @@ results in the following import map:
   }
 </script>
 ```
-See docs for [Imports](https://livecodes.io/docs/configuration/configuration-object#imports)
-and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolution/#custom-module-resolution)
+See docs for [Imports](https://play.nitrocode.ir/docs/configuration/configuration-object#imports)
+and [Custom Module Resolution](https://play.nitrocode.ir/docs/features/module-resolution/#custom-module-resolution)
 
 ##### Index Signature
 
@@ -2086,7 +2086,7 @@ otherwise horizontal.
 
 > `optional` **lineNumbers**: `boolean` \| `"relative"`
 
-Show line numbers in [code editor](https://livecodes.io/docs/features/editor-settings).
+Show line numbers in [code editor](https://play.nitrocode.ir/docs/features/editor-settings).
 
 ##### Default
 
@@ -2126,7 +2126,7 @@ true
 
 Use `{ config: { mode: "lite" } }` instead
 
-If `true`, the playground is loaded in [lite mode](https://livecodes.io/docs/features/lite).
+If `true`, the playground is loaded in [lite mode](https://play.nitrocode.ir/docs/features/lite).
 
 ##### Default
 
@@ -2220,7 +2220,7 @@ Sets how the playground loads:
 
 An object that configures the language and content of the markup editor.
 
-See [docs](https://livecodes.io/docs/configuration/configuration-object/#markup) for details.
+See [docs](https://play.nitrocode.ir/docs/configuration/configuration-object/#markup) for details.
 
 ##### Default
 
@@ -2290,9 +2290,9 @@ This can be useful in embedded playgrounds (e.g. for hiding unnecessary code).
 
 > **language**: [`Language`](../type-aliases/Language.md)
 
-A language name, extension or alias (as defined in [language documentations](https://livecodes.io/docs/languages/)).
+A language name, extension or alias (as defined in [language documentations](https://play.nitrocode.ir/docs/languages/)).
 
-For the list of supported values, see [Language](https://livecodes.io/docs/api/type-aliases/Language)
+For the list of supported values, see [Language](https://play.nitrocode.ir/docs/api/type-aliases/Language)
 
 #### markup.order?
 
@@ -2322,7 +2322,7 @@ The initial position of the cursor in the code editor.
 
 > `optional` **selector**: `string`
 
-A CSS selector to load content from [DOM import](https://livecodes.io/docs/features/import#import-code-from-dom).
+A CSS selector to load content from [DOM import](https://play.nitrocode.ir/docs/features/import#import-code-from-dom).
 
 #### markup.title?
 
@@ -2392,7 +2392,7 @@ overriding the default title set to the language name
 
 > `optional` **mode**: `"focus"` \| `"full"` \| `"result"` \| `"editor"` \| `"lite"` \| `"simple"` \| `"codeblock"`
 
-Sets the [display mode](https://livecodes.io/docs/features/display-modes).
+Sets the [display mode](https://play.nitrocode.ir/docs/features/display-modes).
 
 ##### Default
 
@@ -2444,7 +2444,7 @@ Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
 > `optional` **params**: \{ appUrl?: string \| undefined; params?: ... \| undefined; config?: string \| (Partial\<Config\> & string) \| undefined; headless?: boolean \| undefined; import?: string \| undefined; ... 485 more ...; compiled?: "" \| ... 5 more ... \| undefined; \} \| undefined
 
-An object that represents the [URL Query parameters](https://livecodes.io/docs/configuration/query-params), that can be used to configure the playground.
+An object that represents the [URL Query parameters](https://play.nitrocode.ir/docs/configuration/query-params), that can be used to configure the playground.
 
 These 2 snippets produce similar output:
 
@@ -2827,8 +2827,8 @@ createPlayground('#container', { params: { md: '# Hello World!' } });
 
 If `true`, editors are loaded in read-only mode, where the user is not allowed to change the code.
 
-By default, when readonly is set to true, the light-weight code editor [CodeJar](https://livecodes.io/docs/features/editor-settings#code-editor) is used.
-If you wish to use another editor, set the [editor](https://livecodes.io/docs/configuration/configuration-object#editor) property.
+By default, when readonly is set to true, the light-weight code editor [CodeJar](https://play.nitrocode.ir/docs/features/editor-settings#code-editor) is used.
+If you wish to use another editor, set the [editor](https://play.nitrocode.ir/docs/configuration/configuration-object#editor) property.
 
 ##### Default
 
@@ -2848,7 +2848,7 @@ false
 
 > `optional` **recoverUnsaved**: `boolean`
 
-Enables [recovering last unsaved project](https://livecodes.io/docs/features/recover) when the app is reopened.
+Enables [recovering last unsaved project](https://play.nitrocode.ir/docs/features/recover) when the app is reopened.
 
 ##### Default
 
@@ -3026,7 +3026,7 @@ true
 
 An object that configures the language and content of the script editor.
 
-See [docs](https://livecodes.io/docs/configuration/configuration-object/#markup) for details.
+See [docs](https://play.nitrocode.ir/docs/configuration/configuration-object/#markup) for details.
 
 ##### Default
 
@@ -3096,9 +3096,9 @@ This can be useful in embedded playgrounds (e.g. for hiding unnecessary code).
 
 > **language**: [`Language`](../type-aliases/Language.md)
 
-A language name, extension or alias (as defined in [language documentations](https://livecodes.io/docs/languages/)).
+A language name, extension or alias (as defined in [language documentations](https://play.nitrocode.ir/docs/languages/)).
 
-For the list of supported values, see [Language](https://livecodes.io/docs/api/type-aliases/Language)
+For the list of supported values, see [Language](https://play.nitrocode.ir/docs/api/type-aliases/Language)
 
 #### script.order?
 
@@ -3128,7 +3128,7 @@ The initial position of the cursor in the code editor.
 
 > `optional` **selector**: `string`
 
-A CSS selector to load content from [DOM import](https://livecodes.io/docs/features/import#import-code-from-dom).
+A CSS selector to load content from [DOM import](https://play.nitrocode.ir/docs/features/import#import-code-from-dom).
 
 #### script.title?
 
@@ -3162,7 +3162,7 @@ overriding the default title set to the language name
 
 > `optional` **semicolons**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use semi-colons.
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use semi-colons.
 
 ##### Default
 
@@ -3174,7 +3174,7 @@ true
 
 > `optional` **showSpacing**: `boolean`
 
-Enables [showing element spacing](https://livecodes.io/docs/features/result#show-spacings) in the result page.
+Enables [showing element spacing](https://play.nitrocode.ir/docs/features/result#show-spacings) in the result page.
 
 ##### Default
 
@@ -3186,7 +3186,7 @@ false
 
 > `optional` **singleQuote**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use single quotes instead of double quotes.
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use single quotes instead of double quotes.
 
 ##### Default
 
@@ -3272,7 +3272,7 @@ false
 
 An object that configures the language and content of the style editor.
 
-See [docs](https://livecodes.io/docs/configuration/configuration-object/#markup) for details.
+See [docs](https://play.nitrocode.ir/docs/configuration/configuration-object/#markup) for details.
 
 ##### Default
 
@@ -3342,9 +3342,9 @@ This can be useful in embedded playgrounds (e.g. for hiding unnecessary code).
 
 > **language**: [`Language`](../type-aliases/Language.md)
 
-A language name, extension or alias (as defined in [language documentations](https://livecodes.io/docs/languages/)).
+A language name, extension or alias (as defined in [language documentations](https://play.nitrocode.ir/docs/languages/)).
 
-For the list of supported values, see [Language](https://livecodes.io/docs/api/type-aliases/Language)
+For the list of supported values, see [Language](https://play.nitrocode.ir/docs/api/type-aliases/Language)
 
 #### style.order?
 
@@ -3374,7 +3374,7 @@ The initial position of the cursor in the code editor.
 
 > `optional` **selector**: `string`
 
-A CSS selector to load content from [DOM import](https://livecodes.io/docs/features/import#import-code-from-dom).
+A CSS selector to load content from [DOM import](https://play.nitrocode.ir/docs/features/import#import-code-from-dom).
 
 #### style.title?
 
@@ -3434,7 +3434,7 @@ overriding the default title set to the language name
 
 The number of spaces per indentation-level.
 
-Also used in [code formatting](https://livecodes.io/docs/features/code-format).
+Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-format).
 
 ##### Default
 
@@ -3466,21 +3466,21 @@ Also used in [code formatting](https://livecodes.io/docs/features/code-format).
 
 > `optional` **template**: [`TemplateName`](../internal/type-aliases/TemplateName.md)
 
-A [starter template](https://livecodes.io/docs/features/templates) to load.
-Allowed valued can be found [here](https://livecodes.io/docs/api/internal/type-aliases/TemplateName).
+A [starter template](https://play.nitrocode.ir/docs/features/templates) to load.
+Allowed valued can be found [here](https://play.nitrocode.ir/docs/api/internal/type-aliases/TemplateName).
 
 #### tests?
 
 > `optional` **tests**: (\{ language?: Language \| undefined; content?: string \| undefined; contentUrl?: string \| undefined; hiddenContent?: string \| undefined; hiddenContentUrl?: string \| undefined; ... 5 more ...; position?: EditorPosition \| undefined; \} \| undefined) & ("" \| ... 4 more ... \| "full")
 
-Configures the [language](https://livecodes.io/docs/features/tests#supported-languages)
-and content of [tests](https://livecodes.io/docs/features/tests).
+Configures the [language](https://play.nitrocode.ir/docs/features/tests#supported-languages)
+and content of [tests](https://play.nitrocode.ir/docs/features/tests).
 
 #### theme?
 
 > `optional` **theme**: [`Theme`](../internal/type-aliases/Theme.md)
 
-Sets the app [theme](https://livecodes.io/docs/features/themes) to light/dark mode.
+Sets the app [theme](https://play.nitrocode.ir/docs/features/themes) to light/dark mode.
 
 ##### Default
 
@@ -3506,7 +3506,7 @@ undefined
 > `optional` **title**: `string`
 
 Project title.
-This is used as [result page](https://livecodes.io/docs/features/result) title and title meta tag.
+This is used as [result page](https://play.nitrocode.ir/docs/features/result) title and title meta tag.
 Also used in project search.
 
 ##### Default
@@ -3531,7 +3531,7 @@ Also used in project search.
 
 > `optional` **trailingComma**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use [trailing commas](https://prettier.io/docs/en/options.html#trailing-commas).
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use [trailing commas](https://prettier.io/docs/en/options.html#trailing-commas).
 
 ##### Default
 
@@ -3567,12 +3567,12 @@ true
 
 > `optional` **types**: `object`
 
-Allows providing custom TypeScript type declarations for better [editor intellisense](https://livecodes.io/docs/features/intellisense).
+Allows providing custom TypeScript type declarations for better [editor intellisense](https://play.nitrocode.ir/docs/features/intellisense).
 
 It is an object where each key represents module name and value represents the types.
 
-See docs for [Types](https://livecodes.io/docs/configuration/configuration-object#types)
-and [Custom Types](https://livecodes.io/docs/features/intellisense#custom-types)
+See docs for [Types](https://play.nitrocode.ir/docs/configuration/configuration-object#types)
+and [Custom Types](https://play.nitrocode.ir/docs/features/intellisense#custom-types)
 
 ##### Examples
 
@@ -3609,7 +3609,7 @@ and [Custom Types](https://livecodes.io/docs/features/intellisense#custom-types)
 
 If `true`, lines are indented with tabs instead of spaces.
 
-Also used in [code formatting](https://livecodes.io/docs/features/code-format).
+Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-format).
 
 ##### Default
 
@@ -3631,7 +3631,7 @@ false
 
 This is a read-only property which specifies the current LiveCodes version.
 
-Version specified in [exported](https://livecodes.io/docs/features/export) projects allows automatically upgrading the project configuration when imported by an app with a newer version.
+Version specified in [exported](https://play.nitrocode.ir/docs/features/export) projects allows automatically upgrading the project configuration when imported by an app with a newer version.
 
 #### ~~view?~~
 
@@ -3642,9 +3642,9 @@ Version specified in [exported](https://livecodes.io/docs/features/export) proje
 The `view` option has been moved to `config.view`.
 For headless mode use `headless: true`.
 
-The [default view](https://livecodes.io/docs/features/default-view) for the playground.
+The [default view](https://play.nitrocode.ir/docs/features/default-view) for the playground.
 
-When set to `"headless"`, the playground is loaded in [headless mode](https://livecodes.io/docs/sdk/headless).
+When set to `"headless"`, the playground is loaded in [headless mode](https://play.nitrocode.ir/docs/sdk/headless).
 
 ##### Default
 
@@ -3784,7 +3784,7 @@ When set to `"headless"`, the playground is loaded in [headless mode](https://li
 
 > `optional` **welcome**: `boolean`
 
-If `true`, the [welcome screen](https://livecodes.io/docs/features/welcome) is displayed when the app loads.
+If `true`, the [welcome screen](https://play.nitrocode.ir/docs/features/welcome) is displayed when the app loads.
 
 #### wordWrap?
 
@@ -3822,11 +3822,11 @@ false
 
 > `optional` **zoom**: `1` \| `0.5` \| `0.25`
 
-Sets result page [zoom level](https://livecodes.io/docs/features/result#result-page-zoom).
+Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#result-page-zoom).
 
 #### Defined in
 
-[models.ts:338](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L338)
+[models.ts:338](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L338)
 
 ***
 
@@ -3834,12 +3834,12 @@ Sets result page [zoom level](https://livecodes.io/docs/features/result#result-p
 
 > `optional` **template**: [`TemplateName`](../internal/type-aliases/TemplateName.md)
 
-A [starter template](https://livecodes.io/docs/features/templates) to load.
-Allowed valued can be found [here](https://livecodes.io/docs/api/internal/type-aliases/TemplateName).
+A [starter template](https://play.nitrocode.ir/docs/features/templates) to load.
+Allowed valued can be found [here](https://play.nitrocode.ir/docs/api/internal/type-aliases/TemplateName).
 
 #### Defined in
 
-[models.ts:383](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L383)
+[models.ts:383](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L383)
 
 ***
 
@@ -3852,9 +3852,9 @@ Allowed valued can be found [here](https://livecodes.io/docs/api/internal/type-a
 The `view` option has been moved to `config.view`.
 For headless mode use `headless: true`.
 
-The [default view](https://livecodes.io/docs/features/default-view) for the playground.
+The [default view](https://play.nitrocode.ir/docs/features/default-view) for the playground.
 
-When set to `"headless"`, the playground is loaded in [headless mode](https://livecodes.io/docs/sdk/headless).
+When set to `"headless"`, the playground is loaded in [headless mode](https://play.nitrocode.ir/docs/sdk/headless).
 
 #### Default
 
@@ -3864,4 +3864,4 @@ When set to `"headless"`, the playground is loaded in [headless mode](https://li
 
 #### Defined in
 
-[models.ts:396](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L396)
+[models.ts:396](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L396)

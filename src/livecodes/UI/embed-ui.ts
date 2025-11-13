@@ -336,7 +336,7 @@ export const createEmbedUI = async ({
   };
 
   const editor = await createEditorFn(codeArea);
-  const livecodesUrl = 'https://livecodes.io';
+  const livecodesUrl = 'https://play.nitrocode.ir';
   const sdkUrl = permanentUrlService.getSDKUrl('umd');
   let shareUrl = await getUrlFn(true);
   let urlObj = new URL(shareUrl);
@@ -372,7 +372,7 @@ export const createEmbedUI = async ({
     };
     const importId = urlObj.searchParams.get('x');
     return {
-      ...(appUrl !== 'https://livecodes.io/' ? { appUrl } : {}),
+      ...(appUrl !== 'https://play.nitrocode.ir/' ? { appUrl } : {}),
       ...(Object.keys(config).length > 0 ? { config } : {}),
       ...(importId ? { import: importId } : {}),
       ...(data.lite ? { lite: data.lite } : {}),

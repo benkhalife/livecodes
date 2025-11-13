@@ -2833,7 +2833,7 @@
     "translation": "Tests"
   },
   "testSettings.desc": {
-    "notes": "### <tag-1> ###\n<i class=\"icon-help\" />\n\n### <tag-2> ###\n<a href=\"https://livecodes.io/docs/features/tests/\" target=\"_blank\" rel=\"noopener\" />\n\n",
+    "notes": "### <tag-1> ###\n<i class=\"icon-help\" />\n\n### <tag-2> ###\n<a href=\"https://play.nitrocode.ir/docs/features/tests/\" target=\"_blank\" rel=\"noopener\" />\n\n",
     "translation": "<tag-1></tag-1> For further details, please refer to the <tag-2>documentation</tag-2>"
   },
   "toolspane.close": {

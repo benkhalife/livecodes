@@ -18,7 +18,7 @@ Sets the app UI language used.
 
 #### Defined in
 
-[models.ts:707](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L707)
+[models.ts:707](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L707)
 
 ***
 
@@ -27,7 +27,7 @@ Sets the app UI language used.
 > **autosave**: `boolean`
 
 If `true`, the project is automatically saved on code change,
-after time [delay](https://livecodes.io/docs/configuration/configuration-object#delay).
+after time [delay](https://play.nitrocode.ir/docs/configuration/configuration-object#delay).
 
 #### Default
 
@@ -37,7 +37,7 @@ false
 
 #### Defined in
 
-[models.ts:656](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L656)
+[models.ts:656](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L656)
 
 ***
 
@@ -55,7 +55,7 @@ false
 
 #### Defined in
 
-[models.ts:662](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L662)
+[models.ts:662](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L662)
 
 ***
 
@@ -64,7 +64,7 @@ false
 > **autoupdate**: `boolean`
 
 If `true`, the result page is automatically updated on code change,
-after time [delay](https://livecodes.io/docs/configuration/configuration-object#delay).
+after time [delay](https://play.nitrocode.ir/docs/configuration/configuration-object#delay).
 
 #### Default
 
@@ -74,7 +74,7 @@ true
 
 #### Defined in
 
-[models.ts:649](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L649)
+[models.ts:649](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L649)
 
 ***
 
@@ -96,7 +96,7 @@ true
 
 #### Defined in
 
-[models.ts:801](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L801)
+[models.ts:801](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L801)
 
 ***
 
@@ -105,8 +105,8 @@ true
 > **delay**: `number`
 
 Time delay (in milliseconds) following code change,
-after which the result page is updated (if [`autoupdate`](https://livecodes.io/docs/configuration/configuration-object#autoupdate) is `true`)
-and/or the project is saved (if [`autosave`](https://livecodes.io/docs/configuration/configuration-object#autosave) is `true`).
+after which the result page is updated (if [`autoupdate`](https://play.nitrocode.ir/docs/configuration/configuration-object#autoupdate) is `true`)
+and/or the project is saved (if [`autosave`](https://play.nitrocode.ir/docs/configuration/configuration-object#autosave) is `true`).
 
 #### Default
 
@@ -116,7 +116,7 @@ and/or the project is saved (if [`autosave`](https://livecodes.io/docs/configura
 
 #### Defined in
 
-[models.ts:670](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L670)
+[models.ts:670](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L670)
 
 ***
 
@@ -124,7 +124,7 @@ and/or the project is saved (if [`autosave`](https://livecodes.io/docs/configura
 
 > **editor**: `undefined` \| `"auto"` \| `"monaco"` \| `"codemirror"` \| `"codejar"`
 
-Selects the [code editor](https://livecodes.io/docs/features/editor-settings#code-editor) to use.
+Selects the [code editor](https://play.nitrocode.ir/docs/features/editor-settings#code-editor) to use.
 
 If `undefined` (the default), Monaco editor is used on desktop,
 CodeMirror is used on mobile and in `simple` mode,
@@ -144,7 +144,7 @@ undefined
 
 #### Defined in
 
-[models.ts:722](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L722)
+[models.ts:722](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L722)
 
 ***
 
@@ -152,7 +152,7 @@ undefined
 
 > **editorMode**: `undefined` \| `"vim"` \| `"emacs"`
 
-Sets [editor mode](https://livecodes.io/docs/features/editor-settings#editor-modes).
+Sets [editor mode](https://play.nitrocode.ir/docs/features/editor-settings#editor-modes).
 
 #### Inherited from
 
@@ -160,7 +160,7 @@ Sets [editor mode](https://livecodes.io/docs/features/editor-settings#editor-mod
 
 #### Defined in
 
-[models.ts:812](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L812)
+[models.ts:812](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L812)
 
 ***
 
@@ -168,9 +168,9 @@ Sets [editor mode](https://livecodes.io/docs/features/editor-settings#editor-mod
 
 > **editorTheme**: `undefined` \| `string` \| [`EditorTheme`](../type-aliases/EditorTheme.md)[]
 
-Sets the [code editor](https://livecodes.io/docs/features/editor-settings) themes.
+Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) themes.
 
-See docs for [editor themes](https://livecodes.io/docs/configuration/configuration-object#editortheme) for details.
+See docs for [editor themes](https://play.nitrocode.ir/docs/configuration/configuration-object#editortheme) for details.
 
 #### Examples
 
@@ -200,7 +200,7 @@ See docs for [editor themes](https://livecodes.io/docs/configuration/configurati
 
 #### Defined in
 
-[models.ts:748](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L748)
+[models.ts:748](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L748)
 
 ***
 
@@ -208,7 +208,7 @@ See docs for [editor themes](https://livecodes.io/docs/configuration/configurati
 
 > **emmet**: `boolean`
 
-Enables [Emmet](https://livecodes.io/docs/features/editor-settings#emmet).
+Enables [Emmet](https://play.nitrocode.ir/docs/features/editor-settings#emmet).
 
 #### Default
 
@@ -222,7 +222,7 @@ true
 
 #### Defined in
 
-[models.ts:807](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L807)
+[models.ts:807](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L807)
 
 ***
 
@@ -230,7 +230,7 @@ true
 
 > **enableAI**: `boolean`
 
-If `true`, [AI code assistant](https://livecodes.io/docs/features/ai) is enabled.
+If `true`, [AI code assistant](https://play.nitrocode.ir/docs/features/ai) is enabled.
 
 #### Default
 
@@ -244,7 +244,7 @@ false
 
 #### Defined in
 
-[models.ts:818](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L818)
+[models.ts:818](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L818)
 
 ***
 
@@ -266,7 +266,7 @@ false
 
 #### Defined in
 
-[models.ts:795](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L795)
+[models.ts:795](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L795)
 
 ***
 
@@ -274,7 +274,7 @@ false
 
 > **fontFamily**: `undefined` \| `string`
 
-Sets the [code editor](https://livecodes.io/docs/features/editor-settings) font family.
+Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) font family.
 
 #### Inherited from
 
@@ -282,7 +282,7 @@ Sets the [code editor](https://livecodes.io/docs/features/editor-settings) font 
 
 #### Defined in
 
-[models.ts:753](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L753)
+[models.ts:753](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L753)
 
 ***
 
@@ -292,7 +292,7 @@ Sets the [code editor](https://livecodes.io/docs/features/editor-settings) font 
 
 Sets the font size.
 
-If `undefined` (the default), the font size is set to 14 for the full app and 12 for [embeds](https://livecodes.io/docs/features/embeds).
+If `undefined` (the default), the font size is set to 14 for the full app and 12 for [embeds](https://play.nitrocode.ir/docs/features/embeds).
 
 #### Default
 
@@ -306,7 +306,7 @@ undefined
 
 #### Defined in
 
-[models.ts:761](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L761)
+[models.ts:761](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L761)
 
 ***
 
@@ -314,7 +314,7 @@ undefined
 
 > **formatOnsave**: `boolean`
 
-If `true`, the code is automatically [formatted](https://livecodes.io/docs/features/code-format) on saving the project.
+If `true`, the code is automatically [formatted](https://play.nitrocode.ir/docs/features/code-format) on saving the project.
 
 #### Default
 
@@ -324,7 +324,7 @@ false
 
 #### Defined in
 
-[models.ts:676](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L676)
+[models.ts:676](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L676)
 
 ***
 
@@ -345,7 +345,7 @@ otherwise horizontal.
 
 #### Defined in
 
-[models.ts:685](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L685)
+[models.ts:685](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L685)
 
 ***
 
@@ -353,7 +353,7 @@ otherwise horizontal.
 
 > **lineNumbers**: `boolean` \| `"relative"`
 
-Show line numbers in [code editor](https://livecodes.io/docs/features/editor-settings).
+Show line numbers in [code editor](https://play.nitrocode.ir/docs/features/editor-settings).
 
 #### Default
 
@@ -367,7 +367,7 @@ true
 
 #### Defined in
 
-[models.ts:783](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L783)
+[models.ts:783](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L783)
 
 ***
 
@@ -375,7 +375,7 @@ true
 
 > **recoverUnsaved**: `boolean`
 
-Enables [recovering last unsaved project](https://livecodes.io/docs/features/recover) when the app is reopened.
+Enables [recovering last unsaved project](https://play.nitrocode.ir/docs/features/recover) when the app is reopened.
 
 #### Default
 
@@ -385,7 +385,7 @@ true
 
 #### Defined in
 
-[models.ts:691](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L691)
+[models.ts:691](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L691)
 
 ***
 
@@ -393,7 +393,7 @@ true
 
 > **semicolons**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use semi-colons.
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use semi-colons.
 
 #### Default
 
@@ -407,7 +407,7 @@ true
 
 #### Defined in
 
-[models.ts:838](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L838)
+[models.ts:838](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L838)
 
 ***
 
@@ -415,7 +415,7 @@ true
 
 > **showSpacing**: `boolean`
 
-Enables [showing element spacing](https://livecodes.io/docs/features/result#show-spacings) in the result page.
+Enables [showing element spacing](https://play.nitrocode.ir/docs/features/result#show-spacings) in the result page.
 
 #### Default
 
@@ -425,7 +425,7 @@ false
 
 #### Defined in
 
-[models.ts:697](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L697)
+[models.ts:697](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L697)
 
 ***
 
@@ -433,7 +433,7 @@ false
 
 > **singleQuote**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use single quotes instead of double quotes.
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use single quotes instead of double quotes.
 
 #### Default
 
@@ -447,7 +447,7 @@ false
 
 #### Defined in
 
-[models.ts:843](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L843)
+[models.ts:843](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L843)
 
 ***
 
@@ -457,7 +457,7 @@ false
 
 The number of spaces per indentation-level.
 
-Also used in [code formatting](https://livecodes.io/docs/features/code-format).
+Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-format).
 
 #### Default
 
@@ -471,7 +471,7 @@ Also used in [code formatting](https://livecodes.io/docs/features/code-format).
 
 #### Defined in
 
-[models.ts:777](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L777)
+[models.ts:777](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L777)
 
 ***
 
@@ -479,7 +479,7 @@ Also used in [code formatting](https://livecodes.io/docs/features/code-format).
 
 > **theme**: [`Theme`](../type-aliases/Theme.md)
 
-Sets the app [theme](https://livecodes.io/docs/features/themes) to light/dark mode.
+Sets the app [theme](https://play.nitrocode.ir/docs/features/themes) to light/dark mode.
 
 #### Default
 
@@ -493,7 +493,7 @@ Sets the app [theme](https://livecodes.io/docs/features/themes) to light/dark mo
 
 #### Defined in
 
-[models.ts:728](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L728)
+[models.ts:728](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L728)
 
 ***
 
@@ -516,7 +516,7 @@ undefined
 
 #### Defined in
 
-[models.ts:735](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L735)
+[models.ts:735](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L735)
 
 ***
 
@@ -524,7 +524,7 @@ undefined
 
 > **trailingComma**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use [trailing commas](https://prettier.io/docs/en/options.html#trailing-commas).
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use [trailing commas](https://prettier.io/docs/en/options.html#trailing-commas).
 
 #### Default
 
@@ -538,7 +538,7 @@ true
 
 #### Defined in
 
-[models.ts:849](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L849)
+[models.ts:849](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L849)
 
 ***
 
@@ -548,7 +548,7 @@ true
 
 If `true`, lines are indented with tabs instead of spaces.
 
-Also used in [code formatting](https://livecodes.io/docs/features/code-format).
+Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-format).
 
 #### Default
 
@@ -562,7 +562,7 @@ false
 
 #### Defined in
 
-[models.ts:769](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L769)
+[models.ts:769](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L769)
 
 ***
 
@@ -570,11 +570,11 @@ false
 
 > **welcome**: `boolean`
 
-If `true`, the [welcome screen](https://livecodes.io/docs/features/welcome) is displayed when the app loads.
+If `true`, the [welcome screen](https://play.nitrocode.ir/docs/features/welcome) is displayed when the app loads.
 
 #### Defined in
 
-[models.ts:702](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L702)
+[models.ts:702](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L702)
 
 ***
 
@@ -596,4 +596,4 @@ false
 
 #### Defined in
 
-[models.ts:789](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L789)
+[models.ts:789](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L789)

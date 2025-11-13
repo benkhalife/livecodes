@@ -1089,7 +1089,7 @@ import plinth/browser/document
 import plinth/browser/element
 import plinth/browser/event
 // see docs for using custom modules:
-// https://livecodes.io/docs/languages/gleam
+// https://play.nitrocode.ir/docs/languages/gleam
 
 pub fn main() {
   say_hello()
@@ -2252,7 +2252,7 @@ body {
 import Phaser from "phaser";
 
 // learn about adding assets in livecodes
-// https://livecodes.io/docs/features/assets
+// https://play.nitrocode.ir/docs/features/assets
 
 class Boot extends Phaser.Scene {
   constructor() {

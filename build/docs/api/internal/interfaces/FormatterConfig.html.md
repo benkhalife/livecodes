@@ -10,7 +10,7 @@
 
 > **semicolons**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use semi-colons.
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use semi-colons.
 
 #### Default
 
@@ -20,7 +20,7 @@ true
 
 #### Defined in
 
-[models.ts:838](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L838)
+[models.ts:838](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L838)
 
 ***
 
@@ -28,7 +28,7 @@ true
 
 > **singleQuote**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use single quotes instead of double quotes.
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use single quotes instead of double quotes.
 
 #### Default
 
@@ -38,7 +38,7 @@ false
 
 #### Defined in
 
-[models.ts:843](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L843)
+[models.ts:843](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L843)
 
 ***
 
@@ -56,7 +56,7 @@ The number of spaces per indentation-level.
 
 #### Defined in
 
-[models.ts:832](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L832)
+[models.ts:832](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L832)
 
 ***
 
@@ -64,7 +64,7 @@ The number of spaces per indentation-level.
 
 > **trailingComma**: `boolean`
 
-Configures Prettier [code formatter](https://livecodes.io/docs/features/code-format) to use [trailing commas](https://prettier.io/docs/en/options.html#trailing-commas).
+Configures Prettier [code formatter](https://play.nitrocode.ir/docs/features/code-format) to use [trailing commas](https://prettier.io/docs/en/options.html#trailing-commas).
 
 #### Default
 
@@ -74,7 +74,7 @@ true
 
 #### Defined in
 
-[models.ts:849](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L849)
+[models.ts:849](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L849)
 
 ***
 
@@ -92,4 +92,4 @@ false
 
 #### Defined in
 
-[models.ts:826](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L826)
+[models.ts:826](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L826)

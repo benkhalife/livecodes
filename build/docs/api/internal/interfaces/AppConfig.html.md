@@ -22,7 +22,7 @@ true
 
 #### Defined in
 
-[models.ts:603](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L603)
+[models.ts:603](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L603)
 
 ***
 
@@ -30,7 +30,7 @@ true
 
 > **mode**: `"focus"` \| `"full"` \| `"result"` \| `"editor"` \| `"lite"` \| `"simple"` \| `"codeblock"`
 
-Sets the [display mode](https://livecodes.io/docs/features/display-modes).
+Sets the [display mode](https://play.nitrocode.ir/docs/features/display-modes).
 
 #### Default
 
@@ -40,7 +40,7 @@ Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
 #### Defined in
 
-[models.ts:615](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L615)
+[models.ts:615](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L615)
 
 ***
 
@@ -50,8 +50,8 @@ Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
 If `true`, editors are loaded in read-only mode, where the user is not allowed to change the code.
 
-By default, when readonly is set to true, the light-weight code editor [CodeJar](https://livecodes.io/docs/features/editor-settings#code-editor) is used.
-If you wish to use another editor, set the [editor](https://livecodes.io/docs/configuration/configuration-object#editor) property.
+By default, when readonly is set to true, the light-weight code editor [CodeJar](https://play.nitrocode.ir/docs/features/editor-settings#code-editor) is used.
+If you wish to use another editor, set the [editor](https://play.nitrocode.ir/docs/configuration/configuration-object#editor) property.
 
 #### Default
 
@@ -61,7 +61,7 @@ false
 
 #### Defined in
 
-[models.ts:597](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L597)
+[models.ts:597](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L597)
 
 ***
 
@@ -69,7 +69,7 @@ false
 
 > **tools**: `Partial`\<`object`\>
 
-Sets enabled and active tools and status of [tools pane](https://livecodes.io/docs/features/tools-pane).
+Sets enabled and active tools and status of [tools pane](https://play.nitrocode.ir/docs/features/tools-pane).
 
 #### Type declaration
 
@@ -105,7 +105,7 @@ Sets enabled and active tools and status of [tools pane](https://livecodes.io/do
 
 #### Defined in
 
-[models.ts:631](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L631)
+[models.ts:631](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L631)
 
 ***
 
@@ -113,7 +113,7 @@ Sets enabled and active tools and status of [tools pane](https://livecodes.io/do
 
 > `optional` **view**: `"split"` \| `"result"` \| `"editor"`
 
-Sets the [default view](https://livecodes.io/docs/features/default-view) for the playground.
+Sets the [default view](https://play.nitrocode.ir/docs/features/default-view) for the playground.
 
 #### Default
 
@@ -123,7 +123,7 @@ Sets the [default view](https://livecodes.io/docs/features/default-view) for the
 
 #### Defined in
 
-[models.ts:609](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L609)
+[models.ts:609](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L609)
 
 ***
 
@@ -131,8 +131,8 @@ Sets the [default view](https://livecodes.io/docs/features/default-view) for the
 
 > **zoom**: `0.25` \| `0.5` \| `1`
 
-Sets result page [zoom level](https://livecodes.io/docs/features/result#result-page-zoom).
+Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#result-page-zoom).
 
 #### Defined in
 
-[models.ts:640](https://github.com/benkhalife/livecodes/blob/c4ade12e85f9025788a2a212df3acca88d133eec/src/sdk/models.ts#L640)
+[models.ts:640](https://github.com/benkhalife/livecodes/blob/6dc5281ae30f4a50cb5fbe80b27f2afe2aec958e/src/sdk/models.ts#L640)
