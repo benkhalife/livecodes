@@ -22,7 +22,7 @@ true
 
 #### Defined in
 
-[models.ts:603](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L603)
+[models.ts:603](https://github.com/benkhalife/livecodes/blob/89e6b033263f66c12b8b4f926dc5b2071ee77b8b/src/sdk/models.ts#L603)
 
 ***
 
@@ -40,7 +40,7 @@ Sets the [display mode](https://play.nitrocode.ir/docs/features/display-modes).
 
 #### Defined in
 
-[models.ts:615](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L615)
+[models.ts:615](https://github.com/benkhalife/livecodes/blob/89e6b033263f66c12b8b4f926dc5b2071ee77b8b/src/sdk/models.ts#L615)
 
 ***
 
@@ -61,7 +61,7 @@ false
 
 #### Defined in
 
-[models.ts:597](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L597)
+[models.ts:597](https://github.com/benkhalife/livecodes/blob/89e6b033263f66c12b8b4f926dc5b2071ee77b8b/src/sdk/models.ts#L597)
 
 ***
 
@@ -105,7 +105,7 @@ Sets enabled and active tools and status of [tools pane](https://play.nitrocode.
 
 #### Defined in
 
-[models.ts:631](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L631)
+[models.ts:631](https://github.com/benkhalife/livecodes/blob/89e6b033263f66c12b8b4f926dc5b2071ee77b8b/src/sdk/models.ts#L631)
 
 ***
 
@@ -123,7 +123,7 @@ Sets the [default view](https://play.nitrocode.ir/docs/features/default-view) fo
 
 #### Defined in
 
-[models.ts:609](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L609)
+[models.ts:609](https://github.com/benkhalife/livecodes/blob/89e6b033263f66c12b8b4f926dc5b2071ee77b8b/src/sdk/models.ts#L609)
 
 ***
 
@@ -135,4 +135,4 @@ Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#res
 
 #### Defined in
 
-[models.ts:640](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L640)
+[models.ts:640](https://github.com/benkhalife/livecodes/blob/89e6b033263f66c12b8b4f926dc5b2071ee77b8b/src/sdk/models.ts#L640)

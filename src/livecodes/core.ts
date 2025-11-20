@@ -2942,7 +2942,7 @@ const handleI18nMenu = () => {
   );
   contributeLink.target = '_blank';
   contributeLink.rel = 'noopener noreferrer';
-  contributeSpan.appendChild(contributeLink);
+  // contributeSpan.appendChild(contributeLink);
   contributeLi.appendChild(contributeSpan);
   i18nMenu.appendChild(contributeLi);
 
@@ -2953,7 +2953,7 @@ const handleI18nMenu = () => {
   docsLink.target = '_blank';
   docsLink.rel = 'noopener noreferrer';
   docsLi.appendChild(docsLink);
-  i18nMenu.appendChild(docsLi);
+  // i18nMenu.appendChild(docsLi);
   menuContainer.appendChild(i18nMenu);
   adjustFontSize(menuContainer);
   registerMenuButton(menuContainer, UI.getI18nMenuButton());
