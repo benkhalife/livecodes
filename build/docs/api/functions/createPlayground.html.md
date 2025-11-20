@@ -25,7 +25,7 @@ The [embed options](https://play.nitrocode.ir/docs/sdk/js-ts#embed-options) for 
 
 ### Defined in
 
-[index.ts:26](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/index.ts#L26)
+[index.ts:26](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/index.ts#L26)
 
 ## createPlayground(options)
 
@@ -41,4 +41,4 @@ The [embed options](https://play.nitrocode.ir/docs/sdk/js-ts#embed-options) for 
 
 ### Defined in
 
-[index.ts:30](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/index.ts#L30)
+[index.ts:30](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/index.ts#L30)

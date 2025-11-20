@@ -15,8 +15,8 @@ It can be easily self-hosted, if needed, on any static file server.
 LiveCodes is completely free for unlimited use, with no ads and no account required.
 Its MIT License also permits commercial use.
 
-- [Docs](https://livecodes.io/docs/llms.txt)
-- [Full Docs](https://livecodes.io/docs/llms-full.txt)
+- [Docs](https://play.nitrocode.ir/docs/llms.txt)
+- [Full Docs](https://play.nitrocode.ir/docs/llms-full.txt)
 - [README](https://raw.githubusercontent.com/live-codes/livecodes/refs/heads/develop/README.md)
 
 
@@ -365,7 +365,7 @@ Please consider [becoming a sponsor](https://livecodes.io/docs/sponsor).
 
 ---
 
-<!-- Source: https://livecodes.io/docs/overview -->
+<!-- Source: https://play.nitrocode.ir/docs/overview -->
 
 # Overview
 
@@ -382,7 +382,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/why -->
+<!-- Source: https://play.nitrocode.ir/docs/why -->
 
 # Why Another Playground?
 
@@ -463,7 +463,7 @@ Enough talk, let's get started.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/getting-started -->
+<!-- Source: https://play.nitrocode.ir/docs/getting-started -->
 
 # Getting Started
 
@@ -612,7 +612,7 @@ Please check the section on [self-hosting](./features/self-hosting.html.md) for 
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/index -->
+<!-- Source: https://play.nitrocode.ir/docs/features/index -->
 
 # Features
 
@@ -716,7 +716,7 @@ This was a quick overview of the important features of LiveCodes. A more detaile
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/projects -->
+<!-- Source: https://play.nitrocode.ir/docs/features/projects -->
 
 # Projects
 
@@ -784,7 +784,7 @@ Projects can be [imported](./import.html.md), [exported](./export.html.md), [syn
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/templates -->
+<!-- Source: https://play.nitrocode.ir/docs/features/templates -->
 
 # Templates
 
@@ -838,7 +838,7 @@ User templates are scoped to the currently [logged-in user](./user-management.ht
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/css -->
+<!-- Source: https://play.nitrocode.ir/docs/features/css -->
 
 # CSS
 
@@ -986,7 +986,7 @@ Of course, styles and stylesheets can still be added as usual in markup and scri
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/result -->
+<!-- Source: https://play.nitrocode.ir/docs/features/result -->
 
 # Result Page
 
@@ -1098,7 +1098,7 @@ Example:
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/external-resources -->
+<!-- Source: https://play.nitrocode.ir/docs/features/external-resources -->
 
 # External Resources
 
@@ -1154,7 +1154,7 @@ CSS presets currently include [Normalize.css](https://necolas.github.io/normaliz
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/tools-pane -->
+<!-- Source: https://play.nitrocode.ir/docs/features/tools-pane -->
 
 # Tools Pane
 
@@ -1193,7 +1193,7 @@ Demo: (console=full)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/console -->
+<!-- Source: https://play.nitrocode.ir/docs/features/console -->
 
 # Console
 
@@ -1234,7 +1234,7 @@ Demo: (Python - print to console)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/compiled-code -->
+<!-- Source: https://play.nitrocode.ir/docs/features/compiled-code -->
 
 # Compiled Code
 
@@ -1258,7 +1258,7 @@ This demo shows TypeScript code along with the compiled Javascript code, similar
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/tests -->
+<!-- Source: https://play.nitrocode.ir/docs/features/tests -->
 
 # Tests
 
@@ -1441,7 +1441,7 @@ The [SDK](../sdk/index.html.md) allows [running tests](../sdk/js-ts.html.md)#run
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/module-resolution -->
+<!-- Source: https://play.nitrocode.ir/docs/features/module-resolution -->
 
 # Module Resolution
 
@@ -1729,7 +1729,7 @@ Please note that you may also provide [custom type definitions](./intellisense.h
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/intellisense -->
+<!-- Source: https://play.nitrocode.ir/docs/features/intellisense -->
 
 # IntelliSense
 
@@ -1899,7 +1899,7 @@ export const customModules = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/ai -->
+<!-- Source: https://play.nitrocode.ir/docs/features/ai -->
 
 # AI Code Assistant 🪄
 
@@ -1978,7 +1978,7 @@ Please note that when using Windsurf AI assistant, your code is sent to Windsurf
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/code-format -->
+<!-- Source: https://play.nitrocode.ir/docs/features/code-format -->
 
 # Code Format
 
@@ -2035,7 +2035,7 @@ The code format can be programmatically triggered by the [SDK](../sdk/index.html
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/command-menu -->
+<!-- Source: https://play.nitrocode.ir/docs/features/command-menu -->
 
 # Command Menu
 
@@ -2074,7 +2074,7 @@ If a command has a keyboard shortcut, it will be shown in the command menu. In a
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/keyboard-shortcuts -->
+<!-- Source: https://play.nitrocode.ir/docs/features/keyboard-shortcuts -->
 
 # Keyboard Shortcuts
 
@@ -2086,7 +2086,7 @@ The code editor shortcuts are the same as VS Code, which can be found [here](htt
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/user-settings -->
+<!-- Source: https://play.nitrocode.ir/docs/features/user-settings -->
 
 # User Settings
 
@@ -2121,7 +2121,7 @@ User settings are scoped to the currently [logged-in user](./user-management.htm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/editor-settings -->
+<!-- Source: https://play.nitrocode.ir/docs/features/editor-settings -->
 
 # Editor Settings
 
@@ -2197,7 +2197,7 @@ In addition to those specified in [Editor Options](#editor-options), the followi
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/i18n -->
+<!-- Source: https://play.nitrocode.ir/docs/features/i18n -->
 
 # Internationalization (i18n)
 
@@ -2242,7 +2242,7 @@ https://livecodes.io?template=javascript&appLanguage=fr
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/default-template-language -->
+<!-- Source: https://play.nitrocode.ir/docs/features/default-template-language -->
 
 # Default Template/Language
 
@@ -2269,7 +2269,7 @@ Example: https://livecodes.io?no-defaults
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/assets -->
+<!-- Source: https://play.nitrocode.ir/docs/features/assets -->
 
 # Assets
 
@@ -2300,7 +2300,7 @@ When an asset item is clicked, the URL is copied to clipboard. The URL can then 
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/snippets -->
+<!-- Source: https://play.nitrocode.ir/docs/features/snippets -->
 
 # Code Snippets
 
@@ -2333,7 +2333,7 @@ Code snippets can then be copied to clipboard and pasted in projects.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/import -->
+<!-- Source: https://play.nitrocode.ir/docs/features/import -->
 
 # Import
 
@@ -2537,7 +2537,7 @@ Similarly, [multiple projects exported in bulk](./export.html.md)#exporting-mult
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/export -->
+<!-- Source: https://play.nitrocode.ir/docs/features/export -->
 
 # Export
 
@@ -2587,7 +2587,7 @@ All the currently visible projects will be exported. If projects are filtered (e
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/share -->
+<!-- Source: https://play.nitrocode.ir/docs/features/share -->
 
 # Share
 
@@ -2637,19 +2637,19 @@ QR code can be generated for the share URL. This can then be scanned by any QR c
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/welcome -->
+<!-- Source: https://play.nitrocode.ir/docs/features/welcome -->
 
 # Welcome Screen
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/recover -->
+<!-- Source: https://play.nitrocode.ir/docs/features/recover -->
 
 # Recover Unsaved
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/code-to-image -->
+<!-- Source: https://play.nitrocode.ir/docs/features/code-to-image -->
 
 # Code to Image
 
@@ -2677,7 +2677,7 @@ There are multiple presets that can be used or the options can be manually confi
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/display-modes -->
+<!-- Source: https://play.nitrocode.ir/docs/features/display-modes -->
 
 # Display Modes
 
@@ -2816,7 +2816,7 @@ The same applies for `result` display mode and default view.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/default-view -->
+<!-- Source: https://play.nitrocode.ir/docs/features/default-view -->
 
 # Default View
 
@@ -2868,7 +2868,7 @@ The same applies for `result` display mode and default view.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/themes -->
+<!-- Source: https://play.nitrocode.ir/docs/features/themes -->
 
 # Themes
 
@@ -2926,7 +2926,7 @@ Please note that editor themes can be set in the [editor settings](./editor-sett
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/mobile -->
+<!-- Source: https://play.nitrocode.ir/docs/features/mobile -->
 
 # Mobile Support
 
@@ -2940,7 +2940,7 @@ By default, LiveCodes uses the touch-friendly [CodeMirror 6](https://codemirror.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/embeds -->
+<!-- Source: https://play.nitrocode.ir/docs/features/embeds -->
 
 # Embedded Playgrounds
 
@@ -3046,7 +3046,7 @@ Some of the features of the full standalone app are not available or shown by de
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/lite -->
+<!-- Source: https://play.nitrocode.ir/docs/features/lite -->
 
 # Lite Mode
 
@@ -3082,7 +3082,7 @@ https://livecodes.io?mode=lite
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/read-only -->
+<!-- Source: https://play.nitrocode.ir/docs/features/read-only -->
 
 # Read-Only
 
@@ -3121,7 +3121,7 @@ https://livecodes.io?template=javascript&readonly
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/permanent-url -->
+<!-- Source: https://play.nitrocode.ir/docs/features/permanent-url -->
 
 # Permanent URL
 
@@ -3257,7 +3257,7 @@ ${'  '}});
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/code-prefill -->
+<!-- Source: https://play.nitrocode.ir/docs/features/code-prefill -->
 
 # Code Prefill
 
@@ -3333,7 +3333,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/data-urls -->
+<!-- Source: https://play.nitrocode.ir/docs/features/data-urls -->
 
 # Data URLs
 
@@ -3408,7 +3408,7 @@ console.log(sayHello('Ali'));
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/deploy -->
+<!-- Source: https://play.nitrocode.ir/docs/features/deploy -->
 
 # Deploy
 
@@ -3441,7 +3441,7 @@ The LiveCodes app will remember the repo used to deploy each project, so that la
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/sync -->
+<!-- Source: https://play.nitrocode.ir/docs/features/sync -->
 
 # Sync
 
@@ -3474,7 +3474,7 @@ The sync can be manually triggered at any time from the Sync UI. Information reg
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/broadcast -->
+<!-- Source: https://play.nitrocode.ir/docs/features/broadcast -->
 
 # Broadcast
 
@@ -3561,7 +3561,7 @@ This value is saved for the current user across app reloads.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/backup-restore -->
+<!-- Source: https://play.nitrocode.ir/docs/features/backup-restore -->
 
 # Backup / Restore
 
@@ -3604,7 +3604,7 @@ When restoring a backup, there are 2 options for managing the current data:
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/github-integration -->
+<!-- Source: https://play.nitrocode.ir/docs/features/github-integration -->
 
 # GitHub Integration
 
@@ -3652,13 +3652,13 @@ To change previously set permissions:
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/integrations -->
+<!-- Source: https://play.nitrocode.ir/docs/features/integrations -->
 
 # Integrations
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/user-management -->
+<!-- Source: https://play.nitrocode.ir/docs/features/user-management -->
 
 # User Management
 
@@ -3700,7 +3700,7 @@ All user management features, including ability to login/logout, access to user 
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/security -->
+<!-- Source: https://play.nitrocode.ir/docs/features/security -->
 
 # Security
 
@@ -3717,7 +3717,7 @@ For other non-security-related bugs, please report them in the [repo issues](htt
 
 ---
 
-<!-- Source: https://livecodes.io/docs/features/self-hosting -->
+<!-- Source: https://play.nitrocode.ir/docs/features/self-hosting -->
 
 # Self-Hosting
 
@@ -3830,7 +3830,7 @@ createPlayground('#container', options);
 
 ---
 
-<!-- Source: https://livecodes.io/docs/configuration/index -->
+<!-- Source: https://play.nitrocode.ir/docs/configuration/index -->
 
 # Configuration
 
@@ -3848,7 +3848,7 @@ A flexible and convenient way to configure the app using URL query parameters
 
 ---
 
-<!-- Source: https://livecodes.io/docs/configuration/configuration-object -->
+<!-- Source: https://play.nitrocode.ir/docs/configuration/configuration-object -->
 
 # Configuration Object
 
@@ -4574,7 +4574,7 @@ Configures Prettier [code formatter](../features/code-format.html.md) to use [tr
 
 ---
 
-<!-- Source: https://livecodes.io/docs/configuration/query-params -->
+<!-- Source: https://play.nitrocode.ir/docs/configuration/query-params -->
 
 # Query Parameters
 
@@ -4754,7 +4754,7 @@ For usage examples, check [storybook](pathname:///../stories/?path=/story/embed-
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/index -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/index -->
 
 # LiveCodes SDK
 
@@ -4878,7 +4878,7 @@ P.S. You may want to use the "Full Screen" button!
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/js-ts -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/js-ts -->
 
 # JavaScript/<wbr />TypeScript SDK
 
@@ -5484,7 +5484,7 @@ export const sdkDemo = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/react -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/react -->
 
 # React SDK
 
@@ -5641,7 +5641,7 @@ export const reactSDKDemo = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/vue -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/vue -->
 
 # Vue SDK
 
@@ -5813,7 +5813,7 @@ export const vueSDKDemo = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/svelte -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/svelte -->
 
 # Svelte
 
@@ -5919,7 +5919,7 @@ However, it is recommended to cleanup when the node is unmounted, like that:
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/solid -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/solid -->
 
 # Solid
 
@@ -6010,7 +6010,7 @@ export default function App() {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sdk/headless -->
+<!-- Source: https://play.nitrocode.ir/docs/sdk/headless -->
 
 # Headless Mode
 
@@ -6093,7 +6093,7 @@ export const pyDemo = { markup: { language: 'html', content: `<textarea id="edit
 
 ---
 
-<!-- Source: https://livecodes.io/docs/advanced/index -->
+<!-- Source: https://play.nitrocode.ir/docs/advanced/index -->
 
 # Advanced Topics {#advanced-topics-custom-content-top}
 
@@ -6106,13 +6106,13 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/advanced/custom-settings -->
+<!-- Source: https://play.nitrocode.ir/docs/advanced/custom-settings -->
 
 # Custom Settings
 
 ---
 
-<!-- Source: https://livecodes.io/docs/advanced/services -->
+<!-- Source: https://play.nitrocode.ir/docs/advanced/services -->
 
 # Services
 
@@ -6141,7 +6141,7 @@ LiveCodes [sponsors](../sponsor.html.md) (Bronze sponsors and above) get access 
 
 ---
 
-<!-- Source: https://livecodes.io/docs/advanced/docker -->
+<!-- Source: https://play.nitrocode.ir/docs/advanced/docker -->
 
 # Docker Setup
 
@@ -6420,7 +6420,7 @@ The workflow uses [secrets](https://docs.github.com/en/actions/how-tos/security-
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/index -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/index -->
 
 # Languages
 
@@ -6455,7 +6455,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/art-template -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/art-template -->
 
 # art-template
 
@@ -6591,7 +6591,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/asciidoc -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/asciidoc -->
 
 # AsciiDoc
 
@@ -6677,7 +6677,7 @@ Please note that custom settings should be valid JSON (i.e. functions are not al
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/assemblyscript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/assemblyscript -->
 
 # AssemblyScript
 
@@ -6685,7 +6685,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/astro -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/astro -->
 
 # Astro
 
@@ -6795,7 +6795,7 @@ const data = await res.json();
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/autoprefixer -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/autoprefixer -->
 
 # Autoprefixer
 
@@ -6803,7 +6803,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/babel -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/babel -->
 
 # Babel
 
@@ -6864,7 +6864,7 @@ export const params = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/bbcode -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/bbcode -->
 
 # BBCode
 
@@ -6910,7 +6910,7 @@ export const params = {compiled: 'open'};
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/blockly -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/blockly -->
 
 # Blockly
 
@@ -6918,7 +6918,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/civet -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/civet -->
 
 # Civet
 
@@ -6926,7 +6926,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/clio -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/clio -->
 
 # Clio
 
@@ -6934,7 +6934,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/clojurescript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/clojurescript -->
 
 # ClojureScript
 
@@ -7006,7 +7006,7 @@ https://livecodes.io/?template=clojurescript
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/coffeescript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/coffeescript -->
 
 # CoffeeScript
 
@@ -7058,7 +7058,7 @@ https://livecodes.io/?template=coffeescript
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/commonlisp -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/commonlisp -->
 
 # Common Lisp
 
@@ -7125,7 +7125,7 @@ https://livecodes.io/?template=commonlisp
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/cpp-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/cpp-wasm -->
 
 # C/C++ (Wasm)
 
@@ -7133,7 +7133,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/cpp -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/cpp -->
 
 # C++
 
@@ -7141,7 +7141,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/csharp-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/csharp-wasm -->
 
 # C# (Wasm)
 
@@ -7283,7 +7283,7 @@ https://livecodes.io/?template=csharp-wasm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/css -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/css -->
 
 # CSS
 
@@ -7291,7 +7291,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/cssmodules -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/cssmodules -->
 
 # CSS Modules
 
@@ -7548,7 +7548,7 @@ export const params = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/cssnano -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/cssnano -->
 
 # cssnano
 
@@ -7556,7 +7556,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/diagrams -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/diagrams -->
 
 # Diagrams
 
@@ -8142,7 +8142,7 @@ Example: (<OpenCode id="ey74x6q6cq3"></OpenCode>)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/dot -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/dot -->
 
 # doT
 
@@ -8277,7 +8277,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/ejs -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/ejs -->
 
 # EJS
 
@@ -8412,7 +8412,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/eta -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/eta -->
 
 # Eta
 
@@ -8537,7 +8537,7 @@ export const config2 = {markup: {language: 'eta', content: 'Hello <%= it.name %>
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/fennel -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/fennel -->
 
 # Fennel
 
@@ -8602,7 +8602,7 @@ https://livecodes.io/?template=fennel
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/flow -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/flow -->
 
 # Flow
 
@@ -8610,7 +8610,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/gleam -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/gleam -->
 
 # Gleam
 
@@ -8872,7 +8872,7 @@ https://livecodes.io/?template=gleam
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/go-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/go-wasm -->
 
 # Go (Wasm)
 
@@ -8970,7 +8970,7 @@ https://livecodes.io/?template=go-wasm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/go -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/go -->
 
 # Go (Golang)
 
@@ -9047,7 +9047,7 @@ https://livecodes.io/?template=go
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/haml -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/haml -->
 
 # Haml
 
@@ -9173,7 +9173,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/handlebars -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/handlebars -->
 
 # Handlebars
 
@@ -9309,7 +9309,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/html -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/html -->
 
 # HTML
 
@@ -9382,7 +9382,7 @@ Using [Prettier](https://prettier.io/).
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/imba -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/imba -->
 
 # Imba
 
@@ -9390,7 +9390,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/index -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/index -->
 
 # Languages
 
@@ -9425,7 +9425,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/java -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/java -->
 
 # Java
 
@@ -9552,7 +9552,7 @@ https://livecodes.io/?template=java
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/javascript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/javascript -->
 
 # JavaScript
 
@@ -9560,7 +9560,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/jinja -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/jinja -->
 
 # Jinja
 
@@ -9715,7 +9715,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/jsx -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/jsx -->
 
 # JSX
 
@@ -10032,7 +10032,7 @@ Please note that custom settings should be valid JSON (i.e. functions are not al
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/julia -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/julia -->
 
 # Julia
 
@@ -10040,7 +10040,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/less -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/less -->
 
 # Less
 
@@ -10048,7 +10048,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/lightningcss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/lightningcss -->
 
 # Lightning CSS
 
@@ -10056,7 +10056,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/liquid -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/liquid -->
 
 # Liquid
 
@@ -10193,7 +10193,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/livescript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/livescript -->
 
 # LiveScript
 
@@ -10201,7 +10201,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/lua-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/lua-wasm -->
 
 # Lua (Wasm)
 
@@ -10272,7 +10272,7 @@ https://livecodes.io/?template=lua-wasm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/lua -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/lua -->
 
 # Lua
 
@@ -10339,7 +10339,7 @@ https://livecodes.io/?template=lua
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/malina -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/malina -->
 
 # Malina.js
 
@@ -10347,7 +10347,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/markdown -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/markdown -->
 
 # Markdown
 
@@ -10511,7 +10511,7 @@ https://livecodes.io/?template=markdown
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/mdx -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/mdx -->
 
 # MDX
 
@@ -10623,7 +10623,7 @@ https://livecodes.io/?template=mdx
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/mjml -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/mjml -->
 
 # MJML
 
@@ -10695,7 +10695,7 @@ This playground loads a template from the official MJML [email templates](https:
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/mustache -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/mustache -->
 
 # Mustache
 
@@ -10815,7 +10815,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/nunjucks -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/nunjucks -->
 
 # Nunjucks
 
@@ -10935,7 +10935,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/ocaml -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/ocaml -->
 
 # OCaml
 
@@ -10943,7 +10943,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/perl -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/perl -->
 
 # Perl
 
@@ -10951,7 +10951,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/php-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/php-wasm -->
 
 # PHP (Wasm)
 
@@ -11047,7 +11047,7 @@ https://livecodes.io/?template=php-wasm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/php -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/php -->
 
 # PHP
 
@@ -11112,7 +11112,7 @@ https://livecodes.io/?template=php
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/postcss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/postcss -->
 
 # PostCSS
 
@@ -11120,7 +11120,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/postcssImportUrl -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/postcssImportUrl -->
 
 # Import Url
 
@@ -11128,7 +11128,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/postcssPresetEnv -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/postcssPresetEnv -->
 
 # Preset Env
 
@@ -11136,7 +11136,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/postgresql -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/postgresql -->
 
 # PostgreSQL
 
@@ -11307,7 +11307,7 @@ https://livecodes.io/?template=postgresql
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/prolog -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/prolog -->
 
 # Prolog
 
@@ -11315,7 +11315,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/pug -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/pug -->
 
 # Pug
 
@@ -11451,7 +11451,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/purgecss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/purgecss -->
 
 # PurgeCSS
 
@@ -11459,7 +11459,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/python-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/python-wasm -->
 
 # Python (Wasm)
 
@@ -11598,7 +11598,7 @@ https://livecodes.io/?template=python-wasm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/python -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/python -->
 
 # Python
 
@@ -11673,7 +11673,7 @@ https://livecodes.io/?template=python
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/r -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/r -->
 
 # R
 
@@ -11863,7 +11863,7 @@ https://livecodes.io/?template=r
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/react-native-tsx -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/react-native-tsx -->
 
 # React Native (TSX)
 
@@ -11936,7 +11936,7 @@ https://livecodes.io/?template=react-native (uses JSX)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/react-native -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/react-native -->
 
 # React Native
 
@@ -12011,7 +12011,7 @@ https://livecodes.io/?template=react-native
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/react-tsx -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/react-tsx -->
 
 # React (TSX)
 
@@ -12088,7 +12088,7 @@ Please note that custom settings should be valid JSON (i.e. functions are not al
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/react -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/react -->
 
 # React
 
@@ -12395,7 +12395,7 @@ https://livecodes.io/?template=react
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/reason -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/reason -->
 
 # Reason
 
@@ -12403,7 +12403,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/rescript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/rescript -->
 
 # ReScript
 
@@ -12411,7 +12411,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/richtext -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/richtext -->
 
 # Rich Text Editor
 
@@ -12419,7 +12419,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/riot -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/riot -->
 
 # Riot.js
 
@@ -12427,7 +12427,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/ruby-wasm -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/ruby-wasm -->
 
 # Ruby (Wasm)
 
@@ -12509,7 +12509,7 @@ https://livecodes.io/?template=ruby-wasm
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/ruby -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/ruby -->
 
 # Ruby
 
@@ -12589,7 +12589,7 @@ https://livecodes.io/?template=ruby
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/sass -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/sass -->
 
 # Sass
 
@@ -12597,7 +12597,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/scheme -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/scheme -->
 
 # Scheme
 
@@ -12714,7 +12714,7 @@ https://livecodes.io/?template=scheme
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/scss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/scss -->
 
 # SCSS
 
@@ -12722,7 +12722,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/solid -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/solid -->
 
 # Solid
 
@@ -12796,7 +12796,7 @@ https://livecodes.io/?template=solid (uses TSX)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/solid.tsx -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/solid.tsx -->
 
 # Solid (TS)
 
@@ -12870,7 +12870,7 @@ https://livecodes.io/?template=solid
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/sql -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/sql -->
 
 # SQL (SQLite)
 
@@ -13033,7 +13033,7 @@ https://livecodes.io/?template=sql
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/stencil -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/stencil -->
 
 # Stencil
 
@@ -13041,7 +13041,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/stylis -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/stylis -->
 
 # Stylis
 
@@ -13049,7 +13049,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/stylus -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/stylus -->
 
 # Stylus
 
@@ -13057,7 +13057,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/sucrase -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/sucrase -->
 
 # Sucrase
 
@@ -13119,7 +13119,7 @@ export const params = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/svelte -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/svelte -->
 
 # Svelte
 
@@ -13342,7 +13342,7 @@ https://livecodes.io/?template=svelte
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/tailwindcss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/tailwindcss -->
 
 # Tailwind CSS
 
@@ -13350,7 +13350,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/tcl -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/tcl -->
 
 # Tcl
 
@@ -13358,7 +13358,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/teal -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/teal -->
 
 # Teal
 
@@ -13419,7 +13419,7 @@ https://livecodes.io/?template=teal
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/tokencss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/tokencss -->
 
 # Token CSS
 
@@ -13427,7 +13427,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/tsx -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/tsx -->
 
 # TSX
 
@@ -13493,7 +13493,7 @@ Please note that custom settings should be valid JSON (i.e. functions are not al
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/twig -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/twig -->
 
 # Twig
 
@@ -13621,7 +13621,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/typescript -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/typescript -->
 
 # TypeScript
 
@@ -13629,7 +13629,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/unocss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/unocss -->
 
 # UnoCSS
 
@@ -13637,7 +13637,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/vento -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/vento -->
 
 # Vento
 
@@ -13762,7 +13762,7 @@ export const config2 = {
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/vue -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/vue -->
 
 # Vue SFC
 
@@ -14190,7 +14190,7 @@ https://livecodes.io/?template=vue
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/vue2 -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/vue2 -->
 
 # Vue 2 SFC
 
@@ -14250,7 +14250,7 @@ Using [Prettier](https://prettier.io/).
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/wat -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/wat -->
 
 # WebAssembly Text
 
@@ -14258,7 +14258,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/languages/windicss -->
+<!-- Source: https://play.nitrocode.ir/docs/languages/windicss -->
 
 # Windi CSS
 
@@ -14266,7 +14266,7 @@ TODO...
 
 ---
 
-<!-- Source: https://livecodes.io/docs/tutorials/index -->
+<!-- Source: https://play.nitrocode.ir/docs/tutorials/index -->
 
 # Guides & Tutorials
 
@@ -14287,7 +14287,7 @@ Choose a guide above to get started!
 
 ---
 
-<!-- Source: https://livecodes.io/docs/tutorials/getting-started-guide -->
+<!-- Source: https://play.nitrocode.ir/docs/tutorials/getting-started-guide -->
 
 import CodeBlock from '@theme/CodeBlock';
 import LiveCodes from '../../src/components/LiveCodes.tsx';
@@ -14427,7 +14427,7 @@ Now that you've created your first project, explore:
 
 ---
 
-<!-- Source: https://livecodes.io/docs/tutorials/building-your-first-app -->
+<!-- Source: https://play.nitrocode.ir/docs/tutorials/building-your-first-app -->
 
 import CodeBlock from '@theme/CodeBlock';
 import LiveCodes from '../../src/components/LiveCodes.tsx';
@@ -14613,7 +14613,7 @@ Compare your version with the completed project above. Did you add any personal 
 
 ---
 
-<!-- Source: https://livecodes.io/docs/bookmarklet -->
+<!-- Source: https://play.nitrocode.ir/docs/bookmarklet -->
 
 # Bookmarklet
 
@@ -14652,7 +14652,7 @@ LiveCodes playground should open in a new window and [import](./features/import.
 
 ---
 
-<!-- Source: https://livecodes.io/docs/gh-action -->
+<!-- Source: https://play.nitrocode.ir/docs/gh-action -->
 
 # GitHub Action ⚡
 
@@ -14668,7 +14668,7 @@ For usage and more information, see the [action docs](https://github.com/live-co
 
 ---
 
-<!-- Source: https://livecodes.io/docs/markdown-to-livecodes -->
+<!-- Source: https://play.nitrocode.ir/docs/markdown-to-livecodes -->
 
 # Markdown to LiveCodes
 
@@ -15255,7 +15255,7 @@ export default defineConfig({
 
 ---
 
-<!-- Source: https://livecodes.io/docs/contribution -->
+<!-- Source: https://play.nitrocode.ir/docs/contribution -->
 
 # Contribution
 
@@ -15273,7 +15273,7 @@ Thank you :)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/credits -->
+<!-- Source: https://play.nitrocode.ir/docs/credits -->
 
 # Credits
 
@@ -15448,7 +15448,7 @@ Thank you ❤️
 
 ---
 
-<!-- Source: https://livecodes.io/docs/license -->
+<!-- Source: https://play.nitrocode.ir/docs/license -->
 
 # License
 
@@ -15462,7 +15462,7 @@ Please consider [sponsoring LiveCodes](./sponsor.html.md) to support its mainten
 
 ---
 
-<!-- Source: https://livecodes.io/docs/sponsor -->
+<!-- Source: https://play.nitrocode.ir/docs/sponsor -->
 
 import MailLink from '../src/components/MailLink.tsx';
 
@@ -15590,7 +15590,7 @@ If you are interested in becoming a sponsor of LiveCodes, please don't hesitate 
 
 ---
 
-<!-- Source: https://livecodes.io/docs/contact -->
+<!-- Source: https://play.nitrocode.ir/docs/contact -->
 
 # Contact {#contact-custom-content-none}
 
@@ -15613,7 +15613,7 @@ Please follow the twitter account: [@livecodes_io](https://twitter.com/livecodes
 
 ---
 
-<!-- Source: https://livecodes.io/docs/about -->
+<!-- Source: https://play.nitrocode.ir/docs/about -->
 
 # About us
 
@@ -15629,7 +15629,7 @@ Please consider [sponsoring LiveCodes](./sponsor.html.md) to support its mainten
 
 ---
 
-<!-- Source: https://livecodes.io/docs/examples/display-modes/index -->
+<!-- Source: https://play.nitrocode.ir/docs/examples/display-modes/index -->
 
 # Display Modes
 
@@ -15640,7 +15640,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/examples/display-modes/full -->
+<!-- Source: https://play.nitrocode.ir/docs/examples/display-modes/full -->
 
 # Display Mode: full
 
@@ -15650,7 +15650,7 @@ import LiveCodes from '../../../src/components/LiveCodes.tsx';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/examples/display-modes/editor -->
+<!-- Source: https://play.nitrocode.ir/docs/examples/display-modes/editor -->
 
 # Display Mode: editor
 
@@ -15660,7 +15660,7 @@ import LiveCodes from '../../../src/components/LiveCodes.tsx';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/examples/display-modes/codeblock -->
+<!-- Source: https://play.nitrocode.ir/docs/examples/display-modes/codeblock -->
 
 # Display Mode: codeblock
 
@@ -15670,7 +15670,7 @@ import LiveCodes from '../../../src/components/LiveCodes.tsx';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/examples/display-modes/result -->
+<!-- Source: https://play.nitrocode.ir/docs/examples/display-modes/result -->
 
 # Display Mode: result
 
@@ -15680,7 +15680,7 @@ import LiveCodes from '../../../src/components/LiveCodes.tsx';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/index -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/index -->
 
 # \_internal
 
@@ -15722,7 +15722,7 @@ import LiveCodes from '../../../src/components/LiveCodes.tsx';
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/API -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/API -->
 
 # Interface: API
 
@@ -15758,7 +15758,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:211](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L211)
+[models.ts:211](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L211)
 
 ***
 
@@ -15782,7 +15782,7 @@ See [docs](https://play.nitrocode.ir/docs/sdk/js-ts#exec) for details.
 
 #### Defined in
 
-[models.ts:194](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L194)
+[models.ts:194](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L194)
 
 ***
 
@@ -15816,7 +15816,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:31](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L31)
+[models.ts:31](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L31)
 
 ***
 
@@ -15850,7 +15850,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:105](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L105)
+[models.ts:105](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L105)
 
 ***
 
@@ -15883,7 +15883,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:64](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L64)
+[models.ts:64](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L64)
 
 ***
 
@@ -15917,7 +15917,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:48](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L48)
+[models.ts:48](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L48)
 
 ***
 
@@ -15949,7 +15949,7 @@ Use [`watch`](https://play.nitrocode.ir/docs/sdk/js-ts#watch) method instead.
 
 #### Defined in
 
-[models.ts:142](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L142)
+[models.ts:142](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L142)
 
 ***
 
@@ -15976,7 +15976,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:14](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L14)
+[models.ts:14](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L14)
 
 ***
 
@@ -16006,7 +16006,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:135](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L135)
+[models.ts:135](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L135)
 
 ***
 
@@ -16043,7 +16043,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:84](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L84)
+[models.ts:84](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L84)
 
 ***
 
@@ -16086,7 +16086,7 @@ await playground.show("console", { full: true });
 
 #### Defined in
 
-[models.ts:119](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L119)
+[models.ts:119](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L119)
 
 ***
 
@@ -16140,11 +16140,11 @@ createPlayground("#container").then((playground) => {
 
 #### Defined in
 
-[models.ts:187](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L187)
+[models.ts:187](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L187)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/AppConfig -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/AppConfig -->
 
 # Interface: AppConfig
 
@@ -16170,7 +16170,7 @@ true
 
 #### Defined in
 
-[models.ts:603](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L603)
+[models.ts:603](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L603)
 
 ***
 
@@ -16188,7 +16188,7 @@ Sets the [display mode](https://play.nitrocode.ir/docs/features/display-modes).
 
 #### Defined in
 
-[models.ts:615](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L615)
+[models.ts:615](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L615)
 
 ***
 
@@ -16209,7 +16209,7 @@ false
 
 #### Defined in
 
-[models.ts:597](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L597)
+[models.ts:597](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L597)
 
 ***
 
@@ -16253,7 +16253,7 @@ Sets enabled and active tools and status of [tools pane](https://play.nitrocode.
 
 #### Defined in
 
-[models.ts:631](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L631)
+[models.ts:631](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L631)
 
 ***
 
@@ -16271,7 +16271,7 @@ Sets the [default view](https://play.nitrocode.ir/docs/features/default-view) fo
 
 #### Defined in
 
-[models.ts:609](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L609)
+[models.ts:609](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L609)
 
 ***
 
@@ -16283,11 +16283,11 @@ Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#res
 
 #### Defined in
 
-[models.ts:640](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L640)
+[models.ts:640](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L640)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/ContentConfig -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/ContentConfig -->
 
 # Interface: ContentConfig
 
@@ -16309,7 +16309,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 #### Defined in
 
-[models.ts:455](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L455)
+[models.ts:455](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L455)
 
 ***
 
@@ -16321,7 +16321,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 #### Defined in
 
-[models.ts:502](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L502)
+[models.ts:502](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L502)
 
 ***
 
@@ -17241,7 +17241,7 @@ Defines [custom settings](https://play.nitrocode.ir/docs/advanced/custom-setting
 
 #### Defined in
 
-[models.ts:514](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L514)
+[models.ts:514](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L514)
 
 ***
 
@@ -17260,7 +17260,7 @@ and [result page](https://play.nitrocode.ir/docs/features/result) description me
 
 #### Defined in
 
-[models.ts:425](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L425)
+[models.ts:425](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L425)
 
 ***
 
@@ -17278,7 +17278,7 @@ Content added to the [result page](https://play.nitrocode.ir/docs/features/resul
 
 #### Defined in
 
-[models.ts:431](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L431)
+[models.ts:431](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L431)
 
 ***
 
@@ -17298,7 +17298,7 @@ It can be an object or a string.
 
 #### Defined in
 
-[models.ts:440](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L440)
+[models.ts:440](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L440)
 
 ***
 
@@ -17335,7 +17335,7 @@ and [Custom Module Resolution](https://play.nitrocode.ir/docs/features/module-re
 
 #### Defined in
 
-[models.ts:540](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L540)
+[models.ts:540](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L540)
 
 ***
 
@@ -17349,7 +17349,7 @@ Defaults to all supported languages in full app and only current editor language
 
 #### Defined in
 
-[models.ts:462](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L462)
+[models.ts:462](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L462)
 
 ***
 
@@ -17473,7 +17473,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:470](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L470)
+[models.ts:470](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L470)
 
 ***
 
@@ -17487,7 +17487,7 @@ For the list of available processors, see [Processor](https://play.nitrocode.ir/
 
 #### Defined in
 
-[models.ts:509](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L509)
+[models.ts:509](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L509)
 
 ***
 
@@ -17611,7 +17611,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:486](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L486)
+[models.ts:486](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L486)
 
 ***
 
@@ -17623,7 +17623,7 @@ List of URLs for [external scripts](https://play.nitrocode.ir/docs/features/exte
 
 #### Defined in
 
-[models.ts:496](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L496)
+[models.ts:496](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L496)
 
 ***
 
@@ -17747,7 +17747,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:478](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L478)
+[models.ts:478](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L478)
 
 ***
 
@@ -17759,7 +17759,7 @@ List of URLs for [external stylesheets](https://play.nitrocode.ir/docs/features/
 
 #### Defined in
 
-[models.ts:491](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L491)
+[models.ts:491](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L491)
 
 ***
 
@@ -17778,7 +17778,7 @@ Used in [project](https://play.nitrocode.ir/docs/features/projects) filter and s
 
 #### Defined in
 
-[models.ts:447](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L447)
+[models.ts:447](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L447)
 
 ***
 
@@ -17791,7 +17791,7 @@ and content of [tests](https://play.nitrocode.ir/docs/features/tests).
 
 #### Defined in
 
-[models.ts:576](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L576)
+[models.ts:576](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L576)
 
 ***
 
@@ -17811,7 +17811,7 @@ Also used in project search.
 
 #### Defined in
 
-[models.ts:418](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L418)
+[models.ts:418](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L418)
 
 ***
 
@@ -17849,7 +17849,7 @@ and [Custom Types](https://play.nitrocode.ir/docs/features/intellisense#custom-t
 
 #### Defined in
 
-[models.ts:570](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L570)
+[models.ts:570](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L570)
 
 ***
 
@@ -17863,11 +17863,11 @@ Version specified in [exported](https://play.nitrocode.ir/docs/features/export) 
 
 #### Defined in
 
-[models.ts:583](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L583)
+[models.ts:583](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L583)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/EditorConfig -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/EditorConfig -->
 
 # Interface: EditorConfig
 
@@ -17891,7 +17891,7 @@ true
 
 #### Defined in
 
-[models.ts:801](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L801)
+[models.ts:801](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L801)
 
 ***
 
@@ -17915,7 +17915,7 @@ undefined
 
 #### Defined in
 
-[models.ts:722](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L722)
+[models.ts:722](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L722)
 
 ***
 
@@ -17927,7 +17927,7 @@ Sets [editor mode](https://play.nitrocode.ir/docs/features/editor-settings#edito
 
 #### Defined in
 
-[models.ts:812](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L812)
+[models.ts:812](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L812)
 
 ***
 
@@ -17963,7 +17963,7 @@ See docs for [editor themes](https://play.nitrocode.ir/docs/configuration/config
 
 #### Defined in
 
-[models.ts:748](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L748)
+[models.ts:748](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L748)
 
 ***
 
@@ -17981,7 +17981,7 @@ true
 
 #### Defined in
 
-[models.ts:807](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L807)
+[models.ts:807](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L807)
 
 ***
 
@@ -17999,7 +17999,7 @@ false
 
 #### Defined in
 
-[models.ts:818](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L818)
+[models.ts:818](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L818)
 
 ***
 
@@ -18017,7 +18017,7 @@ false
 
 #### Defined in
 
-[models.ts:795](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L795)
+[models.ts:795](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L795)
 
 ***
 
@@ -18029,7 +18029,7 @@ Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) 
 
 #### Defined in
 
-[models.ts:753](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L753)
+[models.ts:753](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L753)
 
 ***
 
@@ -18049,7 +18049,7 @@ undefined
 
 #### Defined in
 
-[models.ts:761](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L761)
+[models.ts:761](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L761)
 
 ***
 
@@ -18067,7 +18067,7 @@ true
 
 #### Defined in
 
-[models.ts:783](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L783)
+[models.ts:783](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L783)
 
 ***
 
@@ -18087,7 +18087,7 @@ Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-form
 
 #### Defined in
 
-[models.ts:777](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L777)
+[models.ts:777](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L777)
 
 ***
 
@@ -18105,7 +18105,7 @@ Sets the app [theme](https://play.nitrocode.ir/docs/features/themes) to light/da
 
 #### Defined in
 
-[models.ts:728](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L728)
+[models.ts:728](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L728)
 
 ***
 
@@ -18124,7 +18124,7 @@ undefined
 
 #### Defined in
 
-[models.ts:735](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L735)
+[models.ts:735](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L735)
 
 ***
 
@@ -18144,7 +18144,7 @@ false
 
 #### Defined in
 
-[models.ts:769](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L769)
+[models.ts:769](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L769)
 
 ***
 
@@ -18162,11 +18162,11 @@ false
 
 #### Defined in
 
-[models.ts:789](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L789)
+[models.ts:789](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L789)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/EditorPosition -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/EditorPosition -->
 
 # Interface: EditorPosition
 
@@ -18178,7 +18178,7 @@ false
 
 #### Defined in
 
-[models.ts:1170](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1170)
+[models.ts:1170](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1170)
 
 ***
 
@@ -18188,11 +18188,11 @@ false
 
 #### Defined in
 
-[models.ts:1169](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1169)
+[models.ts:1169](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1169)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/FormatterConfig -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/FormatterConfig -->
 
 # Interface: FormatterConfig
 
@@ -18216,7 +18216,7 @@ true
 
 #### Defined in
 
-[models.ts:838](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L838)
+[models.ts:838](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L838)
 
 ***
 
@@ -18234,7 +18234,7 @@ false
 
 #### Defined in
 
-[models.ts:843](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L843)
+[models.ts:843](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L843)
 
 ***
 
@@ -18252,7 +18252,7 @@ The number of spaces per indentation-level.
 
 #### Defined in
 
-[models.ts:832](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L832)
+[models.ts:832](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L832)
 
 ***
 
@@ -18270,7 +18270,7 @@ true
 
 #### Defined in
 
-[models.ts:849](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L849)
+[models.ts:849](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L849)
 
 ***
 
@@ -18288,11 +18288,11 @@ false
 
 #### Defined in
 
-[models.ts:826](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L826)
+[models.ts:826](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L826)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/TestResult -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/TestResult -->
 
 # Interface: TestResult
 
@@ -18304,7 +18304,7 @@ false
 
 #### Defined in
 
-[models.ts:1989](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1989)
+[models.ts:1989](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1989)
 
 ***
 
@@ -18314,7 +18314,7 @@ false
 
 #### Defined in
 
-[models.ts:1990](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1990)
+[models.ts:1990](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1990)
 
 ***
 
@@ -18324,7 +18324,7 @@ false
 
 #### Defined in
 
-[models.ts:1991](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1991)
+[models.ts:1991](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1991)
 
 ***
 
@@ -18334,11 +18334,11 @@ false
 
 #### Defined in
 
-[models.ts:1992](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1992)
+[models.ts:1992](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1992)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/Types -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/Types -->
 
 # Interface: Types
 
@@ -18348,7 +18348,7 @@ false
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/interfaces/UserConfig -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/interfaces/UserConfig -->
 
 # Interface: UserConfig
 
@@ -18370,7 +18370,7 @@ Sets the app UI language used.
 
 #### Defined in
 
-[models.ts:707](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L707)
+[models.ts:707](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L707)
 
 ***
 
@@ -18389,7 +18389,7 @@ false
 
 #### Defined in
 
-[models.ts:656](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L656)
+[models.ts:656](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L656)
 
 ***
 
@@ -18407,7 +18407,7 @@ false
 
 #### Defined in
 
-[models.ts:662](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L662)
+[models.ts:662](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L662)
 
 ***
 
@@ -18426,7 +18426,7 @@ true
 
 #### Defined in
 
-[models.ts:649](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L649)
+[models.ts:649](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L649)
 
 ***
 
@@ -18448,7 +18448,7 @@ true
 
 #### Defined in
 
-[models.ts:801](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L801)
+[models.ts:801](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L801)
 
 ***
 
@@ -18468,7 +18468,7 @@ and/or the project is saved (if [`autosave`](https://play.nitrocode.ir/docs/conf
 
 #### Defined in
 
-[models.ts:670](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L670)
+[models.ts:670](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L670)
 
 ***
 
@@ -18496,7 +18496,7 @@ undefined
 
 #### Defined in
 
-[models.ts:722](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L722)
+[models.ts:722](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L722)
 
 ***
 
@@ -18512,7 +18512,7 @@ Sets [editor mode](https://play.nitrocode.ir/docs/features/editor-settings#edito
 
 #### Defined in
 
-[models.ts:812](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L812)
+[models.ts:812](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L812)
 
 ***
 
@@ -18552,7 +18552,7 @@ See docs for [editor themes](https://play.nitrocode.ir/docs/configuration/config
 
 #### Defined in
 
-[models.ts:748](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L748)
+[models.ts:748](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L748)
 
 ***
 
@@ -18574,7 +18574,7 @@ true
 
 #### Defined in
 
-[models.ts:807](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L807)
+[models.ts:807](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L807)
 
 ***
 
@@ -18596,7 +18596,7 @@ false
 
 #### Defined in
 
-[models.ts:818](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L818)
+[models.ts:818](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L818)
 
 ***
 
@@ -18618,7 +18618,7 @@ false
 
 #### Defined in
 
-[models.ts:795](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L795)
+[models.ts:795](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L795)
 
 ***
 
@@ -18634,7 +18634,7 @@ Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) 
 
 #### Defined in
 
-[models.ts:753](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L753)
+[models.ts:753](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L753)
 
 ***
 
@@ -18658,7 +18658,7 @@ undefined
 
 #### Defined in
 
-[models.ts:761](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L761)
+[models.ts:761](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L761)
 
 ***
 
@@ -18676,7 +18676,7 @@ false
 
 #### Defined in
 
-[models.ts:676](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L676)
+[models.ts:676](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L676)
 
 ***
 
@@ -18697,7 +18697,7 @@ otherwise horizontal.
 
 #### Defined in
 
-[models.ts:685](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L685)
+[models.ts:685](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L685)
 
 ***
 
@@ -18719,7 +18719,7 @@ true
 
 #### Defined in
 
-[models.ts:783](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L783)
+[models.ts:783](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L783)
 
 ***
 
@@ -18737,7 +18737,7 @@ true
 
 #### Defined in
 
-[models.ts:691](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L691)
+[models.ts:691](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L691)
 
 ***
 
@@ -18759,7 +18759,7 @@ true
 
 #### Defined in
 
-[models.ts:838](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L838)
+[models.ts:838](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L838)
 
 ***
 
@@ -18777,7 +18777,7 @@ false
 
 #### Defined in
 
-[models.ts:697](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L697)
+[models.ts:697](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L697)
 
 ***
 
@@ -18799,7 +18799,7 @@ false
 
 #### Defined in
 
-[models.ts:843](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L843)
+[models.ts:843](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L843)
 
 ***
 
@@ -18823,7 +18823,7 @@ Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-form
 
 #### Defined in
 
-[models.ts:777](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L777)
+[models.ts:777](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L777)
 
 ***
 
@@ -18845,7 +18845,7 @@ Sets the app [theme](https://play.nitrocode.ir/docs/features/themes) to light/da
 
 #### Defined in
 
-[models.ts:728](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L728)
+[models.ts:728](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L728)
 
 ***
 
@@ -18868,7 +18868,7 @@ undefined
 
 #### Defined in
 
-[models.ts:735](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L735)
+[models.ts:735](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L735)
 
 ***
 
@@ -18890,7 +18890,7 @@ true
 
 #### Defined in
 
-[models.ts:849](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L849)
+[models.ts:849](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L849)
 
 ***
 
@@ -18914,7 +18914,7 @@ false
 
 #### Defined in
 
-[models.ts:769](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L769)
+[models.ts:769](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L769)
 
 ***
 
@@ -18926,7 +18926,7 @@ If `true`, the [welcome screen](https://play.nitrocode.ir/docs/features/welcome)
 
 #### Defined in
 
-[models.ts:702](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L702)
+[models.ts:702](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L702)
 
 ***
 
@@ -18948,11 +18948,11 @@ false
 
 #### Defined in
 
-[models.ts:789](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L789)
+[models.ts:789](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L789)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/APICommands -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/APICommands -->
 
 # Type Alias: APICommands
 
@@ -18960,11 +18960,11 @@ false
 
 ## Defined in
 
-[models.ts:280](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L280)
+[models.ts:280](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L280)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/AppLanguage -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/AppLanguage -->
 
 # Type Alias: AppLanguage
 
@@ -18972,11 +18972,11 @@ false
 
 ## Defined in
 
-[models.ts:1786](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1786)
+[models.ts:1786](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1786)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/CDN -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/CDN -->
 
 # Type Alias: CDN
 
@@ -18984,11 +18984,11 @@ false
 
 ## Defined in
 
-[models.ts:1871](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1871)
+[models.ts:1871](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1871)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/CodejarTheme -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/CodejarTheme -->
 
 # Type Alias: CodejarTheme
 
@@ -18996,11 +18996,11 @@ false
 
 ## Defined in
 
-[models.ts:1695](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1695)
+[models.ts:1695](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1695)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/CodemirrorTheme -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/CodemirrorTheme -->
 
 # Type Alias: CodemirrorTheme
 
@@ -19008,11 +19008,11 @@ false
 
 ## Defined in
 
-[models.ts:1655](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1655)
+[models.ts:1655](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1655)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/CssPresetId -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/CssPresetId -->
 
 # Type Alias: CssPresetId
 
@@ -19020,11 +19020,11 @@ false
 
 ## Defined in
 
-[models.ts:1274](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1274)
+[models.ts:1274](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1274)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/EditorId -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/EditorId -->
 
 # Type Alias: EditorId
 
@@ -19032,11 +19032,11 @@ false
 
 ## Defined in
 
-[models.ts:1173](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1173)
+[models.ts:1173](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1173)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/EditorTheme -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/EditorTheme -->
 
 # Type Alias: EditorTheme
 
@@ -19044,11 +19044,11 @@ false
 
 ## Defined in
 
-[models.ts:1748](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1748)
+[models.ts:1748](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1748)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/MonacoTheme -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/MonacoTheme -->
 
 # Type Alias: MonacoTheme
 
@@ -19056,11 +19056,11 @@ false
 
 ## Defined in
 
-[models.ts:1588](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1588)
+[models.ts:1588](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1588)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/Processor -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/Processor -->
 
 # Type Alias: Processor
 
@@ -19068,11 +19068,11 @@ false
 
 ## Defined in
 
-[models.ts:1231](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1231)
+[models.ts:1231](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1231)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/TemplateName -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/TemplateName -->
 
 # Type Alias: TemplateName
 
@@ -19080,11 +19080,11 @@ false
 
 ## Defined in
 
-[models.ts:1383](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1383)
+[models.ts:1383](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1383)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/Theme -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/Theme -->
 
 # Type Alias: Theme
 
@@ -19092,11 +19092,11 @@ false
 
 ## Defined in
 
-[models.ts:1936](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1936)
+[models.ts:1936](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1936)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/ToolsPaneStatus -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/ToolsPaneStatus -->
 
 # Type Alias: ToolsPaneStatus
 
@@ -19104,11 +19104,11 @@ false
 
 ## Defined in
 
-[models.ts:1464](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1464)
+[models.ts:1464](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1464)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/WatchCode -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/WatchCode -->
 
 # Type Alias: WatchCode()
 
@@ -19146,11 +19146,11 @@ This includes changes in:
 
 ## Defined in
 
-[models.ts:248](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L248)
+[models.ts:248](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L248)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/WatchConsole -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/WatchConsole -->
 
 # Type Alias: WatchConsole()
 
@@ -19176,11 +19176,11 @@ This includes changes in:
 
 ## Defined in
 
-[models.ts:253](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L253)
+[models.ts:253](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L253)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/WatchDestroy -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/WatchDestroy -->
 
 # Type Alias: WatchDestroy()
 
@@ -19206,11 +19206,11 @@ This includes changes in:
 
 ## Defined in
 
-[models.ts:263](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L263)
+[models.ts:263](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L263)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/WatchLoad -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/WatchLoad -->
 
 # Type Alias: WatchLoad()
 
@@ -19238,11 +19238,11 @@ Called when the playground first loads.
 
 ## Defined in
 
-[models.ts:225](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L225)
+[models.ts:225](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L225)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/WatchReady -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/WatchReady -->
 
 # Type Alias: WatchReady()
 
@@ -19270,11 +19270,11 @@ Called when a new project is loaded (including when [imported](https://play.nitr
 
 ## Defined in
 
-[models.ts:230](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L230)
+[models.ts:230](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L230)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/internal/type-aliases/WatchTests -->
+<!-- Source: https://play.nitrocode.ir/docs/api/internal/type-aliases/WatchTests -->
 
 # Type Alias: WatchTests()
 
@@ -19300,11 +19300,11 @@ Called when a new project is loaded (including when [imported](https://play.nitr
 
 ## Defined in
 
-[models.ts:258](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L258)
+[models.ts:258](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L258)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/interfaces/Code -->
+<!-- Source: https://play.nitrocode.ir/docs/api/interfaces/Code -->
 
 # Interface: Code
 
@@ -19333,7 +19333,7 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1918](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1918)
+[models.ts:1918](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1918)
 
 ***
 
@@ -19343,7 +19343,7 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1933](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1933)
+[models.ts:1933](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1933)
 
 ***
 
@@ -19365,7 +19365,7 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1928](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1928)
+[models.ts:1928](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1928)
 
 ***
 
@@ -19387,11 +19387,11 @@ See [docs](https://play.nitrocode.ir/docs/api/interfaces/Code) for details.
 
 #### Defined in
 
-[models.ts:1923](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L1923)
+[models.ts:1923](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L1923)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/interfaces/Config -->
+<!-- Source: https://play.nitrocode.ir/docs/api/interfaces/Config -->
 
 # Interface: Config
 
@@ -19421,7 +19421,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 #### Defined in
 
-[models.ts:455](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L455)
+[models.ts:455](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L455)
 
 ***
 
@@ -19443,7 +19443,7 @@ true
 
 #### Defined in
 
-[models.ts:603](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L603)
+[models.ts:603](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L603)
 
 ***
 
@@ -19459,7 +19459,7 @@ Sets the app UI language used.
 
 #### Defined in
 
-[models.ts:707](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L707)
+[models.ts:707](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L707)
 
 ***
 
@@ -19482,7 +19482,7 @@ false
 
 #### Defined in
 
-[models.ts:656](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L656)
+[models.ts:656](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L656)
 
 ***
 
@@ -19504,7 +19504,7 @@ false
 
 #### Defined in
 
-[models.ts:662](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L662)
+[models.ts:662](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L662)
 
 ***
 
@@ -19527,7 +19527,7 @@ true
 
 #### Defined in
 
-[models.ts:649](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L649)
+[models.ts:649](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L649)
 
 ***
 
@@ -19549,7 +19549,7 @@ true
 
 #### Defined in
 
-[models.ts:801](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L801)
+[models.ts:801](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L801)
 
 ***
 
@@ -19565,7 +19565,7 @@ true
 
 #### Defined in
 
-[models.ts:502](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L502)
+[models.ts:502](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L502)
 
 ***
 
@@ -20489,7 +20489,7 @@ Defines [custom settings](https://play.nitrocode.ir/docs/advanced/custom-setting
 
 #### Defined in
 
-[models.ts:514](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L514)
+[models.ts:514](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L514)
 
 ***
 
@@ -20513,7 +20513,7 @@ and/or the project is saved (if [`autosave`](https://play.nitrocode.ir/docs/conf
 
 #### Defined in
 
-[models.ts:670](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L670)
+[models.ts:670](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L670)
 
 ***
 
@@ -20536,7 +20536,7 @@ and [result page](https://play.nitrocode.ir/docs/features/result) description me
 
 #### Defined in
 
-[models.ts:425](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L425)
+[models.ts:425](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L425)
 
 ***
 
@@ -20564,7 +20564,7 @@ undefined
 
 #### Defined in
 
-[models.ts:722](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L722)
+[models.ts:722](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L722)
 
 ***
 
@@ -20580,7 +20580,7 @@ Sets [editor mode](https://play.nitrocode.ir/docs/features/editor-settings#edito
 
 #### Defined in
 
-[models.ts:812](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L812)
+[models.ts:812](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L812)
 
 ***
 
@@ -20620,7 +20620,7 @@ See docs for [editor themes](https://play.nitrocode.ir/docs/configuration/config
 
 #### Defined in
 
-[models.ts:748](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L748)
+[models.ts:748](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L748)
 
 ***
 
@@ -20642,7 +20642,7 @@ true
 
 #### Defined in
 
-[models.ts:807](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L807)
+[models.ts:807](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L807)
 
 ***
 
@@ -20664,7 +20664,7 @@ false
 
 #### Defined in
 
-[models.ts:818](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L818)
+[models.ts:818](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L818)
 
 ***
 
@@ -20686,7 +20686,7 @@ false
 
 #### Defined in
 
-[models.ts:795](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L795)
+[models.ts:795](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L795)
 
 ***
 
@@ -20702,7 +20702,7 @@ Sets the [code editor](https://play.nitrocode.ir/docs/features/editor-settings) 
 
 #### Defined in
 
-[models.ts:753](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L753)
+[models.ts:753](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L753)
 
 ***
 
@@ -20726,7 +20726,7 @@ undefined
 
 #### Defined in
 
-[models.ts:761](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L761)
+[models.ts:761](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L761)
 
 ***
 
@@ -20748,7 +20748,7 @@ false
 
 #### Defined in
 
-[models.ts:676](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L676)
+[models.ts:676](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L676)
 
 ***
 
@@ -20770,7 +20770,7 @@ Content added to the [result page](https://play.nitrocode.ir/docs/features/resul
 
 #### Defined in
 
-[models.ts:431](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L431)
+[models.ts:431](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L431)
 
 ***
 
@@ -20794,7 +20794,7 @@ It can be an object or a string.
 
 #### Defined in
 
-[models.ts:440](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L440)
+[models.ts:440](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L440)
 
 ***
 
@@ -20835,7 +20835,7 @@ and [Custom Module Resolution](https://play.nitrocode.ir/docs/features/module-re
 
 #### Defined in
 
-[models.ts:540](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L540)
+[models.ts:540](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L540)
 
 ***
 
@@ -20853,7 +20853,7 @@ Defaults to all supported languages in full app and only current editor language
 
 #### Defined in
 
-[models.ts:462](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L462)
+[models.ts:462](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L462)
 
 ***
 
@@ -20878,7 +20878,7 @@ otherwise horizontal.
 
 #### Defined in
 
-[models.ts:685](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L685)
+[models.ts:685](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L685)
 
 ***
 
@@ -20900,7 +20900,7 @@ true
 
 #### Defined in
 
-[models.ts:783](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L783)
+[models.ts:783](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L783)
 
 ***
 
@@ -21028,7 +21028,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:470](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L470)
+[models.ts:470](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L470)
 
 ***
 
@@ -21050,7 +21050,7 @@ Sets the [display mode](https://play.nitrocode.ir/docs/features/display-modes).
 
 #### Defined in
 
-[models.ts:615](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L615)
+[models.ts:615](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L615)
 
 ***
 
@@ -21068,7 +21068,7 @@ For the list of available processors, see [Processor](https://play.nitrocode.ir/
 
 #### Defined in
 
-[models.ts:509](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L509)
+[models.ts:509](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L509)
 
 ***
 
@@ -21093,7 +21093,7 @@ false
 
 #### Defined in
 
-[models.ts:597](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L597)
+[models.ts:597](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L597)
 
 ***
 
@@ -21115,7 +21115,7 @@ true
 
 #### Defined in
 
-[models.ts:691](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L691)
+[models.ts:691](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L691)
 
 ***
 
@@ -21243,7 +21243,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:486](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L486)
+[models.ts:486](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L486)
 
 ***
 
@@ -21259,7 +21259,7 @@ List of URLs for [external scripts](https://play.nitrocode.ir/docs/features/exte
 
 #### Defined in
 
-[models.ts:496](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L496)
+[models.ts:496](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L496)
 
 ***
 
@@ -21281,7 +21281,7 @@ true
 
 #### Defined in
 
-[models.ts:838](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L838)
+[models.ts:838](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L838)
 
 ***
 
@@ -21303,7 +21303,7 @@ false
 
 #### Defined in
 
-[models.ts:697](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L697)
+[models.ts:697](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L697)
 
 ***
 
@@ -21325,7 +21325,7 @@ false
 
 #### Defined in
 
-[models.ts:843](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L843)
+[models.ts:843](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L843)
 
 ***
 
@@ -21453,7 +21453,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[models.ts:478](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L478)
+[models.ts:478](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L478)
 
 ***
 
@@ -21469,7 +21469,7 @@ List of URLs for [external stylesheets](https://play.nitrocode.ir/docs/features/
 
 #### Defined in
 
-[models.ts:491](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L491)
+[models.ts:491](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L491)
 
 ***
 
@@ -21493,7 +21493,7 @@ Also used in [code formatting](https://play.nitrocode.ir/docs/features/code-form
 
 #### Defined in
 
-[models.ts:777](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L777)
+[models.ts:777](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L777)
 
 ***
 
@@ -21516,7 +21516,7 @@ Used in [project](https://play.nitrocode.ir/docs/features/projects) filter and s
 
 #### Defined in
 
-[models.ts:447](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L447)
+[models.ts:447](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L447)
 
 ***
 
@@ -21533,7 +21533,7 @@ and content of [tests](https://play.nitrocode.ir/docs/features/tests).
 
 #### Defined in
 
-[models.ts:576](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L576)
+[models.ts:576](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L576)
 
 ***
 
@@ -21555,7 +21555,7 @@ Sets the app [theme](https://play.nitrocode.ir/docs/features/themes) to light/da
 
 #### Defined in
 
-[models.ts:728](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L728)
+[models.ts:728](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L728)
 
 ***
 
@@ -21578,7 +21578,7 @@ undefined
 
 #### Defined in
 
-[models.ts:735](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L735)
+[models.ts:735](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L735)
 
 ***
 
@@ -21602,7 +21602,7 @@ Also used in project search.
 
 #### Defined in
 
-[models.ts:418](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L418)
+[models.ts:418](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L418)
 
 ***
 
@@ -21650,7 +21650,7 @@ Sets enabled and active tools and status of [tools pane](https://play.nitrocode.
 
 #### Defined in
 
-[models.ts:631](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L631)
+[models.ts:631](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L631)
 
 ***
 
@@ -21672,7 +21672,7 @@ true
 
 #### Defined in
 
-[models.ts:849](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L849)
+[models.ts:849](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L849)
 
 ***
 
@@ -21714,7 +21714,7 @@ and [Custom Types](https://play.nitrocode.ir/docs/features/intellisense#custom-t
 
 #### Defined in
 
-[models.ts:570](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L570)
+[models.ts:570](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L570)
 
 ***
 
@@ -21738,7 +21738,7 @@ false
 
 #### Defined in
 
-[models.ts:769](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L769)
+[models.ts:769](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L769)
 
 ***
 
@@ -21756,7 +21756,7 @@ Version specified in [exported](https://play.nitrocode.ir/docs/features/export) 
 
 #### Defined in
 
-[models.ts:583](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L583)
+[models.ts:583](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L583)
 
 ***
 
@@ -21778,7 +21778,7 @@ Sets the [default view](https://play.nitrocode.ir/docs/features/default-view) fo
 
 #### Defined in
 
-[models.ts:609](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L609)
+[models.ts:609](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L609)
 
 ***
 
@@ -21794,7 +21794,7 @@ If `true`, the [welcome screen](https://play.nitrocode.ir/docs/features/welcome)
 
 #### Defined in
 
-[models.ts:702](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L702)
+[models.ts:702](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L702)
 
 ***
 
@@ -21816,7 +21816,7 @@ false
 
 #### Defined in
 
-[models.ts:789](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L789)
+[models.ts:789](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L789)
 
 ***
 
@@ -21832,11 +21832,11 @@ Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#res
 
 #### Defined in
 
-[models.ts:640](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L640)
+[models.ts:640](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L640)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/interfaces/EmbedOptions -->
+<!-- Source: https://play.nitrocode.ir/docs/api/interfaces/EmbedOptions -->
 
 # Interface: EmbedOptions
 
@@ -21863,7 +21863,7 @@ If supplied with an invalid URL, an error is thrown.
 
 #### Defined in
 
-[models.ts:314](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L314)
+[models.ts:314](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L314)
 
 ***
 
@@ -21883,7 +21883,7 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 #### Defined in
 
-[models.ts:346](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L346)
+[models.ts:346](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L346)
 
 ***
 
@@ -21901,7 +21901,7 @@ false
 
 #### Defined in
 
-[models.ts:352](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L352)
+[models.ts:352](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L352)
 
 ***
 
@@ -21913,7 +21913,7 @@ A resource to [import](https://play.nitrocode.ir/docs/features/import) (from any
 
 #### Defined in
 
-[models.ts:357](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L357)
+[models.ts:357](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L357)
 
 ***
 
@@ -21935,7 +21935,7 @@ false
 
 #### Defined in
 
-[models.ts:367](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L367)
+[models.ts:367](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L367)
 
 ***
 
@@ -21957,7 +21957,7 @@ Sets how the playground loads:
 
 #### Defined in
 
-[models.ts:377](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L377)
+[models.ts:377](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L377)
 
 ***
 
@@ -25666,7 +25666,7 @@ Sets result page [zoom level](https://play.nitrocode.ir/docs/features/result#res
 
 #### Defined in
 
-[models.ts:338](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L338)
+[models.ts:338](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L338)
 
 ***
 
@@ -25679,7 +25679,7 @@ Allowed valued can be found [here](https://play.nitrocode.ir/docs/api/internal/t
 
 #### Defined in
 
-[models.ts:383](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L383)
+[models.ts:383](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L383)
 
 ***
 
@@ -25704,11 +25704,11 @@ When set to `"headless"`, the playground is loaded in [headless mode](https://pl
 
 #### Defined in
 
-[models.ts:396](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L396)
+[models.ts:396](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L396)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/interfaces/Playground -->
+<!-- Source: https://play.nitrocode.ir/docs/api/interfaces/Playground -->
 
 # Interface: Playground
 
@@ -25754,7 +25754,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:211](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L211)
+[models.ts:211](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L211)
 
 ***
 
@@ -25782,7 +25782,7 @@ See [docs](https://play.nitrocode.ir/docs/sdk/js-ts#exec) for details.
 
 #### Defined in
 
-[models.ts:194](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L194)
+[models.ts:194](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L194)
 
 ***
 
@@ -25820,7 +25820,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:31](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L31)
+[models.ts:31](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L31)
 
 ***
 
@@ -25858,7 +25858,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:105](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L105)
+[models.ts:105](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L105)
 
 ***
 
@@ -25895,7 +25895,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:64](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L64)
+[models.ts:64](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L64)
 
 ***
 
@@ -25933,7 +25933,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:48](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L48)
+[models.ts:48](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L48)
 
 ***
 
@@ -25954,7 +25954,7 @@ If the playground was not loaded, calling any other method will load the playgro
 
 #### Defined in
 
-[models.ts:298](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L298)
+[models.ts:298](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L298)
 
 ***
 
@@ -25990,7 +25990,7 @@ Use [`watch`](https://play.nitrocode.ir/docs/sdk/js-ts#watch) method instead.
 
 #### Defined in
 
-[models.ts:142](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L142)
+[models.ts:142](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L142)
 
 ***
 
@@ -26021,7 +26021,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:14](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L14)
+[models.ts:14](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L14)
 
 ***
 
@@ -26055,7 +26055,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:135](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L135)
+[models.ts:135](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L135)
 
 ***
 
@@ -26096,7 +26096,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[models.ts:84](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L84)
+[models.ts:84](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L84)
 
 ***
 
@@ -26143,7 +26143,7 @@ await playground.show("console", { full: true });
 
 #### Defined in
 
-[models.ts:119](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L119)
+[models.ts:119](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L119)
 
 ***
 
@@ -26201,11 +26201,11 @@ createPlayground("#container").then((playground) => {
 
 #### Defined in
 
-[models.ts:187](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L187)
+[models.ts:187](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L187)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/type-aliases/Language -->
+<!-- Source: https://play.nitrocode.ir/docs/api/type-aliases/Language -->
 
 # Type Alias: Language
 
@@ -26215,11 +26215,11 @@ Language name, alias or extension.
 
 ## Defined in
 
-[models.ts:884](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/models.ts#L884)
+[models.ts:884](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/models.ts#L884)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/functions/createPlayground -->
+<!-- Source: https://play.nitrocode.ir/docs/api/functions/createPlayground -->
 
 # Function: createPlayground()
 
@@ -26248,7 +26248,7 @@ The [embed options](https://play.nitrocode.ir/docs/sdk/js-ts#embed-options) for 
 
 ### Defined in
 
-[index.ts:26](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/index.ts#L26)
+[index.ts:26](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/index.ts#L26)
 
 ## createPlayground(options)
 
@@ -26264,11 +26264,11 @@ The [embed options](https://play.nitrocode.ir/docs/sdk/js-ts#embed-options) for 
 
 ### Defined in
 
-[index.ts:30](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/index.ts#L30)
+[index.ts:30](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/index.ts#L30)
 
 ---
 
-<!-- Source: https://livecodes.io/docs/api/functions/getPlaygroundUrl -->
+<!-- Source: https://play.nitrocode.ir/docs/api/functions/getPlaygroundUrl -->
 
 # Function: getPlaygroundUrl()
 
@@ -26294,4 +26294,4 @@ unless config is a string in which case it is stored in searchParams
 
 ## Defined in
 
-[index.ts:387](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/index.ts#L387)
+[index.ts:387](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/index.ts#L387)

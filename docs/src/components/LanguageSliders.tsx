@@ -155,18 +155,7 @@ export default function Sliders() {
       <span>+</span>
       <Slider slide="script" lists={lists} cb={update} flipper={flipper} />
       <div className={styles.buttons}>
-        <Link
-          className="button button--outline button--primary button--lg"
-          onClick={() => open(false)}
-        >
-          Looks Good 🚀
-        </Link>
-        <Link
-          className="button button--outline button--warning button--lg"
-          onClick={() => open(true)}
-        >
-          Surprise me 🎁
-        </Link>
+        
       </div>
     </div>
   );

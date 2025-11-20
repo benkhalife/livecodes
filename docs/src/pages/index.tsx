@@ -20,15 +20,14 @@ function HomepageHeader() {
             className={styles.tryButton + ' button button--secondary button--lg'}
             href="pathname:///../"
           >
-            Start Coding ⚡
+            شروع کد نویسی ⚡
           </Link>
         </div>
-        <div className={styles.description}>
-          An open-source <strong>client-side</strong> playground for React, Vue, Svelte, Solid,
-          Typescript, Python, Go, Ruby, PHP and{' '}
-          <Link to="./languages">
-            <strong>90+ languages/frameworks</strong>
-          </Link>
+        <div dir='rtl' className={styles.description}>
+          محیط کد نویسی آزاد و رایگان <strong>تماما تحت وب و بدون نیاز به نصب،</strong> یک زمین بازی که
+          <br />
+           از فریمورک ها و زبان های  React, Vue, Svelte, Solid,
+          Typescript, Python, Go, Ruby, PHP پشتیبانی می کند
           .
         </div>
         <div className={styles.eaHomepage}>

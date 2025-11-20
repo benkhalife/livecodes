@@ -22,4 +22,4 @@ unless config is a string in which case it is stored in searchParams
 
 ## Defined in
 
-[index.ts:387](https://github.com/benkhalife/livecodes/blob/da8da11e25995a7c025d845c81dc0dfa4fa05ec5/src/sdk/index.ts#L387)
+[index.ts:387](https://github.com/benkhalife/livecodes/blob/79ad0ac2133f7a6bcd3c83c540720aad8d2531ec/src/sdk/index.ts#L387)

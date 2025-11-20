@@ -16,15 +16,15 @@ const baseUrl =
       : '/docs/';
 
 const config: Config = {
-  title: 'LiveCodes',
-  tagline: 'A Code Playground That Just Works!',
-  url: 'https://livecodes.io/',
+  title: 'Online NitroCode Editor',
+  tagline: 'ویرایشگر کد تحت وب نیترو',
+  url: 'https://play.nitrocode.ir/',
   baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'LiveCodes',
-  projectName: 'LiveCodes',
+  organizationName: 'NitroCode',
+  projectName: 'Online NitroCode Editor',
   customFields: {
     appVersion: appPkg.appVersion,
     sdkVersion: sdkPkg.version,
@@ -78,35 +78,35 @@ const config: Config = {
         src: 'img/livecodes-logo.svg',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'overview',
-          position: 'left',
-          label: 'Docs',
-        },
-        {
-          to: 'sdk',
-          position: 'left',
-          label: 'SDK',
-        },
-        { href: 'https://blog.livecodes.io', target: '_self', label: 'Blog', position: 'left' },
-        {
-          href: 'pathname:///../stories',
-          position: 'left',
-          label: 'Storybook',
-        },
+        // {
+        //   type: 'doc',
+        //   docId: 'overview',
+        //   position: 'left',
+        //   label: 'Docs',
+        // },
+        // {
+        //   to: 'sdk',
+        //   position: 'left',
+        //   label: 'SDK',
+        // },
+        // { href: 'https://blog.livecodes.io', target: '_self', label: 'Blog', position: 'left' },
+        // {
+        //   href: 'pathname:///../stories',
+        //   position: 'left',
+        //   label: 'Storybook',
+        // },
         {
           href: 'pathname:///../',
           label: 'App',
           position: 'right',
         },
+        // {
+        //   href: 'https://twitter.com/livecodes_io',
+        //   label: '𝕏',
+        //   position: 'right',
+        // },
         {
-          href: 'https://twitter.com/livecodes_io',
-          label: '𝕏',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/live-codes/livecodes',
+          href: 'https://github.com/benkhalife',
           label: 'GitHub',
           position: 'right',
         },
@@ -115,35 +115,35 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Overview',
-              to: '/overview',
-            },
-            {
-              label: 'Why Another Playground?',
-              to: '/why',
-            },
-            {
-              label: 'Getting Started',
-              to: '/getting-started',
-            },
-            {
-              label: 'Features',
-              to: '/features',
-            },
-            {
-              label: 'Languages',
-              to: '/languages',
-            },
-            {
-              label: 'SDK',
-              to: '/sdk',
-            },
-          ],
-        },
+        // {
+        //   title: 'Docs',
+        //   items: [
+        //     {
+        //       label: 'Overview',
+        //       to: '/overview',
+        //     },
+        //     {
+        //       label: 'Why Another Playground?',
+        //       to: '/why',
+        //     },
+        //     {
+        //       label: 'Getting Started',
+        //       to: '/getting-started',
+        //     },
+        //     {
+        //       label: 'Features',
+        //       to: '/features',
+        //     },
+        //     {
+        //       label: 'Languages',
+        //       to: '/languages',
+        //     },
+        //     {
+        //       label: 'SDK',
+        //       to: '/sdk',
+        //     },
+        //   ],
+        // },
         {
           title: 'LiveCodes',
           items: [
@@ -155,18 +155,18 @@ const config: Config = {
               label: 'Starter Templates',
               href: 'pathname:///../?new',
             },
-            {
-              label: 'Import...',
-              href: 'pathname:///../?screen=import',
-            },
-            {
-              label: 'AI Code Assistant 🪄',
-              to: '/features/ai',
-            },
-            {
-              label: 'Bookmarklet',
-              to: '/bookmarklet',
-            },
+            // {
+            //   label: 'Import...',
+            //   href: 'pathname:///../?screen=import',
+            // },
+            // {
+            //   label: 'AI Code Assistant 🪄',
+            //   to: '/features/ai',
+            // },
+            // {
+            //   label: 'Bookmarklet',
+            //   to: '/bookmarklet',
+            // },
             {
               html: `<span style="display: flex; gap: 0.5em; align-items: baseline;"><a href="/docs/llms.txt" target="_blank" class="footer__link-item">llms.txt</a>-<a href="/docs/llms-full.txt" target="_blank" class="footer__link-item">llms-full.txt</a></span>`,
             },
@@ -175,18 +175,18 @@ const config: Config = {
         {
           title: 'Info',
           items: [
-            {
-              label: 'Credits',
-              to: '/credits',
-            },
-            {
-              label: 'License',
-              to: '/license',
-            },
-            {
-              label: 'Sponsor 💚',
-              to: '/sponsor',
-            },
+            // {
+            //   label: 'Credits',
+            //   to: '/credits',
+            // },
+            // {
+            //   label: 'License',
+            //   to: '/license',
+            // },
+            // {
+            //   label: 'Sponsor 💚',
+            //   to: '/sponsor',
+            // },
             {
               label: 'Contact',
               to: '/contact',
@@ -202,34 +202,35 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
-              href: 'https://blog.livecodes.io',
+              href: 'https://nitrocode.ir/posts',
               target: '_self',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/live-codes/livecodes',
+              href: 'https://github.com/benkhalife',
             },
-            {
-              label: '𝕏 / Twitter',
-              href: 'https://twitter.com/livecodes_io',
-            },
-            {
-              label: 'Dev',
-              href: 'https://dev.to/livecodes_io',
-            },
-            {
-              label: 'npm',
-              href: 'https://www.npmjs.com/package/livecodes',
-            },
-            {
-              html: '<a href="https://status.livecodes.io" target="_blank" rel="noopener noreferrer" class="footer__link-item status-link"><span>Status</span><svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>',
-            },
+            // {
+            //   label: '𝕏 / Twitter',
+            //   href: 'https://twitter.com/livecodes_io',
+            // },
+            // {
+            //   label: 'Dev',
+            //   href: 'https://dev.to/livecodes_io',
+            // },
+            // {
+            //   label: 'npm',
+            //   href: 'https://www.npmjs.com/package/livecodes',
+            // },
+            // {
+            //   html: '<a href="https://status.livecodes.io" target="_blank" rel="noopener noreferrer" class="footer__link-item status-link"><span>Status</span><svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>',
+            // },
           ],
         },
       ],
       copyright: `<br /> Released under the MIT License <br />
-        Copyright © ${new Date().getFullYear()}
-        <a href="https://github.com/hatemhosny" target="_blank" rel="noopener noreferrer">Hatem Hosny</a>`,
+        <br>Copyright © ${new Date().getFullYear()}</br>
+        پیاده سازی توسط : 
+         <a href="https://nitrocode.ir" target="_blank" rel="noopener noreferrer">NitroCode</a>`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -322,8 +323,8 @@ It can be easily self-hosted, if needed, on any static file server.
 LiveCodes is completely free for unlimited use, with no ads and no account required.
 Its MIT License also permits commercial use.
 
-- [Docs](https://livecodes.io/docs/llms.txt)
-- [Full Docs](https://livecodes.io/docs/llms-full.txt)
+- [Docs](https://play.nitrocode.ir/docs/llms.txt)
+- [Full Docs](https://play.nitrocode.ir/docs/llms-full.txt)
 - [README](https://raw.githubusercontent.com/live-codes/livecodes/refs/heads/develop/README.md)
 `,
         exportIndividualFiles: true,
