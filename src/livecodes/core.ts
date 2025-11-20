@@ -1185,7 +1185,7 @@ const setWindowTitle = () => {
       : '';
 
   parent.document.title =
-    hostLabel + (title && title !== 'Untitled Project' ? title + ' - ' : '') + 'LiveCodes';
+    hostLabel + (title && title !== 'Untitled Project' ? title + ' - ' : '') + 'Online Code Editor | Nitro Code Playground';
 };
 
 const setExternalResourcesMark = () => {
